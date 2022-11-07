@@ -25,16 +25,16 @@ Go to the project directory
 Create Virtual Envirnment 
 
 ```bash
- pyenv local 3.9.8
-python -m venv .venv
-source .venv/bin/activate
+  pyenv local 3.9.8
+  python -m venv .venv
+  source .venv/bin/activate
 ```
 
 Install dependencies
 
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+  pip install --upgrade pip
+  pip install -r requirements.txt
 ```
 
 ## Tech Stack
