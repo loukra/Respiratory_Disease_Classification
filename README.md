@@ -14,39 +14,41 @@ Insert gif or link to demo
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone git@github.com:loukra/Respiratory_Disease_Classification.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Respiratory_Disease_Classification
+```
+Create Virtual Envirnment 
+
+```bash
+ pyenv local 3.9.8
+python -m venv .venv
+source .venv/bin/activate
 ```
 
 Install dependencies
 
 ```bash
-  npm install
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
-
-Start the server
-
-```bash
-  npm run start
-```
-
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
+**Client:** ...
 
-**Server:** Node, Express
+**Server:** ...
 
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
-
+- [@loukra](https://www.github.com/loukra)
+- [@Li](https://www.github.com/loukra)
+- [@Rafael](https://www.github.com/loukra)
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
