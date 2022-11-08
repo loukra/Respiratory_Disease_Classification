@@ -15,7 +15,8 @@ def _read_wav_(filename, tar_sr=4000):
         tar_sr (_type_): target sampling rate for output
 
     Returns:
-        _type_: _description_
+        vec: time domain vec
+        tar_sr: target sampling rate
     """
     wav_path = "../../data/sounds/"+filename
     ori_sr = librosa.get_samplerate(wav_path) # save the original sampling rate
