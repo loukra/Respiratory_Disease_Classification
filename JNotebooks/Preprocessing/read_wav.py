@@ -5,10 +5,9 @@
     sr -> sampling rate
 """
 
-import pandas as pd
 import librosa
 
-def _read_wav_(filename, tar_sr):
+def _read_wav_(filename, tar_sr=4000):
     """_read_wav_
 
     Args:
@@ -18,10 +17,12 @@ def _read_wav_(filename, tar_sr):
     Returns:
         _type_: _description_
     """
-    wav_path = "data/Sounds"+filename
+    wav_path = "../../data/sounds/"+filename
     ori_sr = librosa.get_samplerate(wav_path) # save the original sampling rate
     vec, tar_sr = librosa.load(wav_path, sr=tar_sr)
-    print(f'Original sr: {ori_sr}, Target sr: {tar_sr}')
+    print(f'Original sr: {ori_sr}, Target sr: {tar_sr}, ')
     return vec, tar_sr
+
+
 
 
