@@ -7,7 +7,7 @@
 
 import librosa
 
-def _read_wav_(filename, tar_sr=4000):
+def _read_wav_(filename, tar_sr=4000, verbose=False):
     """_read_wav_
 
     Args:
@@ -22,6 +22,9 @@ def _read_wav_(filename, tar_sr=4000):
     ori_sr = librosa.get_samplerate(wav_path) # save the original sampling rate
     vec, tar_sr = librosa.load(wav_path, sr=tar_sr)
     dur = vec.shape[0]/tar_sr
-    print(f'Original sr: {ori_sr}, Target sr: {tar_sr}, duration: {dur} sec')
+
+    if verbose == True:
+        print(f'Original sr: {ori_sr}, Target sr: {tar_sr}, duration: {dur} sec')
+    
     return vec, tar_sr
 
