@@ -918,7 +918,7 @@
 916,i225,healthy,test,225_1b1_Pl_sc_Meditron.wav,1
 917,i226,pneumonia,train,226_1b1_Al_sc_Meditron.wav,0
 918,i226,pneumonia,train,226_1b1_Ll_sc_Meditron.wav,0
-919,i226,pneumonia,train,226_1b1_Pl_sc_Meditron.wav,0
+919,i226,pneumonia,train,226_1b1_Pl_sc_LittC2SE.wav,0
 920,f1,asthma,train,"BP1_Asthma,I E W,P L L,70,M.wav",0
 921,f1,asthma,train,"DP1_Asthma,I E W,P L L,70,M.wav",0
 922,f1,asthma,test,"EP1_Asthma,I E W,P L L,70,M.wav",0
