@@ -78,7 +78,7 @@ def arr_split(x, fs, length, annotation, overlap=0.5):
 
     
 
-def _read_wav_(filename, tar_sr=4000, verbose=False):
+def read_wav(filename, tar_sr=4000, verbose=False):
     """_read_wav_
 
     Args:
