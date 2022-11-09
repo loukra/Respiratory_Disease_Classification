@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-
+import librosa
 
 def arr_pad(x, fs, length, mode="pre"):
     """adds zeros before or after a array until it got the desired length
@@ -75,3 +75,26 @@ def arr_split(x, fs, length, annotation, overlap=0.5):
     extend_annotation = pd.concat([annotation] * y.shape[0], ignore_index = True)
 
     return y, extend_annotation
+
+    
+
+def _read_wav_(filename, tar_sr=4000, verbose=False):
+    """_read_wav_
+
+    Args:
+        filename (_type_): filename fetched from annotation.csv filename
+        tar_sr (_type_): target sampling rate for output
+
+    Returns:
+        vec: time domain vec
+        tar_sr: target sampling rate
+    """
+    wav_path = "../../data/sounds/"+filename
+    ori_sr = librosa.get_samplerate(wav_path) # save the original sampling rate
+    vec, tar_sr = librosa.load(wav_path, sr=tar_sr)
+    dur = vec.shape[0]/tar_sr
+
+    if verbose == True:
+        print(f'Original sr: {ori_sr}, Target sr: {tar_sr}, duration: {dur} sec')
+    
+    return vec, tar_sr
