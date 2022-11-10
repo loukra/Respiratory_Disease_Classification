@@ -1,17 +1,72 @@
+# make sure to run mk_dir.py file to make the folder structure first.add()
 
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import os
 
-def save_png(filename:str, arr:np.ndarray):
-    """save_png
+from librosa.feature import melspectrogram
+from librosa.display import specshow
+from librosa import power_to_db, get_samplerate, load
+
+def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True):
+    """saves chunks from one record to image, file name: cls_pid_chunk_No.
 
     Args:
-        filename (str): name of the file
-        arr (np.ndarray): vectors of the chunk
+        y (np.ndarray): shape (no_chunk, 32000)
+        anno_chunk (pd.DataFrame): annotation of no_chunks of one audio record
+        sr (int, optional): target sampling rate. Defaults to 4000.
+        bi (bool): binary, related to path of image saving. Default->True
+
+    Returns:
+        1 when all chunk image stord
     """
+    for idx in range(y.shape[0]):
+        if bi:
+            test_train = anno_chunk['train_test'][idx]
+            path = _ws_dir()+'/cls_2/'+ test_train + '/' # get path for the chunk
+            chunk_num = str(anno_chunk.index[idx]+1)
+            filename = str(anno_chunk['is_healthy'][idx])+ '_' \
+                      +anno_chunk['id'][idx]+ '_'  \
+                      + chunk_num
+            filepath = path+filename
+        else:
+            pass # for multi-classification
+
+        arr = _mel_log(y[idx])
+        plt.axis('off')  # no axis
+        plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
+        specshow(arr, sr=sr,fmax=sr/2) 
+        plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
+
+    return 1
 
 
-    plt.axis('off')  # no axis
-    plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
-    librosa.display.specshow(mel_dB,
-                         sr=tar_sr,
-                         fmax=tar_sr/2)                
-    plt.savefig(filename,  bbox_inches="tight", pad_inches=0)
+def _mel_log(vec:np.ndarray, 
+            sr: int=4000,
+            n_mels: int=50,
+            n_fft: int=512, 
+            fmax: int=None) -> np.ndarray:
+    """_summary_
+
+    Args:
+        vec (np.ndarray): column vector
+        sr (int, optional): sampling rate. Defaults to 4000.
+        n_mels (int, optional): number of mel bin. Defaults to 50.
+        n_fft (int, optional):FFT win size. Defaults to 512.
+        fmax (int, optional): max frequency range. Defaults: tar_sr/2.
+
+    Returns:
+        np.ndarray: FFT mel spectrogram, 2D array
+    """
+    mel = melspectrogram(y=vec, sr=sr, n_fft=n_fft, fmax=fmax, n_mels=n_mels)
+    mel_dB = power_to_db(mel, ref=np.max)
+
+    return mel_dB
+
+
+def _ws_dir(folder:str="Respiratory_Disease_Classification/"):
+    # return the absolute data/image directory on local
+
+    ab_dir = os.getcwd()
+    return ab_dir.split(folder, 1)[0]+folder+"data/image"
