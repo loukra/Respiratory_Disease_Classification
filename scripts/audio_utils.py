@@ -98,3 +98,10 @@ def read_wav(filename, tar_sr=4000, verbose=False):
         print(f'Original sr: {ori_sr}, Target sr: {tar_sr}, duration: {dur} sec')
     
     return vec, tar_sr
+
+def audio_preprocessing(annotation, fs = 4000, chunk_length = 8, overlap = 0.5):
+    filename = annotation['filename'].values[0]
+    y, _ = read_wav(filename)
+
+    y, extended_annotations = arr_split(y, fs, chunk_length, annotation, overlap)
+    return y, extended_annotations
