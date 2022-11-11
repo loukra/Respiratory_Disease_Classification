@@ -24,12 +24,12 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
     for idx in range(y.shape[0]):
         if bi:
             test_train = anno_chunk['train_test'][idx]
-            heal = "healty_" + str(anno_chunk['is_healthy'][idx])
+            heal = "health_" + str(anno_chunk['is_healthy'][idx])
             chunk_num = str(anno_chunk.index[idx]+1)
 
             path = os.path.join(_ws_dir(), "cls_2", test_train, heal)
-            if not os.path.exists(path):
-                os.mkdir(path)
+            if not os.path.exists(path): # mkdir if the folder 
+                os.makedirs(path)
             else: 
                 filename = str(anno_chunk['is_healthy'][idx]) + '_' \
                                 +anno_chunk['id'][idx]+ '_'  \
