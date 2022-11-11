@@ -11,6 +11,7 @@ def spec2png(y:np.ndarray,
              anno_chunk: pd.DataFrame,
              sr: int=4000, 
              hop_length: int=32,
+             window: str='hann',
              bi:bool=True):
     """saves chunks from one record to image, file name: cls_pid_chunk_No.
 
@@ -19,6 +20,9 @@ def spec2png(y:np.ndarray,
         anno_chunk (pd.DataFrame): annotation of no_chunks of one audio record
         sr (int, optional): target sampling rate. Defaults to 4000.
         bi (bool): binary classification. Default->True
+        hop_length (int): Default:32
+        win (str,optional):see scipy.signal.get_window. Defaults: "hann"
+
 
     Returns:
         1 when all chunk image storedgit 
@@ -29,7 +33,7 @@ def spec2png(y:np.ndarray,
 
         filepath = _gen_path(anno_row) + chunk_num # generate the file path, append chunk No.
 
-        arr = _mel_log(y[idx], hop_len=hop_length) 
+        arr = _mel_log(y[idx], hop_length=hop_length, window=window) 
 
         plt.axis('off')  # no axis
         plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
@@ -41,7 +45,8 @@ def spec2png(y:np.ndarray,
 
 def _mel_log(vec:np.ndarray,
             sr: int=4000,
-            hop_len: int=32,
+            hop_length: int=32,
+            window: str='hann',
             n_mels: int=50,
             n_fft: int=512, 
             fmax: int=None
@@ -55,12 +60,13 @@ def _mel_log(vec:np.ndarray,
         n_mels (int, optional): number of mel bin. Defaults to 50.
         n_fft (int, optional):FFT win size. Defaults to 512.
         fmax (int, optional): max frequency range. Defaults: tar_sr/2.
-
+        win (str,optional):see scipy.signal.get_window. Defaults: "hann"
     Returns:
         np.ndarray: FFT mel spectrogram, 2D array
     """
 
-    mel = melspectrogram(y=vec, sr=sr, n_fft=n_fft, fmax=fmax, n_mels=n_mels, hop_length=hop_len)
+    mel = melspectrogram(y=vec, sr=sr, n_fft=n_fft, fmax=fmax,
+                        n_mels=n_mels, hop_length=hop_length, window=window)
     mel_dB = power_to_db(mel, ref=np.max)
 
     return mel_dB
