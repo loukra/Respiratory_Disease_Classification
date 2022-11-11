@@ -99,6 +99,30 @@ def read_wav(filename, tar_sr=4000, verbose=False):
     
     return vec, tar_sr
 
+
+def mel_log(vec:np.ndarray, 
+            sr: int=4000,
+            n_mels: int=50,
+            n_fft: int=512, 
+            fmax: int=None) -> np.ndarray:
+    """_summary_
+
+    Args:
+        vec (np.ndarray): column vector
+        sr (int, optional): sampling rate. Defaults to 4000.
+        n_mels (int, optional): number of mel bin. Defaults to 50.
+        n_fft (int, optional):FFT win size. Defaults to 512.
+        fmax (int, optional): max frequency range. Defaults: tar_sr/2.
+
+    Returns:
+        np.ndarray: FFT mel spectrogram, 2D array
+    """
+    mel = melspectrogram(y=vec, sr=sr, n_fft=n_fft, fmax=fmax, n_mels=n_mels)
+    mel_dB = power_to_db(mel, ref=np.max)
+
+    return mel_dB
+
+
 def audio_preprocessing(annotation, fs = 4000, chunk_length = 8, overlap = 0.5):
     filename = annotation['filename'].values[0]
     y, _ = read_wav(filename)
