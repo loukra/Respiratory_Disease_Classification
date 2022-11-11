@@ -17,7 +17,7 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
         bi (bool): binary classification. Default->True
 
     Returns:
-        1 when all chunk image stored
+        1 when all chunk image storedgit 
     """
     for idx in range(y.shape[0]):
         anno_row = anno_chunk.iloc[idx]
