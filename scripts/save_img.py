@@ -1,5 +1,3 @@
-# make sure to run mk_dir.py file to make the folder structure first.add()
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,35 +14,22 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
         y (np.ndarray): shape (no_chunk, 32000)
         anno_chunk (pd.DataFrame): annotation of no_chunks of one audio record
         sr (int, optional): target sampling rate. Defaults to 4000.
-        bi (bool): binary, related to path of image saving. Default->True
+        bi (bool): binary classification. Default->True
 
     Returns:
         1 when all chunk image stor
     """
     for idx in range(y.shape[0]):
-        if bi:
-            test_train = anno_chunk['train_test'][idx]
-            heal = "health_" + str(anno_chunk['is_healthy'][idx])
-            chunk_num = str(anno_chunk.index[idx]+1)
+        anno_row = anno_chunk.iloc[idx]
+        chunk_num = str(anno_chunk.index[idx]+1)
+        
+        filepath = _gen_path(anno_row) + chunk_num # generate the file path, append chunk No.
 
-            path = os.path.join(_ws_dir(), "cls_2", test_train, heal)
-            
-            if not os.path.exists(path): # mkdir if the folder 
-                os.makedirs(path)
-             
-            filename = str(anno_chunk['is_healthy'][idx]) + '_' \
-                            +anno_chunk['id'][idx]+ '_'  \
-                            + chunk_num
-            filepath = os.path.join(path,filename)
-
-            arr = _mel_log(y[idx])
-            plt.axis('off')  # no axis
-            plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
-            specshow(arr, sr=sr,fmax=sr/2) 
-            plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
-
-        else:
-            pass # save for multi-classification
+        arr = _mel_log(y[idx]) 
+        plt.axis('off')  # no axis
+        plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
+        specshow(arr, sr=sr,fmax=sr/2) 
+        plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
 
     return 1
 
@@ -67,13 +52,41 @@ def _mel_log(vec:np.ndarray,
     Returns:
         np.ndarray: FFT mel spectrogram, 2D array
     """
+
     mel = melspectrogram(y=vec, sr=sr, n_fft=n_fft, fmax=fmax, n_mels=n_mels)
     mel_dB = power_to_db(mel, ref=np.max)
 
     return mel_dB
 
 
-def _ws_dir(folder:str="Respiratory_Disease_Classification/"):
-    # return the absolute data/image directory on local
+def _gen_path(anno_row: pd.DataFrame,
+              folder:str="Respiratory_Disease_Classification/",
+              bi:bool=True) -> str:
+    """generate filepath to save img file, without chunk No. appended
+
+    Args:
+        anno_row: annotation row of the chunk
+        folder (str, optional): change if you have different folder name than the GitHub name. Defaults:"Respiratory_Disease_Classification/".
+        bi (bool, optional): False if multiclassification. Defaults to True.
+
+    Returns:
+        str: path/file str for plt.savefig() method
+    """
     ab_dir = os.getcwd()
-    return ab_dir.split(folder, 1)[0]+folder+"data/images"
+    img_dir = ab_dir.split(folder, 1)[0]+folder+"data/images"
+    if bi:
+            test_train = anno_row['train_test']
+            heal = "health_" + str(anno_row['is_healthy'])
+
+            # path example: data/images/cls_2/test/health_0
+            path = os.path.join(img_dir, "cls_2", test_train, heal)
+            
+            if not os.path.exists(path): # mkdir if the folder does not exist
+                os.makedirs(path)
+             
+            filename = str(anno_row['is_healthy']) + '_' \
+                            +anno_row['id']+ '_'
+            filepath = os.path.join(path,filename)
+    else:
+        pass # for multi-classification
+    return filepath
