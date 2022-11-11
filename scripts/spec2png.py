@@ -19,13 +19,13 @@ def spec2png(y:np.ndarray,
         y (np.ndarray): shape (no_chunk, 32000)
         anno_chunk (pd.DataFrame): annotation of no_chunks of one audio record
         sr (int, optional): target sampling rate. Defaults to 4000.
+        hop_length (int): default=32
         bi (bool): binary classification. Default->True
-        hop_length (int): Default:32
-        win (str,optional):see scipy.signal.get_window. Defaults: "hann"
+        window (str,optional): see scipy.signal.get_window. Defaults: "hann"
 
 
     Returns:
-        1 when all chunk image storedgit 
+        1 when all chunk image stored 
     """
     for idx in range(y.shape[0]):
         anno_row = anno_chunk.iloc[idx]
@@ -44,9 +44,9 @@ def spec2png(y:np.ndarray,
 
 
 def _mel_log(vec:np.ndarray,
+            window: str,
             sr: int=4000,
             hop_length: int=32,
-            window: str='hann',
             n_mels: int=50,
             n_fft: int=512, 
             fmax: int=None
@@ -57,6 +57,7 @@ def _mel_log(vec:np.ndarray,
     Args:
         vec (np.ndarray): column vector
         sr (int, optional): sampling rate. Defaults to 4000.
+        hop_length (int): default 32
         n_mels (int, optional): number of mel bin. Defaults to 50.
         n_fft (int, optional):FFT win size. Defaults to 512.
         fmax (int, optional): max frequency range. Defaults: tar_sr/2.
