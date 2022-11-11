@@ -7,7 +7,11 @@ from librosa.feature import melspectrogram
 from librosa.display import specshow
 from librosa import power_to_db, get_samplerate, load
 
-def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True):
+def spec2png(y:np.ndarray, 
+             anno_chunk: pd.DataFrame,
+             sr: int=4000, 
+             hop_length: int=32,
+             bi:bool=True):
     """saves chunks from one record to image, file name: cls_pid_chunk_No.
 
     Args:
@@ -25,7 +29,8 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
 
         filepath = _gen_path(anno_row) + chunk_num # generate the file path, append chunk No.
 
-        arr = _mel_log(y[idx]) 
+        arr = _mel_log(y[idx], hop_len=hop_length) 
+
         plt.axis('off')  # no axis
         plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
         specshow(arr, sr=sr,fmax=sr/2) 
@@ -34,11 +39,13 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
     return 1
 
 
-def _mel_log(vec:np.ndarray, 
+def _mel_log(vec:np.ndarray,
             sr: int=4000,
+            hop_len: int=32,
             n_mels: int=50,
             n_fft: int=512, 
-            fmax: int=None) -> np.ndarray:
+            fmax: int=None
+            ) -> np.ndarray:
 
     """FFT mel and with default 512 window size. Mel bins:50; Log scale.
 
@@ -53,7 +60,7 @@ def _mel_log(vec:np.ndarray,
         np.ndarray: FFT mel spectrogram, 2D array
     """
 
-    mel = melspectrogram(y=vec, sr=sr, n_fft=n_fft, fmax=fmax, n_mels=n_mels)
+    mel = melspectrogram(y=vec, sr=sr, n_fft=n_fft, fmax=fmax, n_mels=n_mels, hop_length=hop_len)
     mel_dB = power_to_db(mel, ref=np.max)
 
     return mel_dB
