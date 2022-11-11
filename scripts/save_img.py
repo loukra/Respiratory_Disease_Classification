@@ -19,25 +19,31 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
         bi (bool): binary, related to path of image saving. Default->True
 
     Returns:
-        1 when all chunk image stord
+        1 when all chunk image stor
     """
     for idx in range(y.shape[0]):
         if bi:
             test_train = anno_chunk['train_test'][idx]
-            path = _ws_dir()+'/cls_2/'+ test_train + '/' # get path for the chunk
+            heal = "healty_" + str(anno_chunk['is_healthy'][idx])
             chunk_num = str(anno_chunk.index[idx]+1)
-            filename = str(anno_chunk['is_healthy'][idx])+ '_' \
-                      +anno_chunk['id'][idx]+ '_'  \
-                      + chunk_num
-            filepath = path+filename
-        else:
-            pass # for multi-classification
 
-        arr = _mel_log(y[idx])
-        plt.axis('off')  # no axis
-        plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
-        specshow(arr, sr=sr,fmax=sr/2) 
-        plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
+            path = os.path.join(_ws_dir(), "cls_2", test_train, heal)
+            if not os.path.exists(path):
+                os.mkdir(path)
+            else: 
+                filename = heal + '_' \
+                                +anno_chunk['id'][idx]+ '_'  \
+                                + chunk_num
+                filepath = os.path.join(path,filename)
+
+                arr = _mel_log(y[idx])
+                plt.axis('off')  # no axis
+                plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
+                specshow(arr, sr=sr,fmax=sr/2) 
+                plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
+
+        else:
+            pass # save for multi-classification
 
     return 1
 
@@ -47,7 +53,8 @@ def _mel_log(vec:np.ndarray,
             n_mels: int=50,
             n_fft: int=512, 
             fmax: int=None) -> np.ndarray:
-    """_summary_
+
+    """FFT mel and with default 512 window size. Mel bins:50; Log scale.
 
     Args:
         vec (np.ndarray): column vector
