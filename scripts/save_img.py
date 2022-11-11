@@ -31,7 +31,7 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
             if not os.path.exists(path):
                 os.mkdir(path)
             else: 
-                filename = heal + '_' \
+                filename = str(anno_chunk['is_healthy'][idx]) + '_' \
                                 +anno_chunk['id'][idx]+ '_'  \
                                 + chunk_num
                 filepath = os.path.join(path,filename)
