@@ -10,7 +10,7 @@ from librosa import power_to_db, get_samplerate, load
 def spec2png(y:np.ndarray, 
              anno_chunk: pd.DataFrame,
              sr: int=4000, 
-             hop_length: int=32,
+             hop_length: int=512,
              window: str='hann',
              bi:bool=True):
     """saves chunks from one record to image, file name: cls_pid_chunk_No.
@@ -19,7 +19,7 @@ def spec2png(y:np.ndarray,
         y (np.ndarray): shape (no_chunk, 32000)
         anno_chunk (pd.DataFrame): annotation of no_chunks of one audio record
         sr (int, optional): target sampling rate. Defaults to 4000.
-        hop_length (int): default=32
+        hop_length (int): default=512
         bi (bool): binary classification. Default->True
         window (str,optional): see scipy.signal.get_window. Defaults: "hann"
 
@@ -45,8 +45,8 @@ def spec2png(y:np.ndarray,
 
 def _mel_log(vec:np.ndarray,
             window: str,
+            hop_length:int,
             sr: int=4000,
-            hop_length: int=32,
             n_mels: int=50,
             n_fft: int=512, 
             fmax: int=None
