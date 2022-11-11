@@ -26,21 +26,23 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
             test_train = anno_chunk['train_test'][idx]
             heal = "health_" + str(anno_chunk['is_healthy'][idx])
             chunk_num = str(anno_chunk.index[idx]+1)
+            print(chunk_num)
 
             path = os.path.join(_ws_dir(), "cls_2", test_train, heal)
+            
             if not os.path.exists(path): # mkdir if the folder 
                 os.makedirs(path)
-            else: 
-                filename = str(anno_chunk['is_healthy'][idx]) + '_' \
-                                +anno_chunk['id'][idx]+ '_'  \
-                                + chunk_num
-                filepath = os.path.join(path,filename)
+             
+            filename = str(anno_chunk['is_healthy'][idx]) + '_' \
+                            +anno_chunk['id'][idx]+ '_'  \
+                            + chunk_num
+            filepath = os.path.join(path,filename)
 
-                arr = _mel_log(y[idx])
-                plt.axis('off')  # no axis
-                plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
-                specshow(arr, sr=sr,fmax=sr/2) 
-                plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
+            arr = _mel_log(y[idx])
+            plt.axis('off')  # no axis
+            plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
+            specshow(arr, sr=sr,fmax=sr/2) 
+            plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
 
         else:
             pass # save for multi-classification
