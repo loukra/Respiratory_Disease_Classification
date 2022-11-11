@@ -26,7 +26,6 @@ def save_png(y:np.ndarray, anno_chunk: pd.DataFrame, sr: int=4000, bi:bool=True)
             test_train = anno_chunk['train_test'][idx]
             heal = "health_" + str(anno_chunk['is_healthy'][idx])
             chunk_num = str(anno_chunk.index[idx]+1)
-            print(chunk_num)
 
             path = os.path.join(_ws_dir(), "cls_2", test_train, heal)
             
@@ -76,6 +75,5 @@ def _mel_log(vec:np.ndarray,
 
 def _ws_dir(folder:str="Respiratory_Disease_Classification/"):
     # return the absolute data/image directory on local
-
     ab_dir = os.getcwd()
-    return ab_dir.split(folder, 1)[0]+folder+"data/image"
+    return ab_dir.split(folder, 1)[0]+folder+"data/images"
