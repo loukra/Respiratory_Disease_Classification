@@ -12,7 +12,8 @@ def spec2png(y:np.ndarray,
              sr: int=4000, 
              hop_length: int=512,
              window: str='hann',
-             bi:bool=True):
+             bi:bool=True,
+             console: bool = False):
     """saves chunks from one record to image, file name: cls_pid_chunk_No.
 
     Args:
@@ -31,15 +32,18 @@ def spec2png(y:np.ndarray,
         anno_row = anno_chunk.iloc[idx]
         chunk_num = str(anno_chunk.index[idx]+1)
 
-        filepath = _gen_path(anno_row) + chunk_num # generate the file path, append chunk No.
+        filepath = _gen_path(anno_row, console = console) + chunk_num # generate the file path, append chunk No.
+
+
         if not os.path.exists(filepath + '.png'):   
+            print(filepath)
             arr = _mel_log(y[idx], hop_length=hop_length, window=window) 
 
             plt.axis('off')  # no axis
             plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
             specshow(arr, sr=sr,fmax=sr/2) 
             plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
-        else: print('The File Already Exists')
+        else: pass
     return 1
 
 
@@ -75,7 +79,8 @@ def _mel_log(vec:np.ndarray,
 
 def _gen_path(anno_row: pd.DataFrame,
               folder:str="Respiratory_Disease_Classification/",
-              bi:bool=True) -> str:
+              bi:bool=True,
+              console = False) -> str:
     """generate filepath to save img file, without chunk No. appended
 
     Args:
@@ -87,6 +92,8 @@ def _gen_path(anno_row: pd.DataFrame,
         str: path/file str for plt.savefig() method
     """
     ab_dir = os.getcwd()
+    if console:
+        ab_dir = ab_dir[:-7]
     img_dir = ab_dir.split(folder, 1)[0]+folder+"data/images"
     if bi:
             test_train = anno_row['train_test']
@@ -94,7 +101,6 @@ def _gen_path(anno_row: pd.DataFrame,
 
             # path example: data/images/cls_2/test/health_0
             path = os.path.join(img_dir, "cls_2", test_train, heal)
-            
             if not os.path.exists(path): # mkdir if the folder does not exist
                 os.makedirs(path)
              
