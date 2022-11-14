@@ -28,6 +28,7 @@ def spec2png(y:np.ndarray,
         1 when all chunk image stored 
     """
     for idx in range(y.shape[0]):
+        print("-----spec2png progress: {idx}/{y.shape[0]}-----")
         anno_row = anno_chunk.iloc[idx]
         chunk_num = str(anno_chunk.index[idx]+1)
 
