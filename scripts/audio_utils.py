@@ -129,3 +129,19 @@ def audio_preprocessing(annotation, fs = 4000, chunk_length = 8, overlap = 0.5):
 
     y, extended_annotations = arr_split(y, fs, chunk_length, annotation, overlap)
     return y, extended_annotations
+
+
+def audio2img(annot_dir = "../../data/annotations.csv", ):
+    annotations = pd.read_csv(annot_dir, index_col=0)
+
+    display(annotations)
+    X = []
+    extend_annotations = pd.DataFrame(columns=['id', 'diagnosis', 'train_test', 'filename', 'is_healthy'])
+
+    for idx, row in annotations.iterrows():
+        df = pd.DataFrame(row).T
+        y, extended_annotation = audio_preprocessing(df)
+        [X.append(col) for col in y]
+        extend_annotations = pd.concat([extend_annotations,extended_annotation], ignore_index=True)
+        
+    X = np.array(X)

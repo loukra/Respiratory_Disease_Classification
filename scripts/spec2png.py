@@ -32,14 +32,14 @@ def spec2png(y:np.ndarray,
         chunk_num = str(anno_chunk.index[idx]+1)
 
         filepath = _gen_path(anno_row) + chunk_num # generate the file path, append chunk No.
+        if not os.path.exists(filepath + '.png'):   
+            arr = _mel_log(y[idx], hop_length=hop_length, window=window) 
 
-        arr = _mel_log(y[idx], hop_length=hop_length, window=window) 
-
-        plt.axis('off')  # no axis
-        plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
-        specshow(arr, sr=sr,fmax=sr/2) 
-        plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
-
+            plt.axis('off')  # no axis
+            plt.axes([0., 0., 1., 1.], frameon=False, xticks=[], yticks=[])
+            specshow(arr, sr=sr,fmax=sr/2) 
+            plt.savefig(filepath,  bbox_inches="tight", pad_inches=0)
+        else: print('The File Already Exists')
     return 1
 
 
