@@ -93,8 +93,10 @@ def _gen_path(anno_row: pd.DataFrame,
     """
     ab_dir = os.getcwd()
     if console:
-        ab_dir = ab_dir[:-7]
-    img_dir = ab_dir.split(folder, 1)[0]+folder+"data/images"
+        ab_dir = '/'.join(ab_dir.split('/')[:-1])
+        img_dir = ab_dir + "/data/images"
+    else:    
+        img_dir = ab_dir.split(folder, 1)[0]+folder+"data/images"
     if bi:
             test_train = anno_row['train_test']
             heal = "health_" + str(anno_row['is_healthy'])
