@@ -4,14 +4,14 @@ import os
 import pandas as pd
 import numpy as np
 
-def balance_sel(df:pd.DataFrame, ranseed: int=42): 
+def balance_sel(df:pd.DataFrame, ranseed: int=30): 
     """do a balanced selection between health_0 and health_1 classes in training data. 
        choose all the subject in the minority group, then choose the same subject number from major class.
        cope the selected images to new /balanced folder.
 
     Args:
         df (pd.DataFrame): annotation file of all the audio files
-        ranseed (int, optional): set random seed for shuffle. Defaults to 42.
+        ranseed (int, optional): set random seed for shuffle. Defaults to 30.
     """
     # 50-50 clf selection, according to patient
     
