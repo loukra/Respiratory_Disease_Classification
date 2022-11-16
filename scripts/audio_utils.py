@@ -139,7 +139,9 @@ def audio_preprocessing(annotation, console = False, fs=4000, chunk_length=8, ov
 
 
 def audio2img(
-    annotation_dir="../../data/annotations.csv", console = False
+    annotation_dir="../../data/annotations.csv", console = False,
+    overlap_minor = 0.9,
+    overlap_major = 0.1,
 ):
     annotations = pd.read_csv(annotation_dir, index_col=0)
 
@@ -151,13 +153,17 @@ def audio2img(
 
     for idx, row in annotations.iterrows():
         df = pd.DataFrame(row).T
-        y, extended_annotation = audio_preprocessing(df, console = console)
+        if row['is_healthy'] == 0:
+            overlap = overlap_major
+        else: overlap = overlap_minor
+        y, extended_annotation = audio_preprocessing(df, console = console, overlap=overlap)
         [X.append(col) for col in y]
         extended_annotations = pd.concat(
             [extended_annotations, extended_annotation], ignore_index=True
         )
 
     X = np.array(X)
+    print(extended_annotations['is_healthy'].value_counts())
     spec2png.spec2png(X, extended_annotations, hop_length=512, console = console)
 
 
