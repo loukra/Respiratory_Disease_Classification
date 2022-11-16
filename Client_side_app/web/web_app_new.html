@@ -1,109 +1,139 @@
 <html><body>
-<h1>Wellcome to the respiratory classification</h1>
-<p>This site is linked to a sophisticated neural network able to detect suspicious lung sounds and to classify them. Optionally, you might tell if you 
-	<select>
-		<option style="font-size:20px;">doubt about having a lung disease.</option>
+	<!-- <div id='raf'> //-->
+	<h1>Breathing Sound Test</h1>
+	<p>This site is linked to a sophisticated neural network that discerns suspicious from sound lung noises and classifies the former. You might use the scroll menu to tell if you 
+		<select id='wech' onchange='adaptS();'>
+		<option>doubt about being lung sick.</option>
 		<option>think that your lung is healthy.</option>
-		<option>have a diagnosed lung disease.</option>
-	</select> 
-Once you feel ready to forcedly breath through your mouth, breath out and click the start button.</p>
-<button id='one1' onclick='startB();'><div id='one2'></div></button>
-</body>
-<!-- CSS for the initial scenario: //-->
-<style>
-html { background-color:green; background-size:5%;}
-body, h1 { font-family: Arial, Helvetica, sans-serif; color:white; text-shadow: 2px 2px 2px black; }
-p { font-size:3vmin; }
-select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding:5px; font-size:20px; }
-button {
-	position:relative; top:calc(50% - min(35vw, 35vh)); left:calc(50% - min(35vw, 35vh));
-	height:min(70vw, 70vh); width:min(70vw, 70vh); border-radius:50%; border-width:0.4em; font-size:300%;
-	box-shadow: -0.04em -0.04em 0 0.04em #ffffffbb, inset 0.04em 0.04em 0 0.1em #ffffff77;
-}
-#one1 { background:#ffffdddd; }
-#one1:active {background:white;box-shadow: 0 0 0}
-#one2::after { content: 'START BUTTON'; }
-</style>
-<!-- CSS for the scenario right after clicking the start button: //-->
-<style>
-#two1 { background:yellow; animation: breath1 16s 2; }
-#two2 {
-	border-radius:50%; display:inline; animation: breath2 16s 2;
-	background:lightblue; color:black; font-size:100%; padding:3em 0.6em;
-}
-#two2::after { content: 'BREATH IN'; animation: breath3 16s 2; }
-@keyframes breath1 {
-	0% { background:yellow; }
-	6.25% { background:yellow; }
-	12.50% { background:conic-gradient(red 0deg, red 22.5deg, yellow 22.5deg); }
-	18.75% { background:conic-gradient(red 0deg, red 45deg, yellow 45deg); }
-	25.00% { background:conic-gradient(red 0deg, red 67.5deg, yellow 67.5deg); }
-	31.25% { background:conic-gradient(red 0deg, red 90deg, yellow 90deg); }
-	37.50% { background:conic-gradient(red 0deg, red 112.5deg, yellow 112.5deg); }
-	43.75% { background:conic-gradient(red 0deg, red 135deg, yellow 135deg); }
-	50.00% { background:conic-gradient(red 0deg, red 157.5deg, yellow 157.5deg); }
-	56.25% { background:conic-gradient(red 0deg, red 180deg, yellow 180deg); }
-	62.50% { background:conic-gradient(red 0deg, red 202.5deg, yellow 202.5deg); }
-	68.75% { background:conic-gradient(red 0deg, red 225deg, yellow 225deg); }
-	75.00% { background:conic-gradient(red 0deg, red 247.5deg, yellow 247.5deg); }
-	81.25% { background:conic-gradient(red 0deg, red 270deg, yellow 270deg); }
-	87.50% { background:conic-gradient(red 0deg, red 292.5deg, yellow 292.5deg); }
-	93.75% { background:conic-gradient(red 0deg, red 315deg, yellow 315deg); }
-	100% { background:conic-gradient(red 0deg, red 337.5deg, yellow 337.5deg); }
-}
-@keyframes breath2 {
-	0% { background:darkblue; color:white; font-size:80%; padding:2.5em 0.6em; }
-	25.00% { background:darkblue; color:white; font-size:80%; padding:2.5em 0.6em; }
-	25.00% { background:lightblue; color:black; font-size:100%; padding:3em 0.6em; }
-	50.00% { background:lightblue; color:black; font-size:100%; padding:3em 0.6em; }
-	50.00% { background:darkblue; color:white; font-size:80%; padding:2.5em 0.6em; }
-	75.00% { background:darkblue; color:white; font-size:80%; padding:2.5em 0.6em; }
-	75.00% { background:lightblue; color:black; font-size:100%; padding:3em 0.6em; }
-	100.00% { background:lightblue; color:black; font-size:100%; padding:3em 0.6em; }
-	100.00% { background:darkblue; color:white; font-size:80%; padding:2.5em 0.6em; }
-}
-@keyframes breath3 {
-	0% { content:'BREATH OUT'; } 25.00% { content:'BREATH OUT'; } 25.00% { content:'BREATH IN'; }
-	50.00% { content:'BREATH IN'; } 50.00% { content:'BREATH OUT'; } 75.00% { content:'BREATH OUT'; }
-	75.00% { content:'BREATH IN'; } 100.00% { content:'BREATH IN'; } 100.00% { content:'BREATH OUT'; }
-}
-</style>
-<script>
-// Main global constants and variables
-const mimeT = ['audio/mp4','audio/webm','audio/ogg'];
-audioChunks = [];
-const possibleR = ['healthy. <b>Mind that if I have symptoms, consulting a physician is still recommendable.</b>','suspicious (crackles)','suspicious (wheezes)','suspicious (crackles and wheezes)']
-// Access to the users microphone:
-navigator.mediaDevices.getUserMedia({audio:true})
-.then(stream => { handlerF(stream); })
-.catch((err) => { alert(err.name + '\n' + err.message); });
-// Function that handles the stream:
-function handlerF(stream) {
-	mimeT.forEach(function(v) { if (MediaRecorder.isTypeSupported(v)) { re = new MediaRecorder(stream, {mimeType:v}); } });
-	re.ondataavailable = eventS => {
-		audioChunks.push(eventS.data); // alert(eventS);
-		if (re.state == 'inactive') {
-			let blob = new Blob(audioChunks, {type:re.mimeType}); // alert(blob);
-			a.src = URL.createObjectURL(blob); // alert(a.src);
+		<option>have a pulmonary disease.</option>
+		</select>
+	That feedback is optional. You receive the probability of having a healthy lung right after the 16-second breath test.<br><br>Breath out, click the start button, and breath forcedly through your mouth.</p>
+	<button id='one1' onclick='startB();'><div id='one2'></div></button>
+	<table cellpadding='5'>
+		<caption>Adds for a clearer auscultation</caption>
+		<tr><th rowspan='1'>Flat Phone microphones</td><td><a href='https://amazon.com/s?k=phone+microphone+flat&crid=1KLYTN7UM86XM&sprefix=phone+microphone+flat%2Caps%2C238&ref=nb_sb_noss'>Amazon</a></td></tr>
+		<tr><th rowspan='1'>Flat USB microphones</td><td style='border-top: 1px solid black; border-bottom: 1px solid black;'><a href='https://renhotecic.com/VIMCENT-YM-200-M2-Wired-360-and-deg-Pickup-Audio-Omnidirectional-Microphone-Conference-Microphone-Webcast-Microphone-with-USB-Cable-0001726'>Renhotec</a></td></tr>
+		<tr><th rowspan='2'>Bluetooth stethoscopes</td><td><a href='https://alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&tab=all&SearchText=bluetooth+stethoscope&selectedTab=product_en'>Alibaba</a></td></tr>
+		<tr><td style='border-bottom: 1px solid black;'><a href='https://sifsof.com/product/bluetooth-enabled-cardio-pulmonary-stethoscope-sifstetho-1-1/'>SIFSOF</a></td></tr>
+		<tr><th rowspan='2'>USB stethoscopes</td><td><a href='https://telemedicinesupply.com/collections/devices'>MobilDrTech</a></td></tr>
+		<tr><td><a href='https://letstalkinteractive.com/solutions/telemedicine-carts-and-equipment#digital-accessories'>Let's Talk</a></td></tr>
+	</table>
+	<!-- </div> //-->
+	</body>
+	<!-- Frame CSS //-->
+	<style>
+	/* #raf { z-index:5; position:absolute; min-width:100%; min-height:100%; } */
+	/*html { background-color:#ADD8E6; background-repeat:no-repeat; background-size: 100% 100vh; background-attachment:fixed; }*/
+	</style>
+	<!-- CSS for the initial phase: //-->
+	<style>
+	h1, p, select, table { font-family: Arial, Helvetica, sans-serif; color:#004400; text-shadow: -0.06em -0.06em 0.04em white; }
+	h1 { font-size:8vmin; }
+	p, select { text-align:justify; }
+	p, select, table { font-size:4.8vmin; font-weight:700; line-height:1.5 }
+	select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding:5px; cursor: pointer; }
+	button {
+		border-radius:50%; border-width:0.4em; font-size:6vmin; font-weight:700;
+		box-shadow: -0.06em -0.06em 0 0.04em #ffffffbb, inset 0.04em 0.04em 0 0.1em #ffffff77;
+	}
+	#one1 { position:relative; height:70vmin; width:70vmin; left:calc(50% - 35vmin); background:#004400; color:white; text-shadow: 0.06em 0.06em 0.04em black; }
+	#one1:active { background:white; box-shadow: 0 0 0; }
+	#one2::after { content: 'START BUTTON'; }
+	</style>
+	<!-- CSS for the animation phase: //-->
+	<style>
+	#two1 { position:absolute; top:calc(50% - 40vmin); left:calc(50% - 40vmin); height:80vmin; width:80vmin; background:pink; animation: breath1 16s 2; }
+	#two2 {
+		display:inline-block; height:50vmin; width:50vmin; border-radius:50%; line-height:50vmin;
+		background:lightblue; color:black; animation: breath2 16s 2;
+	}
+	#two2::after { content: 'BREATH IN'; animation: breath3 16s 2; }
+	@keyframes breath1 {
+		0% { background:pink; }
+		6.25% { background:pink; }
+		12.50% { background:conic-gradient(#004400 0deg, #004400 22.5deg, pink 22.5deg); }
+		18.75% { background:conic-gradient(#004400 0deg, #004400 45deg, pink 45deg); }
+		25.00% { background:conic-gradient(#004400 0deg, #004400 67.5deg, pink 67.5deg); }
+		31.25% { background:conic-gradient(#004400 0deg, #004400 90deg, pink 90deg); }
+		37.50% { background:conic-gradient(#004400 0deg, #004400 112.5deg, pink 112.5deg); }
+		43.75% { background:conic-gradient(#004400 0deg, #004400 135deg, pink 135deg); }
+		50.00% { background:conic-gradient(#004400 0deg, #004400 157.5deg, pink 157.5deg); }
+		56.25% { background:conic-gradient(#004400 0deg, #004400 180deg, pink 180deg); }
+		62.50% { background:conic-gradient(#004400 0deg, #004400 202.5deg, pink 202.5deg); }
+		68.75% { background:conic-gradient(#004400 0deg, #004400 225deg, pink 225deg); }
+		75.00% { background:conic-gradient(#004400 0deg, #004400 247.5deg, pink 247.5deg); }
+		81.25% { background:conic-gradient(#004400 0deg, #004400 270deg, pink 270deg); }
+		87.50% { background:conic-gradient(#004400 0deg, #004400 292.5deg, pink 292.5deg); }
+		93.75% { background:conic-gradient(#004400 0deg, #004400 315deg, pink 315deg); }
+		100% { background:conic-gradient(#004400 0deg, #004400 337.5deg, pink 337.5deg); }
+	}
+	@keyframes breath2 {
+		0% { background:darkblue; color:white; }
+		25.00% { background:darkblue; color:white; }
+		25.00% { background:lightblue; color:black; }
+		50.00% { background:lightblue; color:black; }
+		50.00% { background:darkblue; color:white; }
+		75.00% { background:darkblue; color:white; }
+		75.00% { background:lightblue; color:black; }
+		100.00% { background:lightblue; color:black; }
+		100.00% { background:darkblue; color:white; }
+	}
+	@keyframes breath3 {
+		0% { content:'BREATH OUT'; } 25.00% { content:'BREATH OUT'; } 25.00% { content:'BREATH IN'; }
+		50.00% { content:'BREATH IN'; } 50.00% { content:'BREATH OUT'; } 75.00% { content:'BREATH OUT'; }
+		75.00% { content:'BREATH IN'; } 100.00% { content:'BREATH IN'; } 100.00% { content:'BREATH OUT'; }
+	}
+	</style>
+	<!-- CSS for the return phase: //-->
+	<style>
+	table { margin-top:5vmin; width:100vw; display:none; }
+	table, th { border-top: 1px solid black; border-bottom: 1px solid black; border-collapse:collapse; }
+	caption { font-size:6vmin; font-weight:900; }
+	th { text-align:left; font-weight:800; }
+	</style>
+	<script>
+	// Responsive scroll menu
+	function adaptS() {
+		if (document.getElementById('wech').selectedIndex=='2') {
+			document.getElementById('wech').outerHTML = "have <select><option>any pulmonary disease (PD).</option><optgroup label='an acute PD, namely'><option>any APD.</option><option>an airway infection.</option><option>a recent embolism.</option><option>an exacerbated CPD</option></optgroup><optgroup label='a chronic PD, namely'><option>any CPD.</option><option>a C Obstructive PD.</option><option>(bronchial) asthma.</option><option>a lung fibrosis.</option></optgroup></select>";
+			alert('Do you agree to provide some details on your pulmonary disease?\n\nIf yes, kindly reuse the updated scroll menu.');
 		}
 	}
-}
-//  START BUTTON Function:
-function startB() {
-    re.start();
-    document.getElementsByTagName('p')[0].innerHTML = '';
-    document.getElementById('one1').id = 'two1';
-    document.getElementById('one2').id = 'two2';
-    setTimeout(ende,16000);
-}
-// Ending function:
-function ende() {
-    re.stop();
-    var res = possibleR[Math.floor(Math.random()*4)];
-    document.getElementsByTagName('p')[0].innerHTML = 'Thank you. Your respiration sounds ' + res + '. You now can optionally download a copy of the record. For more accurate results, we recommend [link by Louis]';
-    document.getElementById('two1').remove();
-    var b = document.createElement('a'); b.href = a.src; b.target = '_blank'; b.download = 'LungSound.wav';
-	document.body.appendChild(b); b.click(); b.remove();
-}
-</script>
+	// Main global constants and variables
+	const mimeT = ['audio/mp4','audio/webm','audio/ogg'];
+	audioChunks = [];
+	var fileC = document.createElement('a');
+	// Access to the users microphone:
+	navigator.mediaDevices.getUserMedia({audio:true})
+	.then(stream => { handlerF(stream); })
+	.catch((err) => { alert(err.name + '\n' + err.message); });
+	// Function that handles the stream:
+	function handlerF(stream) {
+		mimeT.forEach(function(v) { if (MediaRecorder.isTypeSupported(v)) { re = new MediaRecorder(stream, {mimeType:v}); } });
+		re.ondataavailable = eventS => {
+			audioChunks.push(eventS.data); // alert(eventS);
+			if (re.state == 'inactive') {
+				let blob = new Blob(audioChunks, {type:re.mimeType}); // alert(blob);
+				fileC.href = URL.createObjectURL(blob); // alert(fileC.href);
+				fileC.target = '_blank'; fileC.download = 'LungSound.wav';
+				document.body.appendChild(fileC); fileC.click(); fileC.remove();
+				var res = Math.random();
+				document.getElementsByTagName('p')[0].style.display = 'inline';
+				document.getElementsByTagName('p')[0].innerHTML = 'The network returned a probability of having a healthy lung of ' + (res*100).toFixed() + "%. Mind that further input, such as lifestyle and symptoms, would have influenced this result. For instance, <a href='https://cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm#respiratory'>smoking</a> would <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/'>reduce it to " + (50*res/(1-res)/(1+0.5*res/(1-res))).toFixed() + "%</a>.<br>To improve the quality, record closer to an <a href='https://researchgate.net/figure/Lung-sounds-are-commonly-auscultated-from-anterior-chest-and-posterior-back-sides-of_fig2_345453767'>auscultation site</a> and extend your device:";
+				document.getElementsByTagName('table')[0].style.display = 'table';
+				document.getElementById('two1').remove();
+			}
+		}
+	}
+	//  START BUTTON Function:
+	function startB() {
+		re.start();
+		document.getElementsByTagName('p')[0].style.display = 'none';
+		document.getElementById('one1').id = 'two1';
+		document.getElementById('one2').id = 'two2';
+		setTimeout(ende,16000);
+	}
+	// Ending function:
+	function ende() { re.stop(); }
+	</script>
 </html>
