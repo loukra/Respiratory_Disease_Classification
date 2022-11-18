@@ -31,7 +31,7 @@ def resize_all(src, pklname, include, width=150, height=None):
     height = height if height is not None else width
      
     data = dict()
-    data['description'] = 'resized ({0}x{1})animal images in rgb'.format(int(width), int(height))
+    data['description'] = 'resized ({0}x{1}) spectrograms in rgb'.format(int(width), int(height))
     data['label'] = []
     data['filename'] = []
     data['data'] = []   
