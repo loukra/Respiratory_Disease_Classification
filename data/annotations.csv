@@ -65,12 +65,12 @@
 63,i113,copd,test,113_1b1_Lr_sc_Litt3200.wav,0
 64,i113,copd,test,113_1b1_Pl_sc_Litt3200.wav,0
 65,i113,copd,test,113_1b1_Pr_sc_Litt3200.wav,0
-66,i114,copd,train,114_1b4_Al_mc_AKGC417L.wav,0
-67,i114,copd,train,114_1b4_Ar_mc_AKGC417L.wav,0
-68,i114,copd,train,114_1b4_Lr_mc_AKGC417L.wav,0
-69,i114,copd,train,114_1b4_Pl_mc_AKGC417L.wav,0
-70,i114,copd,train,114_1b4_Pr_mc_AKGC417L.wav,0
-71,i115,lrti,train,115_1b1_Ar_sc_Meditron.wav,0
+66,i114,copd,val,114_1b4_Al_mc_AKGC417L.wav,0
+67,i114,copd,val,114_1b4_Ar_mc_AKGC417L.wav,0
+68,i114,copd,val,114_1b4_Lr_mc_AKGC417L.wav,0
+69,i114,copd,val,114_1b4_Pl_mc_AKGC417L.wav,0
+70,i114,copd,val,114_1b4_Pr_mc_AKGC417L.wav,0
+71,i115,lrti,val,115_1b1_Ar_sc_Meditron.wav,0
 72,i116,bronchiectasis,train,116_1b2_Pl_sc_Meditron.wav,0
 73,i116,bronchiectasis,train,116_1b2_Tc_sc_Meditron.wav,0
 74,i117,copd,train,117_1b2_Tc_mc_LittC2SE.wav,0
@@ -81,14 +81,14 @@
 79,i118,copd,test,118_1b1_Lr_sc_Litt3200.wav,0
 80,i118,copd,test,118_1b1_Pl_sc_Litt3200.wav,0
 81,i118,copd,test,118_1b1_Pr_sc_Litt3200.wav,0
-82,i119,urti,test,119_1b1_Ar_sc_Meditron.wav,0
+82,i119,urti,val,119_1b1_Ar_sc_Meditron.wav,0
 83,i120,copd,train,120_1b1_Al_sc_Meditron.wav,0
 84,i120,copd,train,120_1b1_Ar_sc_Meditron.wav,0
 85,i120,copd,train,120_1b1_Lr_sc_Meditron.wav,0
 86,i120,copd,train,120_1b1_Pl_sc_Meditron.wav,0
 87,i120,copd,train,120_1b1_Pr_sc_Meditron.wav,0
-88,i121,healthy,train,121_1b1_Tc_sc_Meditron.wav,1
-89,i121,healthy,train,121_1p1_Tc_sc_Meditron.wav,1
+88,i121,healthy,val,121_1b1_Tc_sc_Meditron.wav,1
+89,i121,healthy,val,121_1p1_Tc_sc_Meditron.wav,1
 90,i122,pneumonia,train,122_2b1_Al_mc_LittC2SE.wav,0
 91,i122,pneumonia,train,122_2b1_Ar_mc_LittC2SE.wav,0
 92,i122,pneumonia,train,122_2b1_Tc_mc_LittC2SE.wav,0
@@ -105,9 +105,9 @@
 103,i124,copd,test,124_1b1_Lr_sc_Litt3200.wav,0
 104,i124,copd,test,124_1b1_Pl_sc_Litt3200.wav,0
 105,i124,copd,test,124_1b1_Pr_sc_Litt3200.wav,0
-106,i125,healthy,train,125_1b1_Tc_sc_Meditron.wav,1
+106,i125,healthy,val,125_1b1_Tc_sc_Meditron.wav,1
 107,i126,healthy,test,126_1b1_Al_sc_Meditron.wav,1
-108,i127,healthy,train,127_1b1_Ar_sc_Meditron.wav,1
+108,i127,healthy,val,127_1b1_Ar_sc_Meditron.wav,1
 109,i128,copd,train,128_1b3_Tc_mc_LittC2SE.wav,0
 110,i129,urti,train,129_1b1_Ar_sc_Meditron.wav,0
 111,i130,copd,train,130_1p2_Al_mc_AKGC417L.wav,0
@@ -176,7 +176,7 @@
 174,i130,copd,train,130_3p4_Pl_mc_AKGC417L.wav,0
 175,i130,copd,train,130_3p4_Pr_mc_AKGC417L.wav,0
 176,i130,copd,train,130_3p4_Tc_mc_AKGC417L.wav,0
-177,i131,urti,train,131_1b1_Al_sc_Meditron.wav,0
+177,i131,urti,val,131_1b1_Al_sc_Meditron.wav,0
 178,i132,copd,train,132_2b1_Lr_mc_LittC2SE.wav,0
 179,i132,copd,train,132_2b2_Lr_mc_LittC2SE.wav,0
 180,i133,copd,test,133_2p2_Al_mc_AKGC417L.wav,0
@@ -198,24 +198,24 @@
 196,i133,copd,test,133_3p2_Pl_mc_AKGC417L.wav,0
 197,i133,copd,test,133_3p2_Pr_mc_AKGC417L.wav,0
 198,i133,copd,test,133_3p4_Tc_mc_AKGC417L.wav,0
-199,i134,copd,train,134_2b1_Al_mc_LittC2SE.wav,0
-200,i134,copd,train,134_2b1_Ar_mc_LittC2SE.wav,0
-201,i134,copd,train,134_2b2_Al_mc_LittC2SE.wav,0
-202,i134,copd,train,134_2b2_Ar_mc_LittC2SE.wav,0
-203,i134,copd,train,134_2b3_Ar_mc_LittC2SE.wav,0
-204,i135,pneumonia,train,135_2b1_Al_mc_LittC2SE.wav,0
-205,i135,pneumonia,train,135_2b1_Ar_mc_LittC2SE.wav,0
-206,i135,pneumonia,train,135_2b1_Pl_mc_LittC2SE.wav,0
-207,i135,pneumonia,train,135_2b1_Tc_mc_LittC2SE.wav,0
-208,i135,pneumonia,train,135_2b2_Al_mc_LittC2SE.wav,0
-209,i135,pneumonia,train,135_2b2_Ar_mc_LittC2SE.wav,0
-210,i135,pneumonia,train,135_2b2_Pl_mc_LittC2SE.wav,0
-211,i135,pneumonia,train,135_2b2_Tc_mc_LittC2SE.wav,0
-212,i135,pneumonia,train,135_2b3_Al_mc_LittC2SE.wav,0
-213,i135,pneumonia,train,135_2b3_Ar_mc_LittC2SE.wav,0
-214,i135,pneumonia,train,135_2b3_Pl_mc_LittC2SE.wav,0
-215,i135,pneumonia,train,135_2b3_Pr_mc_LittC2SE.wav,0
-216,i135,pneumonia,train,135_2b3_Tc_mc_LittC2SE.wav,0
+199,i134,copd,val,134_2b1_Al_mc_LittC2SE.wav,0
+200,i134,copd,val,134_2b1_Ar_mc_LittC2SE.wav,0
+201,i134,copd,val,134_2b2_Al_mc_LittC2SE.wav,0
+202,i134,copd,val,134_2b2_Ar_mc_LittC2SE.wav,0
+203,i134,copd,val,134_2b3_Ar_mc_LittC2SE.wav,0
+204,i135,pneumonia,val,135_2b1_Al_mc_LittC2SE.wav,0
+205,i135,pneumonia,val,135_2b1_Ar_mc_LittC2SE.wav,0
+206,i135,pneumonia,val,135_2b1_Pl_mc_LittC2SE.wav,0
+207,i135,pneumonia,val,135_2b1_Tc_mc_LittC2SE.wav,0
+208,i135,pneumonia,val,135_2b2_Al_mc_LittC2SE.wav,0
+209,i135,pneumonia,val,135_2b2_Ar_mc_LittC2SE.wav,0
+210,i135,pneumonia,val,135_2b2_Pl_mc_LittC2SE.wav,0
+211,i135,pneumonia,val,135_2b2_Tc_mc_LittC2SE.wav,0
+212,i135,pneumonia,val,135_2b3_Al_mc_LittC2SE.wav,0
+213,i135,pneumonia,val,135_2b3_Ar_mc_LittC2SE.wav,0
+214,i135,pneumonia,val,135_2b3_Pl_mc_LittC2SE.wav,0
+215,i135,pneumonia,val,135_2b3_Pr_mc_LittC2SE.wav,0
+216,i135,pneumonia,val,135_2b3_Tc_mc_LittC2SE.wav,0
 217,i136,healthy,test,136_1b1_Ar_sc_Meditron.wav,1
 218,i137,urti,train,137_1b1_Ar_sc_Meditron.wav,0
 219,i137,urti,train,137_1b1_Ll_sc_Meditron.wav,0
@@ -246,16 +246,16 @@
 244,i138,copd,train,138_2p2_Pl_mc_AKGC417L.wav,0
 245,i138,copd,train,138_2p2_Pr_mc_AKGC417L.wav,0
 246,i138,copd,train,138_2p2_Tc_mc_AKGC417L.wav,0
-247,i139,copd,test,139_1b1_Al_sc_Litt3200.wav,0
-248,i139,copd,test,139_1b1_Ar_sc_Litt3200.wav,0
-249,i139,copd,test,139_1b1_Ll_sc_Litt3200.wav,0
-250,i139,copd,test,139_1b1_Lr_sc_Litt3200.wav,0
-251,i139,copd,test,139_1b1_Pl_sc_Litt3200.wav,0
-252,i139,copd,test,139_1b1_Pr_sc_Litt3200.wav,0
-253,i140,pneumonia,train,140_2b2_Ll_mc_LittC2SE.wav,0
-254,i140,pneumonia,train,140_2b2_Tc_mc_LittC2SE.wav,0
-255,i140,pneumonia,train,140_2b3_Ll_mc_LittC2SE.wav,0
-256,i140,pneumonia,train,140_2b3_Tc_mc_LittC2SE.wav,0
+247,i139,copd,val,139_1b1_Al_sc_Litt3200.wav,0
+248,i139,copd,val,139_1b1_Ar_sc_Litt3200.wav,0
+249,i139,copd,val,139_1b1_Ll_sc_Litt3200.wav,0
+250,i139,copd,val,139_1b1_Lr_sc_Litt3200.wav,0
+251,i139,copd,val,139_1b1_Pl_sc_Litt3200.wav,0
+252,i139,copd,val,139_1b1_Pr_sc_Litt3200.wav,0
+253,i140,pneumonia,val,140_2b2_Ll_mc_LittC2SE.wav,0
+254,i140,pneumonia,val,140_2b2_Tc_mc_LittC2SE.wav,0
+255,i140,pneumonia,val,140_2b3_Ll_mc_LittC2SE.wav,0
+256,i140,pneumonia,val,140_2b3_Tc_mc_LittC2SE.wav,0
 257,i141,copd,train,141_1b1_Pr_mc_LittC2SE.wav,0
 258,i141,copd,train,141_1b2_Ar_mc_LittC2SE.wav,0
 259,i141,copd,train,141_1b2_Lr_mc_LittC2SE.wav,0
@@ -307,34 +307,34 @@
 305,i149,bronchiolitis,test,149_1b1_Lr_sc_Meditron.wav,0
 306,i149,bronchiolitis,test,149_1b1_Pl_sc_Meditron.wav,0
 307,i150,urti,test,150_1b2_Al_sc_Meditron.wav,0
-308,i151,copd,test,151_2p2_Al_mc_AKGC417L.wav,0
-309,i151,copd,test,151_2p2_Ar_mc_AKGC417L.wav,0
-310,i151,copd,test,151_2p2_Ll_mc_AKGC417L.wav,0
-311,i151,copd,test,151_2p2_Lr_mc_AKGC417L.wav,0
-312,i151,copd,test,151_2p2_Pl_mc_AKGC417L.wav,0
-313,i151,copd,test,151_2p2_Pr_mc_AKGC417L.wav,0
-314,i151,copd,test,151_2p2_Tc_mc_AKGC417L.wav,0
-315,i151,copd,test,151_2p3_Al_mc_AKGC417L.wav,0
-316,i151,copd,test,151_2p3_Ar_mc_AKGC417L.wav,0
-317,i151,copd,test,151_2p3_Ll_mc_AKGC417L.wav,0
-318,i151,copd,test,151_2p3_Lr_mc_AKGC417L.wav,0
-319,i151,copd,test,151_2p3_Pl_mc_AKGC417L.wav,0
-320,i151,copd,test,151_2p3_Pr_mc_AKGC417L.wav,0
-321,i151,copd,test,151_2p3_Tc_mc_AKGC417L.wav,0
-322,i151,copd,test,151_2p4_Al_mc_AKGC417L.wav,0
-323,i151,copd,test,151_2p4_Ar_mc_AKGC417L.wav,0
-324,i151,copd,test,151_2p4_Ll_mc_AKGC417L.wav,0
-325,i151,copd,test,151_2p4_Lr_mc_AKGC417L.wav,0
-326,i151,copd,test,151_2p4_Pl_mc_AKGC417L.wav,0
-327,i151,copd,test,151_2p4_Pr_mc_AKGC417L.wav,0
-328,i151,copd,test,151_2p4_Tc_mc_AKGC417L.wav,0
-329,i151,copd,test,151_3p2_Al_mc_AKGC417L.wav,0
-330,i151,copd,test,151_3p2_Ar_mc_AKGC417L.wav,0
-331,i151,copd,test,151_3p2_Lr_mc_AKGC417L.wav,0
-332,i151,copd,test,151_3p2_Pl_mc_AKGC417L.wav,0
-333,i151,copd,test,151_3p2_Pr_mc_AKGC417L.wav,0
-334,i151,copd,test,151_3p2_Tc_mc_AKGC417L.wav,0
-335,i151,copd,test,151_3p3_Ll_mc_AKGC417L.wav,0
+308,i151,copd,val,151_2p2_Al_mc_AKGC417L.wav,0
+309,i151,copd,val,151_2p2_Ar_mc_AKGC417L.wav,0
+310,i151,copd,val,151_2p2_Ll_mc_AKGC417L.wav,0
+311,i151,copd,val,151_2p2_Lr_mc_AKGC417L.wav,0
+312,i151,copd,val,151_2p2_Pl_mc_AKGC417L.wav,0
+313,i151,copd,val,151_2p2_Pr_mc_AKGC417L.wav,0
+314,i151,copd,val,151_2p2_Tc_mc_AKGC417L.wav,0
+315,i151,copd,val,151_2p3_Al_mc_AKGC417L.wav,0
+316,i151,copd,val,151_2p3_Ar_mc_AKGC417L.wav,0
+317,i151,copd,val,151_2p3_Ll_mc_AKGC417L.wav,0
+318,i151,copd,val,151_2p3_Lr_mc_AKGC417L.wav,0
+319,i151,copd,val,151_2p3_Pl_mc_AKGC417L.wav,0
+320,i151,copd,val,151_2p3_Pr_mc_AKGC417L.wav,0
+321,i151,copd,val,151_2p3_Tc_mc_AKGC417L.wav,0
+322,i151,copd,val,151_2p4_Al_mc_AKGC417L.wav,0
+323,i151,copd,val,151_2p4_Ar_mc_AKGC417L.wav,0
+324,i151,copd,val,151_2p4_Ll_mc_AKGC417L.wav,0
+325,i151,copd,val,151_2p4_Lr_mc_AKGC417L.wav,0
+326,i151,copd,val,151_2p4_Pl_mc_AKGC417L.wav,0
+327,i151,copd,val,151_2p4_Pr_mc_AKGC417L.wav,0
+328,i151,copd,val,151_2p4_Tc_mc_AKGC417L.wav,0
+329,i151,copd,val,151_3p2_Al_mc_AKGC417L.wav,0
+330,i151,copd,val,151_3p2_Ar_mc_AKGC417L.wav,0
+331,i151,copd,val,151_3p2_Lr_mc_AKGC417L.wav,0
+332,i151,copd,val,151_3p2_Pl_mc_AKGC417L.wav,0
+333,i151,copd,val,151_3p2_Pr_mc_AKGC417L.wav,0
+334,i151,copd,val,151_3p2_Tc_mc_AKGC417L.wav,0
+335,i151,copd,val,151_3p3_Ll_mc_AKGC417L.wav,0
 336,i152,healthy,train,152_1b1_Al_sc_Meditron.wav,1
 337,i153,healthy,train,153_1b1_Al_sc_Meditron.wav,1
 338,i154,copd,train,154_1b3_Al_mc_AKGC417L.wav,0
@@ -361,52 +361,52 @@
 359,i154,copd,train,154_4b4_Pl_mc_AKGC417L.wav,0
 360,i154,copd,train,154_4b4_Pr_mc_AKGC417L.wav,0
 361,i155,copd,train,155_2b1_Al_mc_LittC2SE.wav,0
-362,i156,copd,test,156_2b3_Al_mc_AKGC417L.wav,0
+362,i156,copd,train,156_2b3_Al_mc_AKGC417L.wav,0
 363,i156,copd,train,156_2b3_Ar_mc_AKGC417L.wav,0
 364,i156,copd,train,156_2b3_Ll_mc_AKGC417L.wav,0
-365,i156,copd,test,156_2b3_Lr_mc_AKGC417L.wav,0
-366,i156,copd,test,156_2b3_Pl_mc_AKGC417L.wav,0
+365,i156,copd,train,156_2b3_Lr_mc_AKGC417L.wav,0
+366,i156,copd,train,156_2b3_Pl_mc_AKGC417L.wav,0
 367,i156,copd,train,156_2b3_Pr_mc_AKGC417L.wav,0
 368,i156,copd,train,156_5b3_Al_mc_AKGC417L.wav,0
-369,i156,copd,test,156_5b3_Ar_mc_AKGC417L.wav,0
-370,i156,copd,test,156_5b3_Ll_mc_AKGC417L.wav,0
+369,i156,copd,train,156_5b3_Ar_mc_AKGC417L.wav,0
+370,i156,copd,train,156_5b3_Ll_mc_AKGC417L.wav,0
 371,i156,copd,train,156_5b3_Lr_mc_AKGC417L.wav,0
-372,i156,copd,test,156_5b3_Pl_mc_AKGC417L.wav,0
+372,i156,copd,train,156_5b3_Pl_mc_AKGC417L.wav,0
 373,i156,copd,train,156_5b3_Pr_mc_AKGC417L.wav,0
-374,i156,copd,test,156_8b3_Al_mc_AKGC417L.wav,0
+374,i156,copd,train,156_8b3_Al_mc_AKGC417L.wav,0
 375,i156,copd,train,156_8b3_Ar_mc_AKGC417L.wav,0
 376,i156,copd,train,156_8b3_Ll_mc_AKGC417L.wav,0
-377,i156,copd,test,156_8b3_Lr_mc_AKGC417L.wav,0
+377,i156,copd,train,156_8b3_Lr_mc_AKGC417L.wav,0
 378,i156,copd,train,156_8b3_Pl_mc_AKGC417L.wav,0
 379,i157,copd,train,157_1b1_Al_sc_Meditron.wav,0
 380,i157,copd,train,157_1b1_Ar_sc_Meditron.wav,0
 381,i157,copd,train,157_1b1_Lr_sc_Meditron.wav,0
 382,i157,copd,train,157_1b1_Pl_sc_Meditron.wav,0
 383,i157,copd,train,157_1b1_Pr_sc_Meditron.wav,0
-384,i158,copd,train,158_1b3_Ar_mc_LittC2SE.wav,0
-385,i158,copd,train,158_1p2_Al_mc_AKGC417L.wav,0
-386,i158,copd,train,158_1p2_Ar_mc_AKGC417L.wav,0
-387,i158,copd,train,158_1p2_Ll_mc_AKGC417L.wav,0
-388,i158,copd,train,158_1p2_Lr_mc_AKGC417L.wav,0
-389,i158,copd,train,158_1p2_Pl_mc_AKGC417L.wav,0
-390,i158,copd,train,158_1p2_Pr_mc_AKGC417L.wav,0
-391,i158,copd,train,158_1p2_Tc_mc_AKGC417L.wav,0
-392,i158,copd,train,158_1p3_Al_mc_AKGC417L.wav,0
-393,i158,copd,train,158_1p3_Ar_mc_AKGC417L.wav,0
-394,i158,copd,train,158_1p3_Ll_mc_AKGC417L.wav,0
-395,i158,copd,train,158_1p3_Lr_mc_AKGC417L.wav,0
-396,i158,copd,train,158_1p3_Pl_mc_AKGC417L.wav,0
-397,i158,copd,train,158_1p3_Pr_mc_AKGC417L.wav,0
-398,i158,copd,train,158_1p3_Tc_mc_AKGC417L.wav,0
-399,i158,copd,train,158_1p4_Al_mc_AKGC417L.wav,0
-400,i158,copd,train,158_1p4_Ar_mc_AKGC417L.wav,0
-401,i158,copd,train,158_1p4_Lr_mc_AKGC417L.wav,0
-402,i158,copd,train,158_1p4_Pl_mc_AKGC417L.wav,0
-403,i158,copd,train,158_1p4_Pr_mc_AKGC417L.wav,0
-404,i158,copd,train,158_1p4_Tc_mc_AKGC417L.wav,0
-405,i158,copd,train,158_2p2_Ar_mc_AKGC417L.wav,0
-406,i158,copd,train,158_2p3_Lr_mc_AKGC417L.wav,0
-407,i158,copd,train,158_2p3_Tc_mc_AKGC417L.wav,0
+384,i158,copd,val,158_1b3_Ar_mc_LittC2SE.wav,0
+385,i158,copd,val,158_1p2_Al_mc_AKGC417L.wav,0
+386,i158,copd,val,158_1p2_Ar_mc_AKGC417L.wav,0
+387,i158,copd,val,158_1p2_Ll_mc_AKGC417L.wav,0
+388,i158,copd,val,158_1p2_Lr_mc_AKGC417L.wav,0
+389,i158,copd,val,158_1p2_Pl_mc_AKGC417L.wav,0
+390,i158,copd,val,158_1p2_Pr_mc_AKGC417L.wav,0
+391,i158,copd,val,158_1p2_Tc_mc_AKGC417L.wav,0
+392,i158,copd,val,158_1p3_Al_mc_AKGC417L.wav,0
+393,i158,copd,val,158_1p3_Ar_mc_AKGC417L.wav,0
+394,i158,copd,val,158_1p3_Ll_mc_AKGC417L.wav,0
+395,i158,copd,val,158_1p3_Lr_mc_AKGC417L.wav,0
+396,i158,copd,val,158_1p3_Pl_mc_AKGC417L.wav,0
+397,i158,copd,val,158_1p3_Pr_mc_AKGC417L.wav,0
+398,i158,copd,val,158_1p3_Tc_mc_AKGC417L.wav,0
+399,i158,copd,val,158_1p4_Al_mc_AKGC417L.wav,0
+400,i158,copd,val,158_1p4_Ar_mc_AKGC417L.wav,0
+401,i158,copd,val,158_1p4_Lr_mc_AKGC417L.wav,0
+402,i158,copd,val,158_1p4_Pl_mc_AKGC417L.wav,0
+403,i158,copd,val,158_1p4_Pr_mc_AKGC417L.wav,0
+404,i158,copd,val,158_1p4_Tc_mc_AKGC417L.wav,0
+405,i158,copd,val,158_2p2_Ar_mc_AKGC417L.wav,0
+406,i158,copd,val,158_2p3_Lr_mc_AKGC417L.wav,0
+407,i158,copd,val,158_2p3_Tc_mc_AKGC417L.wav,0
 408,i159,healthy,train,159_1b1_Al_sc_Meditron.wav,1
 409,i159,healthy,train,159_1b1_Ar_sc_Meditron.wav,1
 410,i159,healthy,train,159_1b1_Ll_sc_Meditron.wav,1
@@ -482,9 +482,9 @@
 480,i166,copd,train,166_1p1_Ll_sc_Meditron.wav,0
 481,i166,copd,train,166_1p1_Pl_sc_Meditron.wav,0
 482,i166,copd,train,166_1p1_Pr_sc_Meditron.wav,0
-483,i167,bronchiolitis,train,167_1b1_Al_sc_Meditron.wav,0
-484,i167,bronchiolitis,train,167_1b1_Pr_sc_Meditron.wav,0
-485,i168,bronchiectasis,train,168_1b1_Al_sc_Meditron.wav,0
+483,i167,bronchiolitis,val,167_1b1_Al_sc_Meditron.wav,0
+484,i167,bronchiolitis,val,167_1b1_Pr_sc_Meditron.wav,0
+485,i168,bronchiectasis,val,168_1b1_Al_sc_Meditron.wav,0
 486,i169,bronchiectasis,test,169_1b1_Lr_sc_Meditron.wav,0
 487,i169,bronchiectasis,test,169_1b2_Ll_sc_Meditron.wav,0
 488,i170,copd,test,170_1b2_Al_mc_AKGC417L.wav,0
@@ -540,7 +540,7 @@
 538,i172,copd,train,172_2b5_Pl_mc_AKGC417L.wav,0
 539,i172,copd,train,172_2b5_Pr_mc_AKGC417L.wav,0
 540,i172,copd,train,172_2b5_Tc_mc_AKGC417L.wav,0
-541,i173,bronchiolitis,test,173_1b1_Al_sc_Meditron.wav,0
+541,i173,bronchiolitis,val,173_1b1_Al_sc_Meditron.wav,0
 542,i174,copd,test,174_1p2_Ar_mc_AKGC417L.wav,0
 543,i174,copd,test,174_1p2_Ll_mc_AKGC417L.wav,0
 544,i174,copd,test,174_1p2_Lr_mc_AKGC417L.wav,0
@@ -646,7 +646,7 @@
 644,i182,healthy,test,182_1b1_Tc_sc_Meditron.wav,1
 645,i183,healthy,train,183_1b1_Pl_sc_Meditron.wav,1
 646,i183,healthy,train,183_1b1_Tc_sc_Meditron.wav,1
-647,i184,healthy,train,184_1b1_Ar_sc_Meditron.wav,1
+647,i184,healthy,val,184_1b1_Ar_sc_Meditron.wav,1
 648,i185,copd,test,185_1b1_Al_sc_Litt3200.wav,0
 649,i185,copd,test,185_1b1_Ar_sc_Litt3200.wav,0
 650,i185,copd,test,185_1b1_Ll_sc_Litt3200.wav,0
@@ -683,7 +683,7 @@
 681,i188,urti,train,188_1b1_Pl_sc_Meditron.wav,0
 682,i188,urti,train,188_1b1_Tc_sc_Meditron.wav,0
 683,i189,copd,train,189_1b2_Lr_mc_LittC2SE.wav,0
-684,i190,urti,train,190_1b1_Tc_sc_Meditron.wav,0
+684,i190,urti,val,190_1b1_Tc_sc_Meditron.wav,0
 685,i191,pneumonia,train,191_2b1_Pl_mc_LittC2SE.wav,0
 686,i191,pneumonia,train,191_2b1_Pr_mc_LittC2SE.wav,0
 687,i191,pneumonia,train,191_2b2_Tc_mc_LittC2SE.wav,0
@@ -693,20 +693,20 @@
 691,i192,copd,train,192_2b2_Ar_mc_LittC2SE.wav,0
 692,i192,copd,train,192_2b3_Al_mc_LittC2SE.wav,0
 693,i192,copd,train,192_2b3_Ar_mc_LittC2SE.wav,0
-694,i193,copd,train,193_1b2_Al_mc_AKGC417L.wav,0
-695,i193,copd,train,193_1b2_Ar_mc_AKGC417L.wav,0
-696,i193,copd,train,193_1b2_Ll_mc_AKGC417L.wav,0
-697,i193,copd,train,193_1b2_Pl_mc_AKGC417L.wav,0
-698,i193,copd,train,193_1b2_Pr_mc_AKGC417L.wav,0
-699,i193,copd,train,193_1b2_Tc_mc_AKGC417L.wav,0
-700,i193,copd,train,193_1b4_Lr_mc_AKGC417L.wav,0
-701,i193,copd,train,193_7b3_Al_mc_AKGC417L.wav,0
-702,i193,copd,train,193_7b3_Ar_mc_AKGC417L.wav,0
-703,i193,copd,train,193_7b3_Ll_mc_AKGC417L.wav,0
-704,i193,copd,train,193_7b3_Lr_mc_AKGC417L.wav,0
-705,i193,copd,train,193_7b3_Pl_mc_AKGC417L.wav,0
-706,i193,copd,train,193_7b3_Pr_mc_AKGC417L.wav,0
-707,i193,copd,train,193_7b3_Tc_mc_AKGC417L.wav,0
+694,i193,copd,val,193_1b2_Al_mc_AKGC417L.wav,0
+695,i193,copd,val,193_1b2_Ar_mc_AKGC417L.wav,0
+696,i193,copd,val,193_1b2_Ll_mc_AKGC417L.wav,0
+697,i193,copd,val,193_1b2_Pl_mc_AKGC417L.wav,0
+698,i193,copd,val,193_1b2_Pr_mc_AKGC417L.wav,0
+699,i193,copd,val,193_1b2_Tc_mc_AKGC417L.wav,0
+700,i193,copd,val,193_1b4_Lr_mc_AKGC417L.wav,0
+701,i193,copd,val,193_7b3_Al_mc_AKGC417L.wav,0
+702,i193,copd,val,193_7b3_Ar_mc_AKGC417L.wav,0
+703,i193,copd,val,193_7b3_Ll_mc_AKGC417L.wav,0
+704,i193,copd,val,193_7b3_Lr_mc_AKGC417L.wav,0
+705,i193,copd,val,193_7b3_Pl_mc_AKGC417L.wav,0
+706,i193,copd,val,193_7b3_Pr_mc_AKGC417L.wav,0
+707,i193,copd,val,193_7b3_Tc_mc_AKGC417L.wav,0
 708,i194,healthy,test,194_1b1_Lr_sc_Meditron.wav,1
 709,i194,healthy,test,194_1b1_Pr_sc_Meditron.wav,1
 710,i195,copd,test,195_1b1_Al_sc_Litt3200.wav,0
@@ -715,23 +715,23 @@
 713,i195,copd,test,195_1b1_Lr_sc_Litt3200.wav,0
 714,i195,copd,test,195_1b1_Pl_sc_Litt3200.wav,0
 715,i195,copd,test,195_1b1_Pr_sc_Litt3200.wav,0
-716,i196,bronchiectasis,train,196_1b1_Pr_sc_Meditron.wav,0
+716,i196,bronchiectasis,val,196_1b1_Pr_sc_Meditron.wav,0
 717,i197,urti,train,197_1b1_Al_sc_Meditron.wav,0
 718,i197,urti,train,197_1b1_Tc_sc_Meditron.wav,0
-719,i198,copd,test,198_1b5_Al_mc_AKGC417L.wav,0
-720,i198,copd,test,198_1b5_Ar_mc_AKGC417L.wav,0
-721,i198,copd,test,198_1b5_Ll_mc_AKGC417L.wav,0
-722,i198,copd,test,198_1b5_Lr_mc_AKGC417L.wav,0
-723,i198,copd,test,198_1b5_Pl_mc_AKGC417L.wav,0
-724,i198,copd,test,198_1b5_Pr_mc_AKGC417L.wav,0
-725,i198,copd,test,198_1b5_Tc_mc_AKGC417L.wav,0
-726,i198,copd,test,198_6p1_Al_mc_AKGC417L.wav,0
-727,i198,copd,test,198_6p1_Ar_mc_AKGC417L.wav,0
-728,i198,copd,test,198_6p1_Ll_mc_AKGC417L.wav,0
-729,i198,copd,test,198_6p1_Lr_mc_AKGC417L.wav,0
-730,i198,copd,test,198_6p1_Pl_mc_AKGC417L.wav,0
-731,i198,copd,test,198_6p1_Pr_mc_AKGC417L.wav,0
-732,i198,copd,test,198_6p1_Tc_mc_AKGC417L.wav,0
+719,i198,copd,val,198_1b5_Al_mc_AKGC417L.wav,0
+720,i198,copd,val,198_1b5_Ar_mc_AKGC417L.wav,0
+721,i198,copd,val,198_1b5_Ll_mc_AKGC417L.wav,0
+722,i198,copd,val,198_1b5_Lr_mc_AKGC417L.wav,0
+723,i198,copd,val,198_1b5_Pl_mc_AKGC417L.wav,0
+724,i198,copd,val,198_1b5_Pr_mc_AKGC417L.wav,0
+725,i198,copd,val,198_1b5_Tc_mc_AKGC417L.wav,0
+726,i198,copd,val,198_6p1_Al_mc_AKGC417L.wav,0
+727,i198,copd,val,198_6p1_Ar_mc_AKGC417L.wav,0
+728,i198,copd,val,198_6p1_Ll_mc_AKGC417L.wav,0
+729,i198,copd,val,198_6p1_Lr_mc_AKGC417L.wav,0
+730,i198,copd,val,198_6p1_Pl_mc_AKGC417L.wav,0
+731,i198,copd,val,198_6p1_Pr_mc_AKGC417L.wav,0
+732,i198,copd,val,198_6p1_Tc_mc_AKGC417L.wav,0
 733,i199,copd,train,199_2b1_Ll_mc_LittC2SE.wav,0
 734,i199,copd,train,199_2b3_Ll_mc_LittC2SE.wav,0
 735,i200,copd,train,200_2p2_Al_mc_AKGC417L.wav,0
@@ -814,9 +814,9 @@
 812,i205,copd,test,205_4b2_Lr_mc_AKGC417L.wav,0
 813,i205,copd,test,205_4b2_Pl_mc_AKGC417L.wav,0
 814,i205,copd,test,205_4b2_Pr_mc_AKGC417L.wav,0
-815,i206,bronchiolitis,train,206_1b1_Ar_sc_Meditron.wav,0
-816,i206,bronchiolitis,train,206_1b1_Lr_sc_Meditron.wav,0
-817,i206,bronchiolitis,train,206_1b1_Pl_sc_Meditron.wav,0
+815,i206,bronchiolitis,val,206_1b1_Ar_sc_Meditron.wav,0
+816,i206,bronchiolitis,val,206_1b1_Lr_sc_Meditron.wav,0
+817,i206,bronchiolitis,val,206_1b1_Pl_sc_Meditron.wav,0
 818,i207,copd,test,207_2b2_Al_mc_AKGC417L.wav,0
 819,i207,copd,test,207_2b2_Ar_mc_AKGC417L.wav,0
 820,i207,copd,test,207_2b2_Pl_mc_AKGC417L.wav,0
@@ -839,7 +839,7 @@
 837,i207,copd,test,207_3b2_Pr_mc_AKGC417L.wav,0
 838,i207,copd,test,207_3b2_Tc_mc_AKGC417L.wav,0
 839,i208,healthy,train,208_1b1_Ll_sc_Meditron.wav,1
-840,i209,healthy,train,209_1b1_Tc_sc_Meditron.wav,1
+840,i209,healthy,val,209_1b1_Tc_sc_Meditron.wav,1
 841,i210,urti,train,210_1b1_Al_sc_Meditron.wav,0
 842,i210,urti,train,210_1b1_Ar_sc_Meditron.wav,0
 843,i211,copd,test,211_1p2_Ar_mc_AKGC417L.wav,0
@@ -851,45 +851,45 @@
 849,i211,copd,test,211_2p3_Tc_mc_AKGC417L.wav,0
 850,i211,copd,test,211_2p4_Tc_mc_AKGC417L.wav,0
 851,i212,copd,train,212_2b2_Tc_mc_LittC2SE.wav,0
-852,i213,copd,train,213_1p2_Al_mc_AKGC417L.wav,0
-853,i213,copd,train,213_1p2_Ar_mc_AKGC417L.wav,0
-854,i213,copd,train,213_1p2_Lr_mc_AKGC417L.wav,0
-855,i213,copd,train,213_1p2_Pl_mc_AKGC417L.wav,0
-856,i213,copd,train,213_1p2_Pr_mc_AKGC417L.wav,0
-857,i213,copd,train,213_1p2_Tc_mc_AKGC417L.wav,0
-858,i213,copd,train,213_1p3_Al_mc_AKGC417L.wav,0
-859,i213,copd,train,213_1p3_Ar_mc_AKGC417L.wav,0
-860,i213,copd,train,213_1p3_Pl_mc_AKGC417L.wav,0
-861,i213,copd,train,213_1p3_Pr_mc_AKGC417L.wav,0
-862,i213,copd,train,213_1p5_Al_mc_AKGC417L.wav,0
-863,i213,copd,train,213_1p5_Ar_mc_AKGC417L.wav,0
-864,i213,copd,train,213_1p5_Pl_mc_AKGC417L.wav,0
-865,i213,copd,train,213_1p5_Pr_mc_AKGC417L.wav,0
-866,i213,copd,train,213_1p5_Tc_mc_AKGC417L.wav,0
-867,i213,copd,train,213_2p2_Al_mc_AKGC417L.wav,0
-868,i213,copd,train,213_2p2_Ar_mc_AKGC417L.wav,0
-869,i213,copd,train,213_2p2_Pl_mc_AKGC417L.wav,0
-870,i213,copd,train,213_2p2_Pr_mc_AKGC417L.wav,0
-871,i213,copd,train,213_2p2_Tc_mc_AKGC417L.wav,0
+852,i213,copd,val,213_1p2_Al_mc_AKGC417L.wav,0
+853,i213,copd,val,213_1p2_Ar_mc_AKGC417L.wav,0
+854,i213,copd,val,213_1p2_Lr_mc_AKGC417L.wav,0
+855,i213,copd,val,213_1p2_Pl_mc_AKGC417L.wav,0
+856,i213,copd,val,213_1p2_Pr_mc_AKGC417L.wav,0
+857,i213,copd,val,213_1p2_Tc_mc_AKGC417L.wav,0
+858,i213,copd,val,213_1p3_Al_mc_AKGC417L.wav,0
+859,i213,copd,val,213_1p3_Ar_mc_AKGC417L.wav,0
+860,i213,copd,val,213_1p3_Pl_mc_AKGC417L.wav,0
+861,i213,copd,val,213_1p3_Pr_mc_AKGC417L.wav,0
+862,i213,copd,val,213_1p5_Al_mc_AKGC417L.wav,0
+863,i213,copd,val,213_1p5_Ar_mc_AKGC417L.wav,0
+864,i213,copd,val,213_1p5_Pl_mc_AKGC417L.wav,0
+865,i213,copd,val,213_1p5_Pr_mc_AKGC417L.wav,0
+866,i213,copd,val,213_1p5_Tc_mc_AKGC417L.wav,0
+867,i213,copd,val,213_2p2_Al_mc_AKGC417L.wav,0
+868,i213,copd,val,213_2p2_Ar_mc_AKGC417L.wav,0
+869,i213,copd,val,213_2p2_Pl_mc_AKGC417L.wav,0
+870,i213,copd,val,213_2p2_Pr_mc_AKGC417L.wav,0
+871,i213,copd,val,213_2p2_Tc_mc_AKGC417L.wav,0
 872,i214,healthy,test,214_1b1_Ar_sc_Meditron.wav,1
 873,i215,bronchiectasis,train,215_1b2_Ar_sc_Meditron.wav,0
 874,i215,bronchiectasis,train,215_1b3_Tc_sc_Meditron.wav,0
 875,i216,bronchiolitis,test,216_1b1_Al_sc_Meditron.wav,0
 876,i216,bronchiolitis,test,216_1b1_Pl_sc_Meditron.wav,0
 877,i217,healthy,train,217_1b1_Tc_sc_Meditron.wav,1
-878,i218,copd,test,218_1b1_Al_sc_Meditron.wav,0
+878,i218,copd,train,218_1b1_Al_sc_Meditron.wav,0
 879,i218,copd,train,218_1b1_Ar_sc_Meditron.wav,0
 880,i218,copd,train,218_1b1_Lr_sc_Meditron.wav,0
-881,i218,copd,test,218_1b1_Pl_sc_Meditron.wav,0
-882,i218,copd,test,218_1b1_Pr_sc_Meditron.wav,0
+881,i218,copd,train,218_1b1_Pl_sc_Meditron.wav,0
+882,i218,copd,train,218_1b1_Pr_sc_Meditron.wav,0
 883,i218,copd,train,218_1p1_Ar_sc_Litt3200.wav,0
-884,i218,copd,test,218_1p1_Pl_sc_Litt3200.wav,0
+884,i218,copd,train,218_1p1_Pl_sc_Litt3200.wav,0
 885,i218,copd,train,218_1p1_Pr_sc_Litt3200.wav,0
-886,i219,pneumonia,train,219_2b1_Ar_mc_LittC2SE.wav,0
-887,i219,pneumonia,train,219_2b1_Tc_mc_LittC2SE.wav,0
-888,i219,pneumonia,train,219_2b2_Ar_mc_LittC2SE.wav,0
-889,i219,pneumonia,train,219_2b2_Tc_mc_LittC2SE.wav,0
-890,i219,pneumonia,train,219_2b3_Tc_mc_LittC2SE.wav,0
+886,i219,pneumonia,val,219_2b1_Ar_mc_LittC2SE.wav,0
+887,i219,pneumonia,val,219_2b1_Tc_mc_LittC2SE.wav,0
+888,i219,pneumonia,val,219_2b2_Ar_mc_LittC2SE.wav,0
+889,i219,pneumonia,val,219_2b2_Tc_mc_LittC2SE.wav,0
+890,i219,pneumonia,val,219_2b3_Tc_mc_LittC2SE.wav,0
 891,i220,copd,train,220_1b1_Tc_mc_LittC2SE.wav,0
 892,i220,copd,train,220_1b2_Al_mc_LittC2SE.wav,0
 893,i221,copd,train,221_2b1_Al_mc_LittC2SE.wav,0
@@ -904,9 +904,9 @@
 902,i221,copd,train,221_2b3_Ar_mc_LittC2SE.wav,0
 903,i221,copd,train,221_2b3_Lr_mc_LittC2SE.wav,0
 904,i221,copd,train,221_2b3_Pr_mc_LittC2SE.wav,0
-905,i222,copd,train,222_1b1_Ar_sc_Meditron.wav,0
-906,i222,copd,train,222_1b1_Lr_sc_Meditron.wav,0
-907,i222,copd,train,222_1b1_Pr_sc_Meditron.wav,0
+905,i222,copd,val,222_1b1_Ar_sc_Meditron.wav,0
+906,i222,copd,val,222_1b1_Lr_sc_Meditron.wav,0
+907,i222,copd,val,222_1b1_Pr_sc_Meditron.wav,0
 908,i223,copd,test,223_1b1_Pr_sc_Meditron.wav,0
 909,i223,copd,test,223_1b1_Pl_sc_Meditron.wav,0
 910,i223,copd,test,223_1b1_Ar_sc_Meditron.wav,0
@@ -916,14 +916,14 @@
 914,i224,healthy,test,224_1b1_Tc_sc_Meditron.wav,1
 915,i224,healthy,test,224_1b2_Al_sc_Meditron.wav,1
 916,i225,healthy,test,225_1b1_Pl_sc_Meditron.wav,1
-917,i226,pneumonia,train,226_1b1_Al_sc_Meditron.wav,0
-918,i226,pneumonia,train,226_1b1_Ll_sc_Meditron.wav,0
-919,i226,pneumonia,train,226_1b1_Pl_sc_LittC2SE.wav,0
+917,i226,pneumonia,val,226_1b1_Al_sc_Meditron.wav,0
+918,i226,pneumonia,val,226_1b1_Ll_sc_Meditron.wav,0
+919,i226,pneumonia,val,226_1b1_Pl_sc_LittC2SE.wav,0
 920,f1,asthma,train,"BP1_Asthma,I E W,P L L,70,M.wav",0
 921,f1,asthma,train,"DP1_Asthma,I E W,P L L,70,M.wav",0
-922,f1,asthma,test,"EP1_Asthma,I E W,P L L,70,M.wav",0
+922,f1,asthma,train,"EP1_Asthma,I E W,P L L,70,M.wav",0
 923,f2,asthma,train,"BP2_Asthma,E W,P L L R,52,F.wav",0
-924,f2,asthma,test,"DP2_Asthma,E W,P L L R,52,F.wav",0
+924,f2,asthma,train,"DP2_Asthma,E W,P L L R,52,F.wav",0
 925,f2,asthma,train,"EP2_Asthma,E W,P L L R,52,F.wav",0
 926,f3,asthma,train,"BP3_Asthma,I E W,P L L R,50,F.wav",0
 927,f3,asthma,train,"DP3_Asthma,I E W,P L L R,50,F.wav",0
@@ -931,18 +931,18 @@
 929,f4,lung fibrosis,train,"BP4_Heart Failure + Lung Fibrosis ,I C,P L R,72,F.wav",0
 930,f4,lung fibrosis,train,"DP4_Heart Failure + Lung Fibrosis ,I C,P L R,72,F.wav",0
 931,f4,lung fibrosis,train,"EP4_Heart Failure + Lung Fibrosis ,I C,P L R,72,F.wav",0
-932,f5,copd,test,"BP5_Heart Failure + COPD,I C E W,P L R ,71,M.wav",0
-933,f5,copd,test,"DP5_Heart Failure + COPD,I C E W,P L R ,71,M.wav",0
+932,f5,copd,train,"BP5_Heart Failure + COPD,I C E W,P L R ,71,M.wav",0
+933,f5,copd,train,"DP5_Heart Failure + COPD,I C E W,P L R ,71,M.wav",0
 934,f5,copd,train,"EP5_Heart Failure + COPD,I C E W,P L R ,71,M.wav",0
-935,f7,copd,test,"BP7_Heart Failure + COPD,I C E W,P L R,65,M.wav",0
+935,f7,copd,train,"BP7_Heart Failure + COPD,I C E W,P L R,65,M.wav",0
 936,f7,copd,train,"DP7_Heart Failure + COPD,I C E W,P L R,65,M.wav",0
-937,f7,copd,test,"EP7_Heart Failure + COPD,I C E W,P L R,65,M.wav",0
-938,f9,asthma,train,"BP9_Asthma,E W,P R L ,59,M.wav",0
-939,f9,asthma,train,"DP9_Asthma,E W,P R L ,59,M.wav",0
-940,f9,asthma,train,"EP9_Asthma,E W,P R L ,59,M.wav",0
-941,f10,asthma,train,"BP10_Asthma,E W,P R U,59,M.wav",0
-942,f10,asthma,train,"DP10_Asthma,E W,P R U,59,M.wav",0
-943,f10,asthma,test,"EP10_Asthma,E W,P R U,59,M.wav",0
+937,f7,copd,train,"EP7_Heart Failure + COPD,I C E W,P L R,65,M.wav",0
+938,f9,asthma,val,"BP9_Asthma,E W,P R L ,59,M.wav",0
+939,f9,asthma,val,"DP9_Asthma,E W,P R L ,59,M.wav",0
+940,f9,asthma,val,"EP9_Asthma,E W,P R L ,59,M.wav",0
+941,f10,asthma,val,"BP10_Asthma,E W,P R U,59,M.wav",0
+942,f10,asthma,val,"DP10_Asthma,E W,P R U,59,M.wav",0
+943,f10,asthma,val,"EP10_Asthma,E W,P R U,59,M.wav",0
 944,f11,heart failure,train,"BP11_Heart Failure,C,P L L,53,M.wav",0
 945,f11,heart failure,train,"DP11_Heart Failure,C,P L L,53,M.wav",0
 946,f11,heart failure,train,"EP11_Heart Failure,C,P L L,53,M.wav",0
@@ -950,14 +950,14 @@
 948,f12,asthma,train,"DP12_Asthma,E W,P L L,50,F.wav",0
 949,f12,asthma,train,"EP12_Asthma,E W,P L L,50,F.wav",0
 950,f13,heart failure,train,"BP13_Heart Failure,C,P L L,55,M.wav",0
-951,f13,heart failure,test,"DP13_Heart Failure,C,P L L,55,M.wav",0
-952,f13,heart failure,test,"EP13_Heart Failure,C,P L L,55,M.wav",0
+951,f13,heart failure,train,"DP13_Heart Failure,C,P L L,55,M.wav",0
+952,f13,heart failure,train,"EP13_Heart Failure,C,P L L,55,M.wav",0
 953,f14,heart failure,train,"BP14_Heart Failure,C,A R M,54,M.wav",0
 954,f14,heart failure,train,"DP14_Heart Failure,C,A R M,54,M.wav",0
 955,f14,heart failure,train,"EP14_Heart Failure,C,A R M,54,M.wav",0
-956,f15,asthma,test,"BP15_Asthma,E W,P R U,49,F.wav",0
-957,f15,asthma,test,"DP15_Asthma,E W,P R U,49,F.wav",0
-958,f15,asthma,test,"EP15_Asthma,E W,P R U,49,F.wav",0
+956,f15,asthma,val,"BP15_Asthma,E W,P R U,49,F.wav",0
+957,f15,asthma,val,"DP15_Asthma,E W,P R U,49,F.wav",0
+958,f15,asthma,val,"EP15_Asthma,E W,P R U,49,F.wav",0
 959,f16,heart failure,train,"BP16_heart failure,C,P R U,56,M.wav",0
 960,f16,heart failure,train,"DP16_heart failure,C,P R U,56,M.wav",0
 961,f16,heart failure,train,"EP16_heart failure,C,P R U,56,M.wav",0
@@ -968,217 +968,217 @@
 966,f18,pneumonia,train,"DP18_pneumonia,C,P R U,57,M.wav",0
 967,f18,pneumonia,train,"EP18_pneumonia,C,P R U,57,M.wav",0
 968,f19,heart failure,train,"BP19_heart failure,C,P R U,70,F.wav",0
-969,f19,heart failure,test,"DP19_heart failure,C,P R U,70,F.wav",0
-970,f19,heart failure,test,"EP19_heart failure,C,P R U,70,F.wav",0
-971,f20,asthma,train,"BP20_Asthma and lung fibrosis,C,A R M,90,M.wav",0
-972,f20,asthma,test,"DP20_Asthma and lung fibrosis,C,A R M,90,M.wav",0
-973,f20,asthma,test,"EP20_Asthma and lung fibrosis,C,A R M,90,M.wav",0
-974,f21,bronchitis,test,"BP21_BRON,Crep,P R L ,20,M.wav",0
-975,f21,bronchitis,test,"DP21_BRON,Crep,P R L ,20,M.wav",0
-976,f21,bronchitis,train,"EP21_BRON,Crep,P R L ,20,M.wav",0
+969,f19,heart failure,train,"DP19_heart failure,C,P R U,70,F.wav",0
+970,f19,heart failure,train,"EP19_heart failure,C,P R U,70,F.wav",0
+971,f20,asthma,val,"BP20_Asthma and lung fibrosis,C,A R M,90,M.wav",0
+972,f20,asthma,val,"DP20_Asthma and lung fibrosis,C,A R M,90,M.wav",0
+973,f20,asthma,val,"EP20_Asthma and lung fibrosis,C,A R M,90,M.wav",0
+974,f21,bronchitis,val,"BP21_BRON,Crep,P R L ,20,M.wav",0
+975,f21,bronchitis,val,"DP21_BRON,Crep,P R L ,20,M.wav",0
+976,f21,bronchitis,val,"EP21_BRON,Crep,P R L ,20,M.wav",0
 977,f22,bronchitis,train,"BP22_BRON,Crep,P R U,24,M.wav",0
 978,f22,bronchitis,train,"DP22_BRON,Crep,P R U,24,M.wav",0
-979,f22,bronchitis,test,"EP22_BRON,Crep,P R U,24,M.wav",0
+979,f22,bronchitis,train,"EP22_BRON,Crep,P R U,24,M.wav",0
 980,f23,lung fibrosis,test,"BP23_Lung Fibrosis,Crep,P R L ,50,M.wav",0
 981,f23,lung fibrosis,test,"DP23_Lung Fibrosis,Crep,P R L ,50,M.wav",0
-982,f23,lung fibrosis,train,"EP23_Lung Fibrosis,Crep,P R L ,50,M.wav",0
-983,f24,heart failure,test,"BP24_heart failure,Crep,P R L ,76,F.wav",0
-984,f24,heart failure,test,"DP24_heart failure,Crep,P R L ,76,F.wav",0
-985,f24,heart failure,test,"EP24_heart failure,Crep,P R L ,76,F.wav",0
-986,f25,copd,test,"BP25_copd,E W,P L L,76,M.wav",0
+982,f23,lung fibrosis,test,"EP23_Lung Fibrosis,Crep,P R L ,50,M.wav",0
+983,f24,heart failure,train,"BP24_heart failure,Crep,P R L ,76,F.wav",0
+984,f24,heart failure,train,"DP24_heart failure,Crep,P R L ,76,F.wav",0
+985,f24,heart failure,train,"EP24_heart failure,Crep,P R L ,76,F.wav",0
+986,f25,copd,train,"BP25_copd,E W,P L L,76,M.wav",0
 987,f25,copd,train,"DP25_copd,E W,P L L,76,M.wav",0
 988,f25,copd,train,"EP25_copd,E W,P L L,76,M.wav",0
-989,f26,lung fibrosis,test,"BP26_Lung Fibrosis,Crep,P,90,F.wav",0
+989,f26,lung fibrosis,train,"BP26_Lung Fibrosis,Crep,P,90,F.wav",0
 990,f26,lung fibrosis,train,"DP26_Lung Fibrosis,Crep,P,90,F.wav",0
 991,f26,lung fibrosis,train,"EP26_Lung Fibrosis,Crep,P,90,F.wav",0
-992,f27,asthma,test,"BP27_asthma,E W,P R M,53,F.wav",0
+992,f27,asthma,train,"BP27_asthma,E W,P R M,53,F.wav",0
 993,f27,asthma,train,"DP27_asthma,E W,P R M,53,F.wav",0
 994,f27,asthma,train,"EP27_asthma,E W,P R M,53,F.wav",0
 995,f28,bronchitis,train,"BP28_BRON,Crep,P L U,68,F.wav",0
 996,f28,bronchitis,train,"DP28_BRON,Crep,P L U,68,F.wav",0
 997,f28,bronchitis,train,"EP28_BRON,Crep,P L U,68,F.wav",0
-998,f29,heart failure,train,"BP29_heart failure,Crep,P L L,57,M.wav",0
-999,f29,heart failure,train,"DP29_heart failure,Crep,P L L,57,M.wav",0
-1000,f29,heart failure,train,"EP29_heart failure,Crep,P L L,57,M.wav",0
-1001,f30,healthy,test,"BP30_N,N,P R M,18,F.wav",1
-1002,f30,healthy,train,"DP30_N,N,P R M,18,F.wav",1
-1003,f30,healthy,test,"EP30_N,N,P R M,18,F.wav",1
+998,f29,heart failure,test,"BP29_heart failure,Crep,P L L,57,M.wav",0
+999,f29,heart failure,test,"DP29_heart failure,Crep,P L L,57,M.wav",0
+1000,f29,heart failure,test,"EP29_heart failure,Crep,P L L,57,M.wav",0
+1001,f30,healthy,val,"BP30_N,N,P R M,18,F.wav",1
+1002,f30,healthy,val,"DP30_N,N,P R M,18,F.wav",1
+1003,f30,healthy,val,"EP30_N,N,P R M,18,F.wav",1
 1004,f31,healthy,train,"BP31_N,N,P L M,27,F.wav",1
 1005,f31,healthy,train,"DP31_N,N,P L M,27,F.wav",1
 1006,f31,healthy,train,"EP31_N,N,P L M,27,F.wav",1
-1007,f32,healthy,train,"BP32_N,N,A R L,30,M.wav",1
-1008,f32,healthy,train,"DP32_N,N,A R L,30,M.wav",1
-1009,f32,healthy,train,"EP32_N,N,A R L,30,M.wav",1
-1010,f33,asthma,test,"BP33_Asthma,E W,P R M,43,F.wav",0
-1011,f33,asthma,test,"DP33_Asthma,E W,P R M,43,F.wav",0
+1007,f32,healthy,val,"BP32_N,N,A R L,30,M.wav",1
+1008,f32,healthy,val,"DP32_N,N,A R L,30,M.wav",1
+1009,f32,healthy,val,"EP32_N,N,A R L,30,M.wav",1
+1010,f33,asthma,train,"BP33_Asthma,E W,P R M,43,F.wav",0
+1011,f33,asthma,train,"DP33_Asthma,E W,P R M,43,F.wav",0
 1012,f33,asthma,train,"EP33_Asthma,E W,P R M,43,F.wav",0
 1013,f34,heart failure,train,"BP34_heart failure,Crep,P R M,78,F.wav",0
 1014,f34,heart failure,train,"DP34_heart failure,Crep,P R M,78,F.wav",0
-1015,f34,heart failure,test,"EP34_heart failure,Crep,P R M,78,F.wav",0
+1015,f34,heart failure,train,"EP34_heart failure,Crep,P R M,78,F.wav",0
 1016,f35,asthma,train,"BP35_Asthma,E W,A R L,38,M.wav",0
 1017,f35,asthma,train,"DP35_Asthma,E W,A R L,38,M.wav",0
 1018,f35,asthma,train,"EP35_Asthma,E W,A R L,38,M.wav",0
-1019,f36,pneumonia,test,"BP36_pneumonia,Crep,P R M,36,F.wav",0
+1019,f36,pneumonia,train,"BP36_pneumonia,Crep,P R M,36,F.wav",0
 1020,f36,pneumonia,train,"DP36_pneumonia,Crep,P R M,36,F.wav",0
 1021,f36,pneumonia,train,"EP36_pneumonia,Crep,P R M,36,F.wav",0
-1022,f37,pneumonia,test,"BP37_pneumonia,Crep,A R L,70,F.wav",0
-1023,f37,pneumonia,test,"DP37_pneumonia,Crep,A R L,70,F.wav",0
+1022,f37,pneumonia,train,"BP37_pneumonia,Crep,A R L,70,F.wav",0
+1023,f37,pneumonia,train,"DP37_pneumonia,Crep,A R L,70,F.wav",0
 1024,f37,pneumonia,train,"EP37_pneumonia,Crep,A R L,70,F.wav",0
 1025,f38,asthma,train,"BP38_Asthma,E W,P R M,38,M.wav",0
 1026,f38,asthma,train,"DP38_Asthma,E W,P R M,38,M.wav",0
 1027,f38,asthma,train,"EP38_Asthma,E W,P R M,38,M.wav",0
-1028,f39,heart failure,test,"BP39_heart failure,Crep,P R L ,67,M.wav",0
-1029,f39,heart failure,train,"DP39_heart failure,Crep,P R L ,67,M.wav",0
-1030,f39,heart failure,train,"EP39_heart failure,Crep,P R L ,67,M.wav",0
+1028,f39,heart failure,val,"BP39_heart failure,Crep,P R L ,67,M.wav",0
+1029,f39,heart failure,val,"DP39_heart failure,Crep,P R L ,67,M.wav",0
+1030,f39,heart failure,val,"EP39_heart failure,Crep,P R L ,67,M.wav",0
 1031,f40,heart failure,train,"BP40_heart failure,Crep,A R M,26,M.wav",0
 1032,f40,heart failure,train,"DP40_heart failure,Crep,A R M,26,M.wav",0
 1033,f40,heart failure,train,"EP40_heart failure,Crep,A R M,26,M.wav",0
 1034,f41,pneumonia,train,"BP41_pneumonia,Crep,P R M,51,M.wav",0
 1035,f41,pneumonia,train,"DP41_pneumonia,Crep,P R M,51,M.wav",0
-1036,f41,pneumonia,test,"EP41_pneumonia,Crep,P R M,51,M.wav",0
-1037,f42,heart failure,test,"BP42_heart failure,Crep,P L L,56,M.wav",0
+1036,f41,pneumonia,train,"EP41_pneumonia,Crep,P R M,51,M.wav",0
+1037,f42,heart failure,train,"BP42_heart failure,Crep,P L L,56,M.wav",0
 1038,f42,heart failure,train,"DP42_heart failure,Crep,P L L,56,M.wav",0
 1039,f42,heart failure,train,"EP42_heart failure,Crep,P L L,56,M.wav",0
 1040,f43,asthma,train,"BP43_asthma,E W,P L M,15,M.wav",0
 1041,f43,asthma,train,"DP43_asthma,E W,P L M,15,M.wav",0
 1042,f43,asthma,train,"EP43_asthma,E W,P L M,15,M.wav",0
-1043,f44,asthma,test,"BP44_asthma,E W,P R U,40,M.wav",0
+1043,f44,asthma,train,"BP44_asthma,E W,P R U,40,M.wav",0
 1044,f44,asthma,train,"DP44_asthma,E W,P R U,40,M.wav",0
-1045,f44,asthma,test,"EP44_asthma,E W,P R U,40,M.wav",0
+1045,f44,asthma,train,"EP44_asthma,E W,P R U,40,M.wav",0
 1046,f45,heart failure,train,"BP45_heart failure,Crep,P R L ,30,M.wav",0
 1047,f45,heart failure,train,"DP45_heart failure,Crep,P R L ,30,M.wav",0
 1048,f45,heart failure,train,"EP45_heart failure,Crep,P R L ,30,M.wav",0
-1049,f46,asthma,test,"BP46_asthma,E W,P L U,41,F.wav",0
-1050,f46,asthma,test,"DP46_asthma,E W,P L U,41,F.wav",0
+1049,f46,asthma,train,"BP46_asthma,E W,P L U,41,F.wav",0
+1050,f46,asthma,train,"DP46_asthma,E W,P L U,41,F.wav",0
 1051,f46,asthma,train,"EP46_asthma,E W,P L U,41,F.wav",0
 1052,f47,asthma,train,"BP47_asthma,E W,P L M,60,M.wav",0
 1053,f47,asthma,train,"DP47_asthma,E W,P L M,60,M.wav",0
 1054,f47,asthma,train,"EP47_asthma,E W,P L M,60,M.wav",0
-1055,f48,healthy,train,"BP48_N,N,P L U,31,M.wav",1
-1056,f48,healthy,train,"DP48_N,N,P L U,31,M.wav",1
-1057,f48,healthy,train,"EP48_N,N,P L U,31,M.wav",1
+1055,f48,healthy,val,"BP48_N,N,P L U,31,M.wav",1
+1056,f48,healthy,val,"DP48_N,N,P L U,31,M.wav",1
+1057,f48,healthy,val,"EP48_N,N,P L U,31,M.wav",1
 1058,f49,healthy,train,"BP49_N,N,P R M,21,M.wav",1
 1059,f49,healthy,train,"DP49_N,N,P R M,21,M.wav",1
 1060,f49,healthy,train,"EP49_N,N,P R M,21,M.wav",1
-1061,f50,healthy,test,"BP50_N,N,P R L ,27,M.wav",1
+1061,f50,healthy,train,"BP50_N,N,P R L ,27,M.wav",1
 1062,f50,healthy,train,"DP50_N,N,P R L ,27,M.wav",1
 1063,f50,healthy,train,"EP50_N,N,P R L ,27,M.wav",1
-1064,f51,healthy,test,"BP51_N,N,P L M,30,M.wav",1
-1065,f51,healthy,test,"DP51_N,N,P L M,30,M.wav",1
+1064,f51,healthy,train,"BP51_N,N,P L M,30,M.wav",1
+1065,f51,healthy,train,"DP51_N,N,P L M,30,M.wav",1
 1066,f51,healthy,train,"EP51_N,N,P L M,30,M.wav",1
-1067,f52,lung fibrosis,train,"BP52_Lung Fibrosis,Crep,P L L,76,F.wav",0
-1068,f52,lung fibrosis,train,"DP52_Lung Fibrosis,Crep,P L L,76,F.wav",0
-1069,f52,lung fibrosis,test,"EP52_Lung Fibrosis,Crep,P L L,76,F.wav",0
-1070,f53,asthma,test,"BP53_asthma,E W,P R M,72,F.wav",0
-1071,f53,asthma,test,"DP53_asthma,E W,P R M,72,F.wav",0
+1067,f52,lung fibrosis,val,"BP52_Lung Fibrosis,Crep,P L L,76,F.wav",0
+1068,f52,lung fibrosis,val,"DP52_Lung Fibrosis,Crep,P L L,76,F.wav",0
+1069,f52,lung fibrosis,val,"EP52_Lung Fibrosis,Crep,P L L,76,F.wav",0
+1070,f53,asthma,train,"BP53_asthma,E W,P R M,72,F.wav",0
+1071,f53,asthma,train,"DP53_asthma,E W,P R M,72,F.wav",0
 1072,f53,asthma,train,"EP53_asthma,E W,P R M,72,F.wav",0
-1073,f54,heart failure,test,"BP54_heart failure,Crep,P R L ,73,F.wav",0
-1074,f54,heart failure,train,"DP54_heart failure,Crep,P R L ,73,F.wav",0
-1075,f54,heart failure,train,"EP54_heart failure,Crep,P R L ,73,F.wav",0
-1076,f55,asthma,train,"BP55_asthma,E W,P R U,72,F.wav",0
-1077,f55,asthma,train,"DP55_asthma,E W,P R U,72,F.wav",0
+1073,f54,heart failure,val,"BP54_heart failure,Crep,P R L ,73,F.wav",0
+1074,f54,heart failure,val,"DP54_heart failure,Crep,P R L ,73,F.wav",0
+1075,f54,heart failure,val,"EP54_heart failure,Crep,P R L ,73,F.wav",0
+1076,f55,asthma,test,"BP55_asthma,E W,P R U,72,F.wav",0
+1077,f55,asthma,test,"DP55_asthma,E W,P R U,72,F.wav",0
 1078,f55,asthma,test,"EP55_asthma,E W,P R U,72,F.wav",0
-1079,f56,asthma,test,"BP56_asthma,E W,P R M,56,F.wav",0
-1080,f56,asthma,train,"DP56_asthma,E W,P R M,56,F.wav",0
-1081,f56,asthma,test,"EP56_asthma,E W,P R M,56,F.wav",0
+1079,f56,asthma,val,"BP56_asthma,E W,P R M,56,F.wav",0
+1080,f56,asthma,val,"DP56_asthma,E W,P R M,56,F.wav",0
+1081,f56,asthma,val,"EP56_asthma,E W,P R M,56,F.wav",0
 1082,f57,copd,train,"BP57_COPD,E W,P R L ,42,M.wav",0
-1083,f57,copd,test,"DP57_COPD,E W,P R L ,42,M.wav",0
-1084,f57,copd,test,"EP57_COPD,E W,P R L ,42,M.wav",0
-1085,f58,asthma,train,"BP58_asthma,E W,P L M,40,M.wav",0
-1086,f58,asthma,train,"DP58_asthma,E W,P L M,40,M.wav",0
-1087,f58,asthma,train,"EP58_asthma,E W,P L M,40,M.wav",0
-1088,f59,heart failure,test,"BP59_heart failure,Crep,P R L ,83,F.wav",0
-1089,f59,heart failure,test,"DP59_heart failure,Crep,P R L ,83,F.wav",0
+1083,f57,copd,train,"DP57_COPD,E W,P R L ,42,M.wav",0
+1084,f57,copd,train,"EP57_COPD,E W,P R L ,42,M.wav",0
+1085,f58,asthma,val,"BP58_asthma,E W,P L M,40,M.wav",0
+1086,f58,asthma,val,"DP58_asthma,E W,P L M,40,M.wav",0
+1087,f58,asthma,val,"EP58_asthma,E W,P L M,40,M.wav",0
+1088,f59,heart failure,train,"BP59_heart failure,Crep,P R L ,83,F.wav",0
+1089,f59,heart failure,train,"DP59_heart failure,Crep,P R L ,83,F.wav",0
 1090,f59,heart failure,train,"EP59_heart failure,Crep,P R L ,83,F.wav",0
-1091,f60,heart failure,test,"BP60_heart failure,Crep,P L L,83,F.wav",0
-1092,f60,heart failure,test,"DP60_heart failure,Crep,P L L,83,F.wav",0
-1093,f60,heart failure,test,"EP60_heart failure,Crep,P L L,83,F.wav",0
-1094,f61,copd,train,"BP61_COPD,E W,P R L ,53,M.wav",0
-1095,f61,copd,test,"DP61_COPD,E W,P R L ,53,M.wav",0
-1096,f61,copd,train,"EP61_COPD,E W,P R L ,53,M.wav",0
-1097,f62,copd,train,"BP62_COPD,E W,P L M,53,M.wav",0
-1098,f62,copd,test,"DP62_COPD,E W,P L M,53,M.wav",0
-1099,f62,copd,train,"EP62_COPD,E W,P L M,53,M.wav",0
-1100,f63,copd,train,"BP63_COPD,E W,P R L ,58,F.wav",0
-1101,f63,copd,train,"DP63_COPD,E W,P R L ,58,F.wav",0
-1102,f63,copd,train,"EP63_COPD,E W,P R L ,58,F.wav",0
+1091,f60,heart failure,train,"BP60_heart failure,Crep,P L L,83,F.wav",0
+1092,f60,heart failure,train,"DP60_heart failure,Crep,P L L,83,F.wav",0
+1093,f60,heart failure,train,"EP60_heart failure,Crep,P L L,83,F.wav",0
+1094,f61,copd,val,"BP61_COPD,E W,P R L ,53,M.wav",0
+1095,f61,copd,val,"DP61_COPD,E W,P R L ,53,M.wav",0
+1096,f61,copd,val,"EP61_COPD,E W,P R L ,53,M.wav",0
+1097,f62,copd,val,"BP62_COPD,E W,P L M,53,M.wav",0
+1098,f62,copd,val,"DP62_COPD,E W,P L M,53,M.wav",0
+1099,f62,copd,val,"EP62_COPD,E W,P L M,53,M.wav",0
+1100,f63,copd,test,"BP63_COPD,E W,P R L ,58,F.wav",0
+1101,f63,copd,test,"DP63_COPD,E W,P R L ,58,F.wav",0
+1102,f63,copd,test,"EP63_COPD,E W,P R L ,58,F.wav",0
 1103,f64,asthma,test,"BP64_asthma,E W,P L U,60,M.wav",0
-1104,f64,asthma,train,"DP64_asthma,E W,P L U,60,M.wav",0
+1104,f64,asthma,test,"DP64_asthma,E W,P L U,60,M.wav",0
 1105,f64,asthma,test,"EP64_asthma,E W,P L U,60,M.wav",0
 1106,f65,asthma,train,"BP65_asthma,E W,P R L ,60,F.wav",0
-1107,f65,asthma,test,"DP65_asthma,E W,P R L ,60,F.wav",0
+1107,f65,asthma,train,"DP65_asthma,E W,P R L ,60,F.wav",0
 1108,f65,asthma,train,"EP65_asthma,E W,P R L ,60,F.wav",0
 1109,f66,heart failure,train,"BP66_heart failure,Crep,P R L ,43,M.wav",0
-1110,f66,heart failure,test,"DP66_heart failure,Crep,P R L ,43,M.wav",0
-1111,f66,heart failure,test,"EP66_heart failure,Crep,P R L ,43,M.wav",0
-1112,f67,heart failure,train,"BP67_heart failure,Crep,P R L ,24,F.wav",0
-1113,f67,heart failure,train,"DP67_heart failure,Crep,P R L ,24,F.wav",0
-1114,f67,heart failure,train,"EP67_heart failure,Crep,P R L ,24,F.wav",0
+1110,f66,heart failure,train,"DP66_heart failure,Crep,P R L ,43,M.wav",0
+1111,f66,heart failure,train,"EP66_heart failure,Crep,P R L ,43,M.wav",0
+1112,f67,heart failure,val,"BP67_heart failure,Crep,P R L ,24,F.wav",0
+1113,f67,heart failure,val,"DP67_heart failure,Crep,P R L ,24,F.wav",0
+1114,f67,heart failure,val,"EP67_heart failure,Crep,P R L ,24,F.wav",0
 1115,f68,asthma,train,"BP68_asthma,E W,P R L ,21,F.wav",0
-1116,f68,asthma,test,"DP68_asthma,E W,P R L ,21,F.wav",0
-1117,f68,asthma,test,"EP68_asthma,E W,P R L ,21,F.wav",0
-1118,f69,pneumonia,train,"BP69_pneumonia,Bronchial,P R L ,64,M.wav",0
+1116,f68,asthma,train,"DP68_asthma,E W,P R L ,21,F.wav",0
+1117,f68,asthma,train,"EP68_asthma,E W,P R L ,21,F.wav",0
+1118,f69,pneumonia,test,"BP69_pneumonia,Bronchial,P R L ,64,M.wav",0
 1119,f69,pneumonia,test,"DP69_pneumonia,Bronchial,P R L ,64,M.wav",0
-1120,f69,pneumonia,train,"EP69_pneumonia,Bronchial,P R L ,64,M.wav",0
-1121,f70,healthy,train,"BP70_N,N,P L U,52,F.wav",1
-1122,f70,healthy,train,"DP70_N,N,P L U,52,F.wav",1
-1123,f70,healthy,test,"EP70_N,N,P L U,52,F.wav",1
-1124,f71,healthy,test,"BP71_N,N,P R U,36,M.wav",1
-1125,f71,healthy,test,"DP71_N,N,P R U,36,M.wav",1
+1120,f69,pneumonia,test,"EP69_pneumonia,Bronchial,P R L ,64,M.wav",0
+1121,f70,healthy,val,"BP70_N,N,P L U,52,F.wav",1
+1122,f70,healthy,val,"DP70_N,N,P L U,52,F.wav",1
+1123,f70,healthy,val,"EP70_N,N,P L U,52,F.wav",1
+1124,f71,healthy,train,"BP71_N,N,P R U,36,M.wav",1
+1125,f71,healthy,train,"DP71_N,N,P R U,36,M.wav",1
 1126,f71,healthy,train,"EP71_N,N,P R U,36,M.wav",1
-1127,f72,healthy,train,"BP72_N,N,P R U,24,F.wav",1
-1128,f72,healthy,train,"DP72_N,N,P R U,24,F.wav",1
+1127,f72,healthy,test,"BP72_N,N,P R U,24,F.wav",1
+1128,f72,healthy,test,"DP72_N,N,P R U,24,F.wav",1
 1129,f72,healthy,test,"EP72_N,N,P R U,24,F.wav",1
-1130,f73,healthy,train,"BP73_N,N,P L L,32,M.wav",1
-1131,f73,healthy,train,"DP73_N,N,P L L,32,M.wav",1
-1132,f73,healthy,train,"EP73_N,N,P L L,32,M.wav",1
-1133,f74,healthy,test,"BP74_N,N,P R M,74,M.wav",1
+1130,f73,healthy,test,"BP73_N,N,P L L,32,M.wav",1
+1131,f73,healthy,test,"DP73_N,N,P L L,32,M.wav",1
+1132,f73,healthy,test,"EP73_N,N,P L L,32,M.wav",1
+1133,f74,healthy,train,"BP74_N,N,P R M,74,M.wav",1
 1134,f74,healthy,train,"DP74_N,N,P R M,74,M.wav",1
-1135,f74,healthy,test,"EP74_N,N,P R M,74,M.wav",1
+1135,f74,healthy,train,"EP74_N,N,P R M,74,M.wav",1
 1136,f75,healthy,test,"BP75_N,N,P L U,73,F.wav",1
-1137,f75,healthy,train,"DP75_N,N,P L U,73,F.wav",1
-1138,f75,healthy,train,"EP75_N,N,P L U,73,F.wav",1
+1137,f75,healthy,test,"DP75_N,N,P L U,73,F.wav",1
+1138,f75,healthy,test,"EP75_N,N,P L U,73,F.wav",1
 1139,f76,healthy,train,"BP76_N,N,A L U,31,M.wav",1
-1140,f76,healthy,test,"DP76_N,N,A L U,31,M.wav",1
-1141,f76,healthy,test,"EP76_N,N,A L U,31,M.wav",1
+1140,f76,healthy,train,"DP76_N,N,A L U,31,M.wav",1
+1141,f76,healthy,train,"EP76_N,N,A L U,31,M.wav",1
 1142,f77,asthma,train,"BP77_Asthma,E W,A R L,40,M.wav",0
 1143,f77,asthma,train,"DP77_Asthma,E W,A R L,40,M.wav",0
-1144,f77,asthma,test,"EP77_Asthma,E W,A R L,40,M.wav",0
+1144,f77,asthma,train,"EP77_Asthma,E W,A R L,40,M.wav",0
 1145,f78,asthma,train,"BP78_Asthma,E W,P R M,20,M.wav",0
 1146,f78,asthma,train,"DP78_Asthma,E W,P R M,20,M.wav",0
-1147,f78,asthma,test,"EP78_Asthma,E W,P R M,20,M.wav",0
+1147,f78,asthma,train,"EP78_Asthma,E W,P R M,20,M.wav",0
 1148,f79,asthma,train,"BP79_asthma,E W,A R U,46,M.wav",0
 1149,f79,asthma,train,"DP79_asthma,E W,A R U,46,M.wav",0
 1150,f79,asthma,train,"EP79_asthma,E W,A R U,46,M.wav",0
-1151,f80,asthma,train,"BP80_asthma,E W,A L U,38,M.wav",0
-1152,f80,asthma,train,"DP80_asthma,E W,A L U,38,M.wav",0
-1153,f80,asthma,train,"EP80_asthma,E W,A L U,38,M.wav",0
+1151,f80,asthma,test,"BP80_asthma,E W,A L U,38,M.wav",0
+1152,f80,asthma,test,"DP80_asthma,E W,A L U,38,M.wav",0
+1153,f80,asthma,test,"EP80_asthma,E W,A L U,38,M.wav",0
 1154,f81,healthy,train,"BP81_N,N,P L U,33,M.wav",1
 1155,f81,healthy,train,"DP81_N,N,P L U,33,M.wav",1
 1156,f81,healthy,train,"EP81_N,N,P L U,33,M.wav",1
 1157,f82,healthy,test,"BP82_N,N,P L U,38,M.wav",1
 1158,f82,healthy,test,"DP82_N,N,P L U,38,M.wav",1
-1159,f82,healthy,train,"EP82_N,N,P L U,38,M.wav",1
-1160,f83,healthy,test,"BP83_N,N,A R U,18,F.wav",1
-1161,f83,healthy,test,"DP83_N,N,A R U,18,F.wav",1
+1159,f82,healthy,test,"EP82_N,N,P L U,38,M.wav",1
+1160,f83,healthy,train,"BP83_N,N,A R U,18,F.wav",1
+1161,f83,healthy,train,"DP83_N,N,A R U,18,F.wav",1
 1162,f83,healthy,train,"EP83_N,N,A R U,18,F.wav",1
 1163,f84,healthy,train,"BP84_N,N,A R U,65,F.wav",1
 1164,f84,healthy,train,"DP84_N,N,A R U,65,F.wav",1
 1165,f84,healthy,train,"EP84_N,N,A R U,65,F.wav",1
-1166,f85,healthy,train,"BP85_N,N,A R U,33,M.wav",1
-1167,f85,healthy,train,"DP85_N,N,A R U,33,M.wav",1
-1168,f85,healthy,train,"EP85_N,N,A R U,33,M.wav",1
+1166,f85,healthy,test,"BP85_N,N,A R U,33,M.wav",1
+1167,f85,healthy,test,"DP85_N,N,A R U,33,M.wav",1
+1168,f85,healthy,test,"EP85_N,N,A R U,33,M.wav",1
 1169,f86,healthy,train,"BP86_N,N,P R U,68,F.wav",1
 1170,f86,healthy,train,"DP86_N,N,P R U,68,F.wav",1
-1171,f86,healthy,test,"EP86_N,N,P R U,68,F.wav",1
-1172,f87,healthy,train,"BP87_N,N,P R M,72,M.wav",1
+1171,f86,healthy,train,"EP86_N,N,P R U,68,F.wav",1
+1172,f87,healthy,test,"BP87_N,N,P R M,72,M.wav",1
 1173,f87,healthy,test,"DP87_N,N,P R M,72,M.wav",1
-1174,f87,healthy,train,"EP87_N,N,P R M,72,M.wav",1
-1175,f88,healthy,train,"BP88_N,N,A R U,29,M.wav",1
-1176,f88,healthy,train,"DP88_N,N,A R U,29,M.wav",1
-1177,f88,healthy,train,"EP88_N,N,A R U,29,M.wav",1
-1178,f89,healthy,test,"BP89_N,N,P L M,70,M.wav",1
-1179,f89,healthy,test,"DP89_N,N,P L M,70,M.wav",1
+1174,f87,healthy,test,"EP87_N,N,P R M,72,M.wav",1
+1175,f88,healthy,val,"BP88_N,N,A R U,29,M.wav",1
+1176,f88,healthy,val,"DP88_N,N,A R U,29,M.wav",1
+1177,f88,healthy,val,"EP88_N,N,A R U,29,M.wav",1
+1178,f89,healthy,train,"BP89_N,N,P L M,70,M.wav",1
+1179,f89,healthy,train,"DP89_N,N,P L M,70,M.wav",1
 1180,f89,healthy,train,"EP89_N,N,P L M,70,M.wav",1
 1181,f90,heart failure,train,"BP90_heart failure,Crep,P L M,74,F.wav",0
 1182,f90,heart failure,train,"DP90_heart failure,Crep,P L M,74,F.wav",0
@@ -1189,63 +1189,63 @@
 1187,f92,healthy,train,"BP92_N,N,P L L ,43,M.wav",1
 1188,f92,healthy,train,"DP92_N,N,P L L ,43,M.wav",1
 1189,f92,healthy,train,"EP92_N,N,P L L ,43,M.wav",1
-1190,f93,healthy,test,"BP93_N,N,P R M,75,M.wav",1
+1190,f93,healthy,train,"BP93_N,N,P R M,75,M.wav",1
 1191,f93,healthy,train,"DP93_N,N,P R M,75,M.wav",1
-1192,f93,healthy,test,"EP93_N,N,P R M,75,M.wav",1
+1192,f93,healthy,train,"EP93_N,N,P R M,75,M.wav",1
 1193,f94,healthy,train,"BP94_N,N,P L L,24,M.wav",1
 1194,f94,healthy,train,"DP94_N,N,P L L,24,M.wav",1
-1195,f94,healthy,test,"EP94_N,N,P L L,24,M.wav",1
+1195,f94,healthy,train,"EP94_N,N,P L L,24,M.wav",1
 1196,f95,healthy,train,"BP95_N,N,P L M,18,M.wav",1
-1197,f95,healthy,test,"DP95_N,N,P L M,18,M.wav",1
+1197,f95,healthy,train,"DP95_N,N,P L M,18,M.wav",1
 1198,f95,healthy,train,"EP95_N,N,P L M,18,M.wav",1
-1199,f96,healthy,train,"BP96_N,N,P R L ,66,F.wav",1
-1200,f96,healthy,train,"DP96_N,N,P R L ,66,F.wav",1
-1201,f96,healthy,train,"EP96_N,N,P R L ,66,F.wav",1
-1202,f97,asthma,train,"BP97_Asthma,E W,P R U,24,M.wav",0
-1203,f97,asthma,train,"DP97_Asthma,E W,P R U,24,M.wav",0
-1204,f97,asthma,train,"EP97_Asthma,E W,P R U,24,M.wav",0
-1205,f98,healthy,test,"BP98_N,N,P L L,53,M.wav",1
-1206,f98,healthy,test,"DP98_N,N,P L L,53,M.wav",1
+1199,f96,healthy,val,"BP96_N,N,P R L ,66,F.wav",1
+1200,f96,healthy,val,"DP96_N,N,P R L ,66,F.wav",1
+1201,f96,healthy,val,"EP96_N,N,P R L ,66,F.wav",1
+1202,f97,asthma,val,"BP97_Asthma,E W,P R U,24,M.wav",0
+1203,f97,asthma,val,"DP97_Asthma,E W,P R U,24,M.wav",0
+1204,f97,asthma,val,"EP97_Asthma,E W,P R U,24,M.wav",0
+1205,f98,healthy,train,"BP98_N,N,P L L,53,M.wav",1
+1206,f98,healthy,train,"DP98_N,N,P L L,53,M.wav",1
 1207,f98,healthy,train,"EP98_N,N,P L L,53,M.wav",1
-1208,f99,healthy,train,"BP99_N,N,P R M,50,M.wav",1
-1209,f99,healthy,train,"DP99_N,N,P R M,50,M.wav",1
-1210,f99,healthy,train,"EP99_N,N,P R M,50,M.wav",1
+1208,f99,healthy,test,"BP99_N,N,P R M,50,M.wav",1
+1209,f99,healthy,test,"DP99_N,N,P R M,50,M.wav",1
+1210,f99,healthy,test,"EP99_N,N,P R M,50,M.wav",1
 1211,f100,healthy,train,"BP100_N,N,P R M,70,F.wav",1
 1212,f100,healthy,train,"DP100_N,N,P R M,70,F.wav",1
-1213,f100,healthy,test,"EP100_N,N,P R M,70,F.wav",1
+1213,f100,healthy,train,"EP100_N,N,P R M,70,F.wav",1
 1214,f101,asthma,test,"BP101_Asthma,E W,P L M,12,F.wav",0
 1215,f101,asthma,test,"DP101_Asthma,E W,P L M,12,F.wav",0
-1216,f101,asthma,train,"EP101_Asthma,E W,P L M,12,F.wav",0
+1216,f101,asthma,test,"EP101_Asthma,E W,P L M,12,F.wav",0
 1217,f102,healthy,train,"BP102_N,N,P L L,41,M.wav",1
 1218,f102,healthy,train,"DP102_N,N,P L L,41,M.wav",1
-1219,f102,healthy,test,"EP102_N,N,P L L,41,M.wav",1
-1220,f103,healthy,train,"BP103_N,N,P R U,81,F.wav",1
-1221,f103,healthy,test,"DP103_N,N,P R U,81,F.wav",1
-1222,f103,healthy,train,"EP103_N,N,P R U,81,F.wav",1
+1219,f102,healthy,train,"EP102_N,N,P L L,41,M.wav",1
+1220,f103,healthy,val,"BP103_N,N,P R U,81,F.wav",1
+1221,f103,healthy,val,"DP103_N,N,P R U,81,F.wav",1
+1222,f103,healthy,val,"EP103_N,N,P R U,81,F.wav",1
 1223,f104,asthma,train,"BP104_Asthma,E W,P L U,45,F.wav",0
-1224,f104,asthma,test,"DP104_Asthma,E W,P L U,45,F.wav",0
+1224,f104,asthma,train,"DP104_Asthma,E W,P L U,45,F.wav",0
 1225,f104,asthma,train,"EP104_Asthma,E W,P L U,45,F.wav",0
 1226,f105,lung fibrosis,train,"BP105_Lung Fibrosis,Crep,A U R,44,M.wav",0
-1227,f105,lung fibrosis,test,"DP105_Lung Fibrosis,Crep,A U R,44,M.wav",0
-1228,f105,lung fibrosis,test,"EP105_Lung Fibrosis,Crep,A U R,44,M.wav",0
-1229,f106,asthma,test,"BP106_Asthma,E W,P L U,45,F.wav",0
+1227,f105,lung fibrosis,train,"DP105_Lung Fibrosis,Crep,A U R,44,M.wav",0
+1228,f105,lung fibrosis,train,"EP105_Lung Fibrosis,Crep,A U R,44,M.wav",0
+1229,f106,asthma,train,"BP106_Asthma,E W,P L U,45,F.wav",0
 1230,f106,asthma,train,"DP106_Asthma,E W,P L U,45,F.wav",0
 1231,f106,asthma,train,"EP106_Asthma,E W,P L U,45,F.wav",0
-1232,f107,asthma,test,"BP107_Asthma,E W,P L U,59,F.wav",0
-1233,f107,asthma,test,"DP107_Asthma,E W,P L U,59,F.wav",0
+1232,f107,asthma,train,"BP107_Asthma,E W,P L U,59,F.wav",0
+1233,f107,asthma,train,"DP107_Asthma,E W,P L U,59,F.wav",0
 1234,f107,asthma,train,"EP107_Asthma,E W,P L U,59,F.wav",0
 1235,f108,copd,train,"BP108_COPD,E W,P R L ,63,M.wav",0
 1236,f108,copd,train,"DP108_COPD,E W,P R L ,63,M.wav",0
 1237,f108,copd,train,"EP108_COPD,E W,P R L ,63,M.wav",0
 1238,f109,healthy,train,"BP109_N,N,P L M,26,M.wav",1
-1239,f109,healthy,test,"DP109_N,N,P L M,26,M.wav",1
+1239,f109,healthy,train,"DP109_N,N,P L M,26,M.wav",1
 1240,f109,healthy,train,"EP109_N,N,P L M,26,M.wav",1
 1241,f110,copd,train,"BP110_COPD,E W,P L L,62,M.wav",0
 1242,f110,copd,train,"DP110_COPD,E W,P L L,62,M.wav",0
-1243,f110,copd,test,"EP110_COPD,E W,P L L,62,M.wav",0
-1244,f111,copd,test,"BP111_COPD,E W,P R L ,51,M.wav",0
+1243,f110,copd,train,"EP110_COPD,E W,P L L,62,M.wav",0
+1244,f111,copd,train,"BP111_COPD,E W,P R L ,51,M.wav",0
 1245,f111,copd,train,"DP111_COPD,E W,P R L ,51,M.wav",0
-1246,f111,copd,test,"EP111_COPD,E W,P R L ,51,M.wav",0
+1246,f111,copd,train,"EP111_COPD,E W,P R L ,51,M.wav",0
 1247,f112,healthy,train,"BP112_N,N,P L M,30,M.wav",1
 1248,f112,healthy,train,"DP112_N,N,P L M,30,M.wav",1
-1249,f112,healthy,test,"EP112_N,N,P L M,30,M.wav",1
+1249,f112,healthy,train,"EP112_N,N,P L M,30,M.wav",1
