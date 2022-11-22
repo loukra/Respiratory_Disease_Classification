@@ -1,0 +1,237 @@
+id,diagnosis,train_test,is_healthy
+f1,asthma,train,0.0
+f10,asthma,val,0.0
+f100,healthy,train,1.0
+f101,asthma,test,0.0
+f102,healthy,train,1.0
+f103,healthy,val,1.0
+f104,asthma,train,0.0
+f105,lung fibrosis,train,0.0
+f106,asthma,train,0.0
+f107,asthma,train,0.0
+f108,copd,train,0.0
+f109,healthy,train,1.0
+f11,heart failure,train,0.0
+f110,copd,train,0.0
+f111,copd,train,0.0
+f112,healthy,train,1.0
+f12,asthma,train,0.0
+f13,heart failure,train,0.0
+f14,heart failure,train,0.0
+f15,asthma,val,0.0
+f16,heart failure,train,0.0
+f17,copd,train,0.0
+f18,pneumonia,train,0.0
+f19,heart failure,train,0.0
+f2,asthma,train,0.0
+f20,asthma,val,0.0
+f21,bronchitis,val,0.0
+f22,bronchitis,train,0.0
+f23,lung fibrosis,test,0.0
+f24,heart failure,train,0.0
+f25,copd,train,0.0
+f26,lung fibrosis,train,0.0
+f27,asthma,train,0.0
+f28,bronchitis,train,0.0
+f29,heart failure,test,0.0
+f3,asthma,train,0.0
+f30,healthy,val,1.0
+f31,healthy,train,1.0
+f32,healthy,val,1.0
+f33,asthma,train,0.0
+f34,heart failure,train,0.0
+f35,asthma,train,0.0
+f36,pneumonia,train,0.0
+f37,pneumonia,train,0.0
+f38,asthma,train,0.0
+f39,heart failure,val,0.0
+f4,lung fibrosis,train,0.0
+f40,heart failure,train,0.0
+f41,pneumonia,train,0.0
+f42,heart failure,train,0.0
+f43,asthma,train,0.0
+f44,asthma,train,0.0
+f45,heart failure,train,0.0
+f46,asthma,train,0.0
+f47,asthma,train,0.0
+f48,healthy,val,1.0
+f49,healthy,train,1.0
+f5,copd,train,0.0
+f50,healthy,train,1.0
+f51,healthy,train,1.0
+f52,lung fibrosis,val,0.0
+f53,asthma,train,0.0
+f54,heart failure,val,0.0
+f55,asthma,test,0.0
+f56,asthma,val,0.0
+f57,copd,train,0.0
+f58,asthma,val,0.0
+f59,heart failure,train,0.0
+f60,heart failure,train,0.0
+f61,copd,val,0.0
+f62,copd,val,0.0
+f63,copd,test,0.0
+f64,asthma,test,0.0
+f65,asthma,train,0.0
+f66,heart failure,train,0.0
+f67,heart failure,val,0.0
+f68,asthma,train,0.0
+f69,pneumonia,test,0.0
+f7,copd,train,0.0
+f70,healthy,val,1.0
+f71,healthy,train,1.0
+f72,healthy,test,1.0
+f73,healthy,test,1.0
+f74,healthy,train,1.0
+f75,healthy,test,1.0
+f76,healthy,train,1.0
+f77,asthma,train,0.0
+f78,asthma,train,0.0
+f79,asthma,train,0.0
+f80,asthma,test,0.0
+f81,healthy,train,1.0
+f82,healthy,test,1.0
+f83,healthy,train,1.0
+f84,healthy,train,1.0
+f85,healthy,test,1.0
+f86,healthy,train,1.0
+f87,healthy,test,1.0
+f88,healthy,val,1.0
+f89,healthy,train,1.0
+f9,asthma,val,0.0
+f90,heart failure,train,0.0
+f91,asthma,train,0.0
+f92,healthy,train,1.0
+f93,healthy,train,1.0
+f94,healthy,train,1.0
+f95,healthy,train,1.0
+f96,healthy,val,1.0
+f97,asthma,val,0.0
+f98,healthy,train,1.0
+f99,healthy,test,1.0
+i101,urti,test,0.0
+i102,healthy,test,1.0
+i103,asthma,train,0.0
+i104,copd,test,0.0
+i105,urti,train,0.0
+i106,copd,train,0.0
+i107,copd,train,0.0
+i108,lrti,train,0.0
+i109,copd,test,0.0
+i110,copd,train,0.0
+i111,bronchiectasis,train,0.0
+i112,copd,train,0.0
+i113,copd,test,0.0
+i114,copd,val,0.0
+i115,lrti,val,0.0
+i116,bronchiectasis,train,0.0
+i117,copd,train,0.0
+i118,copd,test,0.0
+i119,urti,val,0.0
+i120,copd,train,0.0
+i121,healthy,val,1.0
+i122,pneumonia,train,0.0
+i123,healthy,test,1.0
+i124,copd,test,0.0
+i125,healthy,val,1.0
+i126,healthy,test,1.0
+i127,healthy,val,1.0
+i128,copd,train,0.0
+i129,urti,train,0.0
+i130,copd,train,0.0
+i131,urti,val,0.0
+i132,copd,train,0.0
+i133,copd,test,0.0
+i134,copd,val,0.0
+i135,pneumonia,val,0.0
+i136,healthy,test,1.0
+i137,urti,train,0.0
+i138,copd,train,0.0
+i139,copd,val,0.0
+i140,pneumonia,val,0.0
+i141,copd,train,0.0
+i142,copd,train,0.0
+i143,healthy,test,1.0
+i144,healthy,test,1.0
+i145,copd,test,0.0
+i146,copd,test,0.0
+i147,copd,test,0.0
+i148,urti,train,0.0
+i149,bronchiolitis,test,0.0
+i150,urti,test,0.0
+i151,copd,val,0.0
+i152,healthy,train,1.0
+i153,healthy,train,1.0
+i154,copd,train,0.0
+i155,copd,train,0.0
+i156,copd,train,0.0
+i157,copd,train,0.0
+i158,copd,val,0.0
+i159,healthy,train,1.0
+i160,copd,test,0.0
+i161,bronchiolitis,train,0.0
+i162,copd,train,0.0
+i163,copd,train,0.0
+i164,urti,train,0.0
+i165,urti,test,0.0
+i166,copd,train,0.0
+i167,bronchiolitis,val,0.0
+i168,bronchiectasis,val,0.0
+i169,bronchiectasis,test,0.0
+i170,copd,test,0.0
+i171,healthy,test,1.0
+i172,copd,train,0.0
+i173,bronchiolitis,val,0.0
+i174,copd,test,0.0
+i175,copd,test,0.0
+i176,copd,test,0.0
+i177,copd,test,0.0
+i178,copd,test,0.0
+i179,healthy,train,1.0
+i180,copd,train,0.0
+i181,copd,train,0.0
+i182,healthy,test,1.0
+i183,healthy,train,1.0
+i184,healthy,val,1.0
+i185,copd,test,0.0
+i186,copd,train,0.0
+i187,healthy,test,1.0
+i188,urti,train,0.0
+i189,copd,train,0.0
+i190,urti,val,0.0
+i191,pneumonia,train,0.0
+i192,copd,train,0.0
+i193,copd,val,0.0
+i194,healthy,test,1.0
+i195,copd,test,0.0
+i196,bronchiectasis,val,0.0
+i197,urti,train,0.0
+i198,copd,val,0.0
+i199,copd,train,0.0
+i200,copd,train,0.0
+i201,bronchiectasis,train,0.0
+i202,healthy,test,1.0
+i203,copd,train,0.0
+i204,copd,train,0.0
+i205,copd,test,0.0
+i206,bronchiolitis,val,0.0
+i207,copd,test,0.0
+i208,healthy,train,1.0
+i209,healthy,val,1.0
+i210,urti,train,0.0
+i211,copd,test,0.0
+i212,copd,train,0.0
+i213,copd,val,0.0
+i214,healthy,test,1.0
+i215,bronchiectasis,train,0.0
+i216,bronchiolitis,test,0.0
+i217,healthy,train,1.0
+i218,copd,train,0.0
+i219,pneumonia,val,0.0
+i220,copd,train,0.0
+i221,copd,train,0.0
+i222,copd,val,0.0
+i223,copd,test,0.0
+i224,healthy,test,1.0
+i225,healthy,test,1.0
+i226,pneumonia,val,0.0

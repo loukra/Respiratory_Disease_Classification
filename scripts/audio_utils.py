@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 import librosa
+import spec2png
+import sys
+from IPython.display import display
 
 def arr_pad(x, fs, length, mode="pre"):
     """adds zeros before or after a array until it got the desired length
@@ -72,13 +75,12 @@ def arr_split(x, fs, length, annotation, overlap=0.5):
     for idx in range(y.shape[0]):
         y[idx, :] = arr_pad(x[split_start[idx] : split_end[idx]], fs, length)
 
-    extend_annotation = pd.concat([annotation] * y.shape[0], ignore_index = True)
+    extend_annotation = pd.concat([annotation] * y.shape[0], ignore_index=True)
 
     return y, extend_annotation
 
-    
 
-def read_wav(filename, tar_sr=4000, verbose=False):
+def read_wav(filename, tar_sr=4000, verbose=False, console = False):
     """_read_wav_
 
     Args:
@@ -89,22 +91,27 @@ def read_wav(filename, tar_sr=4000, verbose=False):
         vec: time domain vec
         tar_sr: target sampling rate
     """
-    wav_path = "../../data/sounds/"+filename
-    ori_sr = librosa.get_samplerate(wav_path) # save the original sampling rate
+    if console:
+        wav_path = "../data/sounds/" + filename
+    else:
+        wav_path = "../../data/sounds/" + filename
+    ori_sr = librosa.get_samplerate(wav_path)  # save the original sampling rate
     vec, tar_sr = librosa.load(wav_path, sr=tar_sr)
-    dur = vec.shape[0]/tar_sr
+    dur = vec.shape[0] / tar_sr
 
     if verbose == True:
-        print(f'Original sr: {ori_sr}, Target sr: {tar_sr}, duration: {dur} sec')
-    
+        print(f"Original sr: {ori_sr}, Target sr: {tar_sr}, duration: {dur} sec")
+
     return vec, tar_sr
 
 
-def mel_log(vec:np.ndarray, 
-            sr: int=4000,
-            n_mels: int=50,
-            n_fft: int=512, 
-            fmax: int=None) -> np.ndarray:
+def mel_log(
+    vec: np.ndarray,
+    sr: int = 4000,
+    n_mels: int = 50,
+    n_fft: int = 512,
+    fmax: int = None,
+) -> np.ndarray:
     """_summary_
 
     Args:
@@ -123,9 +130,45 @@ def mel_log(vec:np.ndarray,
     return mel_dB
 
 
-def audio_preprocessing(annotation, fs = 4000, chunk_length = 8, overlap = 0.5):
-    filename = annotation['filename'].values[0]
-    y, _ = read_wav(filename)
+def audio_preprocessing(annotation, console = False, fs=4000, chunk_length=8, overlap=0.5):
+    filename = annotation["filename"].values[0]
+    y, _ = read_wav(filename, console = console)
 
     y, extended_annotations = arr_split(y, fs, chunk_length, annotation, overlap)
     return y, extended_annotations
+
+
+def audio2img(
+    annotation_dir="../../data/annotations.csv", console = False,
+    overlap_minor = 0.9,
+    overlap_major = 0.1,
+):
+    annotations = pd.read_csv(annotation_dir, index_col=0)
+
+    display(annotations)
+    X = []
+    extended_annotations = pd.DataFrame(
+        columns=["id", "diagnosis", "train_test", "filename", "is_healthy"]
+    )
+
+    for idx, row in annotations.iterrows():
+        df = pd.DataFrame(row).T
+        if row['is_healthy'] == 0:
+            overlap = overlap_major
+        else: overlap = overlap_minor
+        y, extended_annotation = audio_preprocessing(df, console = console, overlap=overlap)
+        [X.append(col) for col in y]
+        extended_annotations = pd.concat(
+            [extended_annotations, extended_annotation], ignore_index=True
+        )
+
+    X = np.array(X)
+    print(extended_annotations['is_healthy'].value_counts())
+    spec2png.spec2png(X, extended_annotations, hop_length=512, console = console)
+
+
+if __name__ == "__main__":
+    print(sys.argv[1])
+    annot_path = sys.argv[1]
+    audio2img(
+    annotation_dir=annot_path, console = True)
