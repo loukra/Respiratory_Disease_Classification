@@ -4,6 +4,8 @@ import librosa
 import spec2png
 import sys
 from IPython.display import display
+from librosa.feature import melspectrogram
+from librosa import power_to_db
 
 def arr_pad(x, fs, length, mode="pre"):
     """adds zeros before or after a array until it got the desired length
@@ -35,7 +37,7 @@ def arr_pad(x, fs, length, mode="pre"):
     return y
 
 
-def arr_split(x, fs, length, annotation, overlap=0.5):
+def arr_split(x, fs, length, annotation=None, overlap=0.5):
     """splits array into chunks of length fs * length
 
     Args:
@@ -74,10 +76,11 @@ def arr_split(x, fs, length, annotation, overlap=0.5):
     # fill output array with padded arrays
     for idx in range(y.shape[0]):
         y[idx, :] = arr_pad(x[split_start[idx] : split_end[idx]], fs, length)
-
-    extend_annotation = pd.concat([annotation] * y.shape[0], ignore_index=True)
-
-    return y, extend_annotation
+    if annotation:
+        extend_annotation = pd.concat([annotation] * y.shape[0], ignore_index=True)
+        return y, extend_annotation
+    else:
+        return y
 
 
 def read_wav(filename, tar_sr=4000, verbose=False, console = False):
@@ -130,12 +133,16 @@ def mel_log(
     return mel_dB
 
 
-def audio_preprocessing(annotation, console = False, fs=4000, chunk_length=8, overlap=0.5):
-    filename = annotation["filename"].values[0]
+def audio_preprocessing(annotation, console = False, fs=4000, chunk_length=8, overlap=0.5, predict = False):
+    if predict == False:
+        filename = annotation["filename"].values[0]
+    else:
+        filename = annotation
     y, _ = read_wav(filename, console = console)
 
     y, extended_annotations = arr_split(y, fs, chunk_length, annotation, overlap)
     return y, extended_annotations
+
 
 
 def audio2img(
