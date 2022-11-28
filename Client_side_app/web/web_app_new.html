@@ -1,104 +1,113 @@
 <html><body>
 	<!-- <div id='raf'> //-->
-	<h1>Breathing Sound Test</h1>
-	<p>This site is linked to a sophisticated neural network that discerns suspicious from sound lung noises and classifies the former. You might use the scroll menu to tell if you 
-		<select id='wech' onchange='adaptS();'>
+	<h1 id="phase_h">Breathing Sound Test</h1>
+	<p id="phase_p">This site is linked to a sophisticated neural network that discerns suspicious from sound lung noises and classifies the former. You might use the scroll menu to tell if you 
+		<select id="wech" onchange="adaptS();">
 		<option>doubt about being lung sick.</option>
 		<option>think that your lung is healthy.</option>
 		<option>have a pulmonary disease.</option>
 		</select>
-	That feedback is optional. You receive the probability of having a healthy lung right after the 16-second breath test.<br><br>Breath out, click the start button, and breath forcedly through your mouth.</p>
-	<button id='one1' onclick='startB();'><div id='one2'></div></button>
-	<table cellpadding='5'>
-		<caption>Adds for a clearer auscultation</caption>
-		<tr><th rowspan='1'>Flat Phone microphones</td><td><a href='https://amazon.com/s?k=phone+microphone+flat&crid=1KLYTN7UM86XM&sprefix=phone+microphone+flat%2Caps%2C238&ref=nb_sb_noss'>Amazon</a></td></tr>
-		<tr><th rowspan='1'>Flat USB microphones</td><td style='border-top: 1px solid black; border-bottom: 1px solid black;'><a href='https://renhotecic.com/VIMCENT-YM-200-M2-Wired-360-and-deg-Pickup-Audio-Omnidirectional-Microphone-Conference-Microphone-Webcast-Microphone-with-USB-Cable-0001726'>Renhotec</a></td></tr>
-		<tr><th rowspan='2'>Bluetooth stethoscopes</td><td><a href='https://alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&tab=all&SearchText=bluetooth+stethoscope&selectedTab=product_en'>Alibaba</a></td></tr>
-		<tr><td style='border-bottom: 1px solid black;'><a href='https://sifsof.com/product/bluetooth-enabled-cardio-pulmonary-stethoscope-sifstetho-1-1/'>SIFSOF</a></td></tr>
-		<tr><th rowspan='2'>USB stethoscopes</td><td><a href='https://telemedicinesupply.com/collections/devices'>MobilDrTech</a></td></tr>
-		<tr><td><a href='https://letstalkinteractive.com/solutions/telemedicine-carts-and-equipment#digital-accessories'>Let's Talk</a></td></tr>
-	</table>
+	That feedback is optional. You receive the probability of having a healthy lung right after the 16-second breath test.<br><br>Breath out, click 'start test', and breath forcedly through your mouth.</p>
+	<button id="one1" onclick="startB();"><div id="one2"></div></button>
+	<table cellpadding="5">
+	<caption>Adds for a clearer auscultation</caption><tbody>
+		<tr><th rowspan="1">Flat Phone microphones</th><td><a href="https://amazon.com/s?k=phone+microphone+flat&amp;crid=1KLYTN7UM86XM&amp;sprefix=phone+microphone+flat%2Caps%2C238&amp;ref=nb_sb_noss">Amazon</a></td></tr>
+		<tr><th rowspan="1">Flat USB microphones</th><td><a href="https://renhotecic.com/VIMCENT-YM-200-M2-Wired-360-and-deg-Pickup-Audio-Omnidirectional-Microphone-Conference-Microphone-Webcast-Microphone-with-USB-Cable-0001726">Renhotec</a></td></tr>
+		<tr><th rowspan="2">Bluetooth stethoscopes</th><td><a href="https://alibaba.com/trade/search?fsb=y&amp;IndexArea=product_en&amp;CatId=&amp;tab=all&amp;SearchText=bluetooth+stethoscope&amp;selectedTab=product_en">Alibaba</a></td></tr>
+		<tr><td><a href="https://sifsof.com/product/bluetooth-enabled-cardio-pulmonary-stethoscope-sifstetho-1-1/">SIFSOF</a></td></tr>
+		<tr><th rowspan="2">USB stethoscopes</th><td><a href="https://telemedicinesupply.com/collections/devices">MobilDrTech</a></td></tr>
+		<tr><td><a href="https://letstalkinteractive.com/solutions/telemedicine-carts-and-equipment#digital-accessories">Let's Talk</a></td></tr>
+		<tr><th rowspan="1">Do it yourself</th><td><a href="https://create.arduino.cc/projecthub/mixpose/digital-stethoscope-ai-1e0229#toc-step-1--building-the-stethoscope-and-recording-sound-4">Project hub</a></td></tr>
+	</tbody></table>
+	<nav id="phase_n">
+		<button id="train" onclick="if (this.innerHTML=='Repeat') { location.reload(); }">Train
+		<span>The microphone holes of your mobile phone, usually identifiable by being smaller than its SIM card eject hole, are typically located on its lower and/or upper edge. In lying position, you can place one on <a href="https://researchgate.net/figure/Lung-sounds-are-commonly-auscultated-from-anterior-chest-and-posterior-back-sides-of_fig2_345453767" target="_blank">auscultation site RL5 or 6</a> while having free sight to the rythm animation. We recommend starting with R6 to minimize underlying heart sounds. The train animation includes a breath sample and - some phones only - vibrates during the expiration phases.<br><br>
+		<a onclick="exampleT();">Click to proceed</a>.</span></button>
+		<button onclick="moreI();">More</button>
+		<button>Contact<span>
+		<div><img src="https://avatars.githubusercontent.com/u/111969813?v=4"><a href="https://github.com/loukra">Louis Krause</a><br>Data scientist<br>Sound analist<br></div>
+		<div><img src="https://avatars.githubusercontent.com/u/4790396?v=4"><a href="https://github.com/puenktchenli">Li Xie</a><br>Engineer<br>Biophysicist<br></div>
+		<div><img src="https://avatars.githubusercontent.com/u/111279188?v=4"><a href="https://github.com/medscoops">Rafael Cámara</a><br>Data scientist<br>Medical doctor<br></div>
+		</span></button>
+	</nav>
+	<audio id="sampleB" src="https://static1.squarespace.com/static/5cf3c7be3ec7de0001f2cb61/t/637c6f6ff6ff8c7cb07f26f5/1669099377891/LungSoundSample.mp3/original/LungSoundSample.mp3"></audio>
 	<!-- </div> //-->
 	</body>
 	<!-- Frame CSS //-->
 	<style>
 	/* #raf { z-index:5; position:absolute; min-width:100%; min-height:100%; } */
-	/*html { background-color:#ADD8E6; background-repeat:no-repeat; background-size: 100% 100vh; background-attachment:fixed; }*/
+	/*html { background-color:white; }*/
 	</style>
-	<!-- CSS for the initial phase: //-->
+	<!-- Device-specific CSS with priority for phone microphones: //-->
 	<style>
-	h1, p, select, table { font-family: Arial, Helvetica, sans-serif; color:#004400; text-shadow: -0.06em -0.06em 0.04em white; }
+	h1, p, table, nav { margin-left:3vw; margin-right:3vw; }
+	table, nav { width:94vw; }
+	nav button { width:24vw; }
+	nav button span div { width:32vw; }
+	nav button span div img { width:30vw;height:30vw; }
+	@media only screen and (orientation: landscape) {
+		h1, p, table, nav { margin-left:12vw; margin-right:12vw; }
+		table, nav { width:76vw; }
+		nav button { width:18vw; }
+		nav button span { width:76vw; }
+		nav button span div { width:18vw; }
+		nav button span div img { width:18vw;height:18vw; }
+	}
+	</style>
+	<!-- CSS for the initial state: //-->
+	<style>
+	h1, p, select, button, table, nav { font-family: Arial, Helvetica, sans-serif; color:#112211; }
 	h1 { font-size:8vmin; }
 	p, select { text-align:justify; }
-	p, select, table { font-size:4.8vmin; font-weight:700; line-height:1.5 }
-	select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding:5px; cursor: pointer; }
-	button {
-		border-radius:50%; border-width:0.4em; font-size:6vmin; font-weight:700;
-		box-shadow: -0.06em -0.06em 0 0.04em #ffffffbb, inset 0.04em 0.04em 0 0.1em #ffffff77;
+	p, select, table, button { font-weight:700; }
+	p, select, table, nav button { font-size:4.8vmin; }
+	p, select, table, nav button span { line-height:1.5; }
+	select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding:5px; cursor:pointer; }
+	button { border-width:0.4em; box-shadow: -0.09em -0.09em 0 0.03em black, 0.09em 0.09em 0 0.03em black; }
+	#one1, #two1 { border-radius:50%; }
+	#one1, #two1, caption { font-size:6vmin; }
+	#one1 { position:relative; height:70vmin; width:70vmin; left:calc(50% - 35vmin); }
+	#one1:active, nav button:active { background:#112211; box-shadow: 0 0 0; }
+	#one2::after { content: 'START TEST'; }
+	#one1, table { margin-bottom:18vmin; }
+	nav { position:fixed; bottom:0; height:12vmin; display:flex; justify-content:space-between; }
+	nav button { height:100%; border-radius:5%; background:white; }
+	nav button span {
+		visibility:hidden; position:absolute; bottom:100%; background:white;
+		padding-top:6vmin; padding-bottom:6vmin; font-size:4.2vmin; cursor:auto;
 	}
-	#one1 { position:relative; height:70vmin; width:70vmin; left:calc(50% - 35vmin); background:#004400; color:white; text-shadow: 0.06em 0.06em 0.04em black; }
-	#one1:active { background:white; box-shadow: 0 0 0; }
-	#one2::after { content: 'START BUTTON'; }
+	nav button:first-child span { left:0;text-align:left; }
+	nav button:last-child span { right:0;display:flex;justify-content:space-between; }
+	nav button:hover span { visibility:visible; }
+	nav button span div img { border-radius:50%;object-fit:cover; }
+	nav button span div a, caption { font-weight:bold; }
+	a { text-decoration:underline; cursor:auto; color:blue; cursor:pointer; }
 	</style>
-	<!-- CSS for the animation phase: //-->
+	<!-- CSS for the recording phase: //-->
 	<style>
-	#two1 { position:absolute; top:calc(50% - 40vmin); left:calc(50% - 40vmin); height:80vmin; width:80vmin; background:pink; animation: breath1 16s 2; }
+	#two1 { position:absolute; top:calc(50% - 40vmin); left:calc(50% - 40vmin); height:80vmin; width:80vmin; }
 	#two2 {
 		display:inline-block; height:50vmin; width:50vmin; border-radius:50%; line-height:50vmin;
-		background:lightblue; color:black; animation: breath2 16s 2;
+		background:grey; animation: breath1 4s 4;
 	}
-	#two2::after { content: 'BREATH IN'; animation: breath3 16s 2; }
-	@keyframes breath1 {
-		0% { background:pink; }
-		6.25% { background:pink; }
-		12.50% { background:conic-gradient(#004400 0deg, #004400 22.5deg, pink 22.5deg); }
-		18.75% { background:conic-gradient(#004400 0deg, #004400 45deg, pink 45deg); }
-		25.00% { background:conic-gradient(#004400 0deg, #004400 67.5deg, pink 67.5deg); }
-		31.25% { background:conic-gradient(#004400 0deg, #004400 90deg, pink 90deg); }
-		37.50% { background:conic-gradient(#004400 0deg, #004400 112.5deg, pink 112.5deg); }
-		43.75% { background:conic-gradient(#004400 0deg, #004400 135deg, pink 135deg); }
-		50.00% { background:conic-gradient(#004400 0deg, #004400 157.5deg, pink 157.5deg); }
-		56.25% { background:conic-gradient(#004400 0deg, #004400 180deg, pink 180deg); }
-		62.50% { background:conic-gradient(#004400 0deg, #004400 202.5deg, pink 202.5deg); }
-		68.75% { background:conic-gradient(#004400 0deg, #004400 225deg, pink 225deg); }
-		75.00% { background:conic-gradient(#004400 0deg, #004400 247.5deg, pink 247.5deg); }
-		81.25% { background:conic-gradient(#004400 0deg, #004400 270deg, pink 270deg); }
-		87.50% { background:conic-gradient(#004400 0deg, #004400 292.5deg, pink 292.5deg); }
-		93.75% { background:conic-gradient(#004400 0deg, #004400 315deg, pink 315deg); }
-		100% { background:conic-gradient(#004400 0deg, #004400 337.5deg, pink 337.5deg); }
-	}
+	#two2::after { content: 'BREATH IN'; animation: breath2 4s 4; }
+	@keyframes breath1 { 0% { transform:scale(1); } 62.50% { transform:scale(2); } 100.00% { transform:scale(1); } }
 	@keyframes breath2 {
-		0% { background:darkblue; color:white; }
-		25.00% { background:darkblue; color:white; }
-		25.00% { background:lightblue; color:black; }
-		50.00% { background:lightblue; color:black; }
-		50.00% { background:darkblue; color:white; }
-		75.00% { background:darkblue; color:white; }
-		75.00% { background:lightblue; color:black; }
-		100.00% { background:lightblue; color:black; }
-		100.00% { background:darkblue; color:white; }
-	}
-	@keyframes breath3 {
-		0% { content:'BREATH OUT'; } 25.00% { content:'BREATH OUT'; } 25.00% { content:'BREATH IN'; }
-		50.00% { content:'BREATH IN'; } 50.00% { content:'BREATH OUT'; } 75.00% { content:'BREATH OUT'; }
-		75.00% { content:'BREATH IN'; } 100.00% { content:'BREATH IN'; } 100.00% { content:'BREATH OUT'; }
+		0.50% { content:'BREATH IN'; }
+		62.00% { content:'BREATH IN'; }
+		63.00% { content:'BREATH OUT'; }
+		99.50% { content:'BREATH OUT'; }
 	}
 	</style>
-	<!-- CSS for the return phase: //-->
+	<!-- CSS for the return state: //-->
 	<style>
-	table { margin-top:5vmin; width:100vw; display:none; }
+	table { margin-top:5vmin; display:none; }
 	table, th { border-top: 1px solid black; border-bottom: 1px solid black; border-collapse:collapse; }
-	caption { font-size:6vmin; font-weight:900; }
+	caption { margin-bottom:2vmin; }
+	th+td { border-top: 1px solid black; }
 	th { text-align:left; font-weight:800; }
 	</style>
 	<script>
-	// Responsive scroll menu
-	function adaptS() {
-		if (document.getElementById('wech').selectedIndex=='2') {
-			document.getElementById('wech').outerHTML = "have <select><option>any pulmonary disease (PD).</option><optgroup label='an acute PD, namely'><option>any APD.</option><option>an airway infection.</option><option>a recent embolism.</option><option>an exacerbated CPD</option></optgroup><optgroup label='a chronic PD, namely'><option>any CPD.</option><option>a C Obstructive PD.</option><option>(bronchial) asthma.</option><option>a lung fibrosis.</option></optgroup></select>";
-			alert('Do you agree to provide some details on your pulmonary disease?\n\nIf yes, kindly reuse the updated scroll menu.');
-		}
-	}
 	// Main global constants and variables
 	const mimeT = ['audio/mp4','audio/webm','audio/ogg'];
 	audioChunks = [];
@@ -107,6 +116,24 @@
 	navigator.mediaDevices.getUserMedia({audio:true})
 	.then(stream => { handlerF(stream); })
 	.catch((err) => { alert(err.name + '\n' + err.message); });
+	// Responsive scroll menu
+	function adaptS() {
+		if (document.getElementById('wech').selectedIndex=='2') {
+			document.getElementById('wech').outerHTML = "have <select><option>any pulmonary disease (PD).</option><optgroup label='an acute PD, namely'><option>any APD.</option><option>an airway infection.</option><option>a recent embolism.</option><option>an exacerbated CPD</option></optgroup><optgroup label='a chronic PD, namely'><option>any CPD.</option><option>a C Obstructive PD.</option><option>(bronchial) asthma.</option><option>a lung fibrosis.</option></optgroup></select>";
+			alert('Do you agree to provide some details on your pulmonary disease?\n\nIf yes, kindly reuse the updated scroll menu.');
+		}
+	}
+	// Navigation bar
+	function exampleT() {
+		animateS(); document.getElementById('sampleB').play();
+		if (MediaRecorder.isTypeSupported('audio/mp4')==false) { window.navigator.vibrate([0,1500,2500,1500,2500,1500,2500,1500,2500]); }
+		setTimeout(endT,16000);
+	}
+	function endT() { animateE(); document.getElementById('two1').id = 'one1'; document.getElementById('two2').id = 'one2'; }
+	function moreI() {
+		var myWindow = window.open('', 'Team', 'width=200,height=250');
+		myWindow.document.write("<a href='https://github.com/loukra/Respiratory_Disease_Classification/blob/main/README.md'>GitHubRepository</a>");
+	}
 	// Function that handles the stream:
 	function handlerF(stream) {
 		mimeT.forEach(function(v) { if (MediaRecorder.isTypeSupported(v)) { re = new MediaRecorder(stream, {mimeType:v}); } });
@@ -116,24 +143,33 @@
 				let blob = new Blob(audioChunks, {type:re.mimeType}); // alert(blob);
 				fileC.href = URL.createObjectURL(blob); // alert(fileC.href);
 				fileC.target = '_blank'; fileC.download = 'LungSound.wav';
-				document.body.appendChild(fileC); fileC.click(); fileC.remove();
+			document.body.appendChild(fileC); fileC.click(); fileC.remove();
 				var res = Math.random();
-				document.getElementsByTagName('p')[0].style.display = 'inline';
-				document.getElementsByTagName('p')[0].innerHTML = 'The network returned a probability of having a healthy lung of ' + (res*100).toFixed() + "%. Mind that further input, such as lifestyle and symptoms, would have influenced this result. For instance, <a href='https://cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm#respiratory'>smoking</a> would <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/'>reduce it to " + (50*res/(1-res)/(1+0.5*res/(1-res))).toFixed() + "%</a>.<br>To improve the quality, record closer to an <a href='https://researchgate.net/figure/Lung-sounds-are-commonly-auscultated-from-anterior-chest-and-posterior-back-sides-of_fig2_345453767'>auscultation site</a> and extend your device:";
+				animateE();
+				document.getElementById('phase_p').innerHTML = 'The network returned a probability of having a healthy lung of ' + (res*100).toFixed() + "%. Mind that further input, such as lifestyle and symptoms, would have influenced this result. For instance, <a href='https://cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm#respiratory'>smoking</a> would <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/'>reduce it to " + (50*res/(1-res)/(1+0.5*res/(1-res))).toFixed() + "%</a>.<br><br>To improve the quality, follow the instructions on the <a onclick='location.reload();'>train button</a> and extend your device:";
 				document.getElementsByTagName('table')[0].style.display = 'table';
 				document.getElementById('two1').remove();
+				document.getElementById('train').innerHTML = 'Repeat';
 			}
 		}
 	}
-	//  START BUTTON Function:
-	function startB() {
-		re.start();
-		document.getElementsByTagName('p')[0].style.display = 'none';
+	//  START TEST Function:
+	function startB() { re.start(); animateS(); setTimeout(endR,16000); }
+	// Function to end the recording:
+	function endR() { re.stop(); }
+	//  Animation start function:
+	function animateS() {
+		document.getElementById('phase_h').style.display = 'none';
+		document.getElementById('phase_p').style.display = 'none';
+		document.getElementById('phase_n').style.display = 'none';
 		document.getElementById('one1').id = 'two1';
 		document.getElementById('one2').id = 'two2';
-		setTimeout(ende,16000);
 	}
-	// Ending function:
-	function ende() { re.stop(); }
+	//  Animation end function:
+	function animateE() {
+		document.getElementById('phase_h').style.display = 'block';
+		document.getElementById('phase_p').style.display = 'block';
+		document.getElementById('phase_n').style.display = 'flex';
+	}
 	</script>
 </html>
