@@ -1,16 +1,16 @@
 <html><body>
 	<!-- <div id='raf'> //-->
 	<h1 id="phase_h">Breathing Sound Test</h1>
-	<p id="phase_p">This site is linked to a sophisticated neural network that discerns suspicious from sound lung noises and classifies the former. You might use the scroll menu to tell if you 
+	<p id="phase_p">This page is linked to a sophisticated neural network that discerns suspicious from sound breath noises and classifies the former. You may tell by the scroll menu if you 
 		<select id="wech" onchange="adaptS();">
-		<option>doubt about being lung sick.</option>
-		<option>think that your lung is healthy.</option>
-		<option>have a pulmonary disease.</option>
+		<option value="0.00">suspect an airway illness.</option>
+		<option value="1.00">have sound airways.</option>
+		<option>have sick airways.</option>
 		</select>
-	That feedback is optional. You receive the probability of having a healthy lung right after the 16-second breath test.<br><br>Breath out, click 'start test', and breath forcedly through your mouth.</p>
+	That feedback is optional. You receive the probability of healthy airways right after the 16-second breath test.<br><br>Train, 'start test', and breath forcedly through your mouth.</p>
 	<button id="one1" onclick="startB();"><div id="one2"></div></button>
 	<table cellpadding="5">
-	<caption>Adds for a clearer auscultation</caption><tbody>
+	<caption>Table 1: Improve the auscultation</caption><tbody>
 		<tr><th rowspan="1">Flat Phone microphones</th><td><a href="https://amazon.com/s?k=phone+microphone+flat&amp;crid=1KLYTN7UM86XM&amp;sprefix=phone+microphone+flat%2Caps%2C238&amp;ref=nb_sb_noss">Amazon</a></td></tr>
 		<tr><th rowspan="1">Flat USB microphones</th><td><a href="https://renhotecic.com/VIMCENT-YM-200-M2-Wired-360-and-deg-Pickup-Audio-Omnidirectional-Microphone-Conference-Microphone-Webcast-Microphone-with-USB-Cable-0001726">Renhotec</a></td></tr>
 		<tr><th rowspan="2">Bluetooth stethoscopes</th><td><a href="https://alibaba.com/trade/search?fsb=y&amp;IndexArea=product_en&amp;CatId=&amp;tab=all&amp;SearchText=bluetooth+stethoscope&amp;selectedTab=product_en">Alibaba</a></td></tr>
@@ -21,13 +21,15 @@
 	</tbody></table>
 	<nav id="phase_n">
 		<button id="train" onclick="if (this.innerHTML=='Repeat') { location.reload(); }">Train
-		<span>The microphone holes of your mobile phone, usually identifiable by being smaller than its SIM card eject hole, are typically located on its lower and/or upper edge. In lying position, you can place one on <a href="https://researchgate.net/figure/Lung-sounds-are-commonly-auscultated-from-anterior-chest-and-posterior-back-sides-of_fig2_345453767" target="_blank">auscultation site RL5 or 6</a> while having free sight to the rythm animation. We recommend starting with R6 to minimize underlying heart sounds. The train animation includes a breath sample and - some phones only - vibrates during the expiration phases.<br><br>
+		<span>The microphone holes of your mobile phone, usually identifiable by being smaller than its SIM card eject hole, are typically located on its lower and/or upper edge.
+		In lying position, you can place one on <a href="https://researchgate.net/figure/Lung-sounds-are-commonly-auscultated-from-anterior-chest-and-posterior-back-sides-of_fig2_345453767" target="_blank">auscultation site RL5 or 6</a>
+		while having free sight to the rythm animation. We recommend starting with R6 to minimize underlying heart sounds. The train animation includes a breath sample and - some phones only - vibrates during the expiration.<br><br>
 		<a onclick="exampleT();">Click to proceed</a>.</span></button>
-		<button onclick="moreI();">More</button>
+		<button onclick="window.open('https://github.com/loukra/Respiratory_Disease_Classification/blob/main/README.md', 'Readme', 'width=900,height=600');">More</button>
 		<button>Contact<span>
-		<div><img src="https://avatars.githubusercontent.com/u/111969813?v=4"><a href="https://github.com/loukra">Louis Krause</a><br>Data scientist<br>Sound analist<br></div>
-		<div><img src="https://avatars.githubusercontent.com/u/4790396?v=4"><a href="https://github.com/puenktchenli">Li Xie</a><br>Engineer<br>Biophysicist<br></div>
-		<div><img src="https://avatars.githubusercontent.com/u/111279188?v=4"><a href="https://github.com/medscoops">Rafael Cámara</a><br>Data scientist<br>Medical doctor<br></div>
+		<div><img src="https://avatars.githubusercontent.com/u/111969813?v=4"><a href="https://github.com/loukra" target="_blank">Louis Krause</a><br>Data scientist<br>Sound analist<br></div>
+		<div><img src="https://avatars.githubusercontent.com/u/4790396?v=4"><a href="https://github.com/puenktchenli" target="_blank">Li Xie</a><br>Engineer<br>Biophysicist<br></div>
+		<div><img src="https://avatars.githubusercontent.com/u/111279188?v=4"><a href="https://github.com/medscoops" target="_blank">Rafael Cámara</a><br>Data scientist<br>Medical doctor<br></div>
 		</span></button>
 	</nav>
 	<audio id="sampleB" src="https://static1.squarespace.com/static/5cf3c7be3ec7de0001f2cb61/t/637c6f6ff6ff8c7cb07f26f5/1669099377891/LungSoundSample.mp3/original/LungSoundSample.mp3"></audio>
@@ -62,18 +64,21 @@
 	p, select, table, button { font-weight:700; }
 	p, select, table, nav button { font-size:4.8vmin; }
 	p, select, table, nav button span { line-height:1.5; }
-	select { -webkit-appearance: none; -moz-appearance: none; appearance: none; padding:5px; cursor:pointer; }
-	button { border-width:0.4em; box-shadow: -0.09em -0.09em 0 0.03em black, 0.09em 0.09em 0 0.03em black; }
-	#one1, #two1 { border-radius:50%; }
+	select { -webkit-appearance:none; -moz-appearance:none; appearance:none; padding:5px; cursor:pointer; }
+	button, select { background:GhostWhite; }
+	select, nav button { border-style:solid; border-width:0.2em; border-color: LightGrey grey; }
+	select:active, nav button:active { border-color: grey LightGrey; }
+	#one1, #two1 { border-radius:50%; box-shadow: -0.09em -0.09em 0 0.03em grey, 0.09em 0.09em 0 0.03em grey; }
 	#one1, #two1, caption { font-size:6vmin; }
 	#one1 { position:relative; height:70vmin; width:70vmin; left:calc(50% - 35vmin); }
-	#one1:active, nav button:active { background:#112211; box-shadow: 0 0 0; }
+	select:active, #one1:active, nav button:active { background:DimGray; color:white; }
+	#one1:active { box-shadow: -0.09em 0.09em 0 0.03em LightGrey, 0.09em -0.09em 0 0.03em LightGrey; }
 	#one2::after { content: 'START TEST'; }
 	#one1, table { margin-bottom:18vmin; }
 	nav { position:fixed; bottom:0; height:12vmin; display:flex; justify-content:space-between; }
-	nav button { height:100%; border-radius:5%; background:white; }
+	nav button { height:100%; border-radius:5%; }
 	nav button span {
-		visibility:hidden; position:absolute; bottom:100%; background:white;
+		visibility:hidden; position:absolute; bottom:100%; background-color:white;
 		padding-top:6vmin; padding-bottom:6vmin; font-size:4.2vmin; cursor:auto;
 	}
 	nav button:first-child span { left:0;text-align:left; }
@@ -88,7 +93,7 @@
 	#two1 { position:absolute; top:calc(50% - 40vmin); left:calc(50% - 40vmin); height:80vmin; width:80vmin; }
 	#two2 {
 		display:inline-block; height:50vmin; width:50vmin; border-radius:50%; line-height:50vmin;
-		background:grey; animation: breath1 4s 4;
+		background:LightGrey; animation: breath1 4s 4;
 	}
 	#two2::after { content: 'BREATH IN'; animation: breath2 4s 4; }
 	@keyframes breath1 { 0% { transform:scale(1); } 62.50% { transform:scale(2); } 100.00% { transform:scale(1); } }
@@ -117,12 +122,54 @@
 	.then(stream => { handlerF(stream); })
 	.catch((err) => { alert(err.name + '\n' + err.message); });
 	// Responsive scroll menu
-	function adaptS() {
-		if (document.getElementById('wech').selectedIndex=='2') {
-			document.getElementById('wech').outerHTML = "have <select><option>any pulmonary disease (PD).</option><optgroup label='an acute PD, namely'><option>any APD.</option><option>an airway infection.</option><option>a recent embolism.</option><option>an exacerbated CPD</option></optgroup><optgroup label='a chronic PD, namely'><option>any CPD.</option><option>a C Obstructive PD.</option><option>(bronchial) asthma.</option><option>a lung fibrosis.</option></optgroup></select>";
-			alert('Do you agree to provide some details on your pulmonary disease?\n\nIf yes, kindly reuse the updated scroll menu.');
+function adaptS() {
+	if (document.getElementById('wech').selectedIndex=='2') {
+		document.getElementById('wech').outerHTML = "have <select id='wech'>\
+		<option value='2.00'>any respiratory illness.</option>\
+		<optgroup label='an acute airway illness (AI), i.e.'>\
+		<option value='2.11'>an upper airway infection.</option>\
+		<option value='2.12'>a lower airway infection.</option>\
+		<option value='2.13'>a pulmonary embolism.</option>\
+		<option value='2.14'>a pleural effusion.</option>\
+		<option value='2.15'>an altitude sickness.</option>\
+		<option value='2.16'>an exacerbated CI.</option>\
+		<option value='2.10'>another AI.</option></optgroup>\
+		<optgroup label='a chronic airway illness (CI), i.e.'>\
+		<option value='2.21'>a COPD.</option>\
+		<option value='2.22'>(bronchial) asthma.</option>\
+		<option value='2.23'>an emphysema.</option>\
+		<option value='2.24'>a bronchiectasis.</option>\
+		<option value='2.25'>an interstitial lung disease.</option>\
+		<option value='2.26'>a pulmonary tumour.</option>\
+		<option value='2.20'>another CI.</option></optgroup></select>";
+		alert('To tell from which airway illness you suffer, kindly reuse the updated scroll menu and select the best fit.');
+		alert("If you feel unsure or happy with the information already given, leave 'any respiratory illness' or select 'another AI/CI'.");
+		var helpQ = confirm('Do you whish assistance in selecting the truest option?')
+		if (helpQ) { helpT = window.open('', 'Assistance', 'width=850,height=550'); }
+		if (helpQ && helpT==null) {
+			alert('You need to allow popups on this site to get assistance.\n\nWebKit:\t\tSafari>Preferences...>\n            \t\tWebsites>Pop-up Windows\nGecko:\t\tSettings>\n            \t\tPrivacy & Security>Permissions\nTrident:\t\tSettings>Coo... site permissions>\n            \t\tPop-ups and redirects');
+		}
+		if (helpQ) {
+			if (helpT.document.body.innerHTML!='') { helpT.close(); helpT = window.open('', 'Assistance', 'width=850,height=550'); }
+			helpT.document.write("<body><table cellpadding='5' style='text-align:left;font-size:20;'><tbody>\
+			<tr><th colspan='2' style='padding-top:15;font-size:24;'>Acute airway illnesses (AI)</th></tr>\
+			<tr><th>Upper airway infection:</th><td>Infection limited to the nose, the nasal cavities, and the larynx</td></tr>\
+			<tr><th>Lower airway infection:</th><td>Tracheitis, bronchitis, bronchiolitis, or pneumonia</td></tr>\
+			<tr><th>Pulmonary embolism:</th><td>Blockage of an artery in the lungs</td></tr>\
+			<tr><th>Pleural effusion:</th><td>Accumulation of excessive fluid in the space surrounding the lungs</td></tr>\
+			<tr><th>Altitude sickness:</th><td>Mountain/decompression sickness with(out) pulmonary oedema</td></tr>\
+			<tr><th>Exacerbated CI:</th><td>Acute aggravation of a chronic airway illness</td></tr>\
+			<tr><th colspan='2' style='padding-top:15;font-size:24;'>Chronic airway illnesses (CI)</th></tr>\
+			<tr><th>COPD:</th><td>Chronic obstructive pulmonary disease</td></tr>\
+			<tr><th>(Bronchial) asthma:</th><td>Long-term inflammatory pulmonary obstruction</td></tr>\
+			<tr><th>Emphysema:</th><td>Replacement of alveoli (i.e. air exchange sacs) by spongy tissue</td></tr>\
+			<tr><th>Bronchiectasis:</th><td>Obstructive secretions caused by enlarged airways</td></tr>\
+			<tr><th>Interstitial lung disease:</th><td>Includes pulmonary fibrosis, sarcoidosis, tuberculosis, and toxicity</td></tr>\
+			<tr><th>Pulmonary tumour:</th><td>Includes lung cancer, lung metastases and benign lung tumours</td></tr>\
+			</tbody></table></body>");
 		}
 	}
+}
 	// Navigation bar
 	function exampleT() {
 		animateS(); document.getElementById('sampleB').play();
@@ -130,10 +177,10 @@
 		setTimeout(endT,16000);
 	}
 	function endT() { animateE(); document.getElementById('two1').id = 'one1'; document.getElementById('two2').id = 'one2'; }
-	function moreI() {
+	/*function moreI() {
 		var myWindow = window.open('', 'Team', 'width=200,height=250');
 		myWindow.document.write("<a href='https://github.com/loukra/Respiratory_Disease_Classification/blob/main/README.md'>GitHubRepository</a>");
-	}
+	}*/
 	// Function that handles the stream:
 	function handlerF(stream) {
 		mimeT.forEach(function(v) { if (MediaRecorder.isTypeSupported(v)) { re = new MediaRecorder(stream, {mimeType:v}); } });
@@ -146,7 +193,14 @@
 			document.body.appendChild(fileC); fileC.click(); fileC.remove();
 				var res = Math.random();
 				animateE();
-				document.getElementById('phase_p').innerHTML = 'The network returned a probability of having a healthy lung of ' + (res*100).toFixed() + "%. Mind that further input, such as lifestyle and symptoms, would have influenced this result. For instance, <a href='https://cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm#respiratory'>smoking</a> would <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/'>reduce it to " + (50*res/(1-res)/(1+0.5*res/(1-res))).toFixed() + "%</a>.<br><br>To improve the quality, follow the instructions on the <a onclick='location.reload();'>train button</a> and extend your device:";
+				document.getElementById('phase_p').innerHTML = 'The network returned a probability of healthy lungs \
+				of ' + (res*100).toFixed() + "%. Mind that more input, such as lifestyle and symptoms, would have affected this result. \
+				<a href='https://cdc.gov/tobacco/data_statistics/fact_sheets/health_effects/effects_cig_smoking/index.htm#respiratory'>Smoking</a>, \
+				for instance, would <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/'>reduce it \
+				to " + (50*res/(1-res)/(1+0.5*res/(1-res))).toFixed() + "%</a>. Probabilities <70% are suspicious.<br><br>\
+				To improve the quality, follow the <a onclick='location.reload();'>train button</a> instructions, \
+				extend your device (table 1), and ausculate several sites (with your partner´s help). \
+				Of the auscultations with the highest quality, take the lowest probability, as most airway illnesses have a local maximum.";
 				document.getElementsByTagName('table')[0].style.display = 'table';
 				document.getElementById('two1').remove();
 				document.getElementById('train').innerHTML = 'Repeat';
