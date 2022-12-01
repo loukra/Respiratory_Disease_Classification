@@ -37,20 +37,20 @@ Telehealth reduces the burden on medical resources, saves the patients´ time an
 |Microphone data||
 |Training data from the apps||
 
-|Network programming|<div style="width:430px"></div>||
+|Network programming|&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|---|
 |Model1:|- distinction between healthy and suspicious|&check;|
 ||- area under the receiver operating characteristic curve||
 |Model2:|- is acute or chronic more probable?||
 |Model3:|- most probable diagnosis||
 
-|<div style="width:590px">Performance of model1 given a recall of 95% for the respiratory ill</div>||
+|Performance of model1 given a recall of 95% for the respiratory ill &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|
 |Threshold for the predicted probability|52%|
 |Recall for the respiratory healthy|67%|
 |[Accuracy level reached (0 to 4)](https://www.nature.com/articles/s41598-021-96724-7/figures/4)|3|
 
-|<div style="width:470px">Client app programming</div>|App1|App2|App3|
+|Client app programming &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; |App1|App2|App3|
 |---|---|---|---|
 |Main functionality|&check;|&check;||
 |Full functionality|&check;|||
