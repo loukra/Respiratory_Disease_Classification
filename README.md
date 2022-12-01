@@ -51,7 +51,7 @@ Telehealth reduces the burden on medical resources, saves the patients´ time an
 |[Accuracy level reached (0 to 4)](https://www.nature.com/articles/s41598-021-96724-7/figures/4)| &nbsp; 3 |
 
 |Client app programming &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;|App1|App2|App3|
-|---|---|---|---|
+|---|:---:|:---:|:---:|
 |Main functionality|&check;|&check;||
 |Full functionality|&check;|||
 |Table for further improvement|&check;|||
