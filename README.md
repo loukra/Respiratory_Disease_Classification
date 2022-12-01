@@ -29,7 +29,7 @@ The breathing sound test is a telemedical online lung auscultation that automati
 Telehealth reduces the burden on medical resources, saves the patients´ time and money, and is easily accessible. Telemedical care [increased during the COVID-19 pandemic](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7532385/). The [evolution of convolutional neural networks](https://ieeexplore.ieee.org/document/9156454) further contributes to this increase.
 ## Project status
 
-|Training and validation data &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
+|Training and validation data &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|
 |[ICBHI data](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database)| &ensp; &check;&emsp;|
 |[Steth data](https://data.mendeley.com/datasets/jwyy9np4gv/3)| &ensp; &check;&emsp;|
