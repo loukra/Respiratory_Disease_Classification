@@ -39,10 +39,10 @@ Telehealth reduces the burden on medical resources, saves the patients´ time an
 
 |Network programming| &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;||
 |---|---|---|
-|Model1:|- distinction between healthy and suspicious| &ensp; &check;&emsp;|
+|**Model1:**|- distinction between healthy and suspicious| &ensp; &check;&emsp;|
 ||- area under the receiver operating characteristic curve||
-|Model2:|- is acute or chronic more probable?||
-|Model3:|- most probable diagnosis||
+|**Model2:**|- is acute or chronic more probable?||
+|**Model3:**|- most probable diagnosis||
 
 |Performance of model1 given a recall of 95% for the respiratory ill &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|
