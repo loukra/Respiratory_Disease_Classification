@@ -88,7 +88,7 @@ App1 is built with HTML, CSS, and JavaScript, app2 with [Streamlit](https://stre
 ## Server/cloud
 Currently Streamlit and [GitHub](https://github.com/loukra/RespiratoryApp)
 ## Confidentiality
-The additional training data collected within this project is anonymous. Audio with other content than breath cycles, such as voices, etc., are immediately deleted. Users have the possibility to indicate if they
+The additional training data collected within this project is anonymous. Audio files with other content than breath cycles, such as voices, etc., are immediately deleted. The users have the possibility to indicate if they
 - suspect an airway illness.
 - have sound airways.
 - have sick airways.
