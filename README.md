@@ -44,7 +44,7 @@ Telehealth reduces the burden on medical resources, saves the patients´ time an
 |Model2:|- is acute or chronic more probable?||
 |Model3:|- most probable diagnosis||
 
-|Performance of model1 given a recall of 95% for the respiratory ill &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
+|Performance of model1 given a recall of 95% for the respiratory ill &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|
 |Threshold for the predicted probability|52%|
 |Recall for the respiratory healthy|67%|
