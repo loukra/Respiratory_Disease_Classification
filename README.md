@@ -58,7 +58,7 @@ Telehealth reduces the burden on medical resources, saves the patients´ time an
 |Communication with the model||&check;||
 |More factors than respiration and smoking||||
 ## Training and validation data
-The ICBHI and Steth datasets include a total of 238 participants (37% girls/women) from the infancy up to >90 years of age. 177 suffered from respiratory diseases, of which 124 were chronic, predominately COPD (75 cases) and asthma (34 cases). The participants provided 25618 seconds of respiratory auscultation, namely 2570 seconds by the respiratory healthy and 23048 seconds by the respiratory ill. The breath cycles lasted - on the average of individual averages of the ICBHI set - 2.4 seconds in the healthy, 2.2 seconds in the acutely ill, and 3.0 seconds in the chronically ill.
+The ICBHI and Steth datasets include a total of 238 participants (37% girls/women) from infancy to >90 years old. 177 suffered from respiratory diseases, of which 124 were chronic, predominately COPD (75 cases) and asthma (34 cases). The participants provided 25618 seconds of respiratory auscultation, namely 2570 seconds by the respiratory healthy and 23048 seconds by the respiratory ill. The breath cycles lasted - on the average of individual averages of the ICBHI set - 2.4 seconds in the healthy, 2.2 seconds in the acutely ill, and 3.0 seconds in the chronically ill.
 ## Programming
 The most important programming steps are a deep convolutional neural network and client apps.
 ### Preprocessing and augmentation
