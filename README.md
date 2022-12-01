@@ -29,15 +29,15 @@ The breathing sound test is a telemedical online lung auscultation that automati
 Telehealth reduces the burden on medical resources, saves the patients´ time and money, and is easily accessible. Telemedical care [increased during the COVID-19 pandemic](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7532385/). The [evolution of convolutional neural networks](https://ieeexplore.ieee.org/document/9156454) further contributes to this increase.
 ## Project status
 
-|<span style='display:inline-block;width:600px;'>Training and validation data</span>||
+|Training and validation data &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|
-|[ICBHI data](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database)|&check;|
-|[Steth data](https://data.mendeley.com/datasets/jwyy9np4gv/3)|&check;|
+|[ICBHI data](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database)| &ensp; &check;&emsp;|
+|[Steth data](https://data.mendeley.com/datasets/jwyy9np4gv/3)| &ensp; &check;&emsp;|
 |[HF_Lung_V1 data](https://gitlab.com/techsupportHF/HF_Lung_V1)||
 |Microphone data||
 |Training data from the apps||
 
-|Network programming|&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
+|Network programming| &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;||
 |---|---|---|
 |Model1:|- distinction between healthy and suspicious| &ensp; &check;&emsp;|
 ||- area under the receiver operating characteristic curve||
