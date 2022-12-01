@@ -37,9 +37,9 @@ Telehealth reduces the burden on medical resources, saves the patients´ time an
 |Microphone data||
 |Training data from the apps||
 
-|Network programming|&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; ||
+|Network programming|&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|---|
-|Model1:|- distinction between healthy and suspicious|&check;|
+|Model1:|- distinction between healthy and suspicious| &nbsp; &check; &nbsp; |
 ||- area under the receiver operating characteristic curve||
 |Model2:|- is acute or chronic more probable?||
 |Model3:|- most probable diagnosis||
