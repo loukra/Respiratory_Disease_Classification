@@ -1,10 +1,11 @@
 
-# Respiratory Health Classification - Readme
+# Respiratory Health Classification
 
 ## Introduction
-The Respiratory Health Classifier is a telemedical online lung auscultation system that automatically returns the probability of having healthy airways. With a threshold of 52%, 95% of the respiratory ill are classified as such.
+The Respiratory Health Classifier is a telemedical online lung auscultation system that automatically returns the probability of having healthy airways.
 
-https://user-images.githubusercontent.com/111969813/205321259-96847fac-d2ba-40ff-8a50-092246b958aa.mp4
+![Respiratory_Health_Classifier](https://user-images.githubusercontent.com/111969813/205322368-f0744bc8-4bbb-4a02-b037-764b6ac84625.gif)
+
 
 ## Table of contents
 * [Motivation](#Motivation)
