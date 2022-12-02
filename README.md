@@ -4,7 +4,8 @@
 ## Introduction
 The Respiratory Health Classifier is a telemedical online lung auscultation system that automatically returns the probability of having healthy airways.
 
-![Respiratory_Health_Classifier](https://user-images.githubusercontent.com/111969813/205322368-f0744bc8-4bbb-4a02-b037-764b6ac84625.gif)
+![Respiratory_Health_Classifier](https://user-images.githubusercontent.com/111969813/205322753-578b534d-b647-4011-a88d-30f3927309fd.gif)
+ 
 
 
 ## Table of contents
