@@ -29,36 +29,36 @@ The breathing sound test is a telemedical online lung auscultation that automati
 Telehealth reduces the burden on medical resources, saves the patients´ time and money, and is easily accessible. Telemedical care [increased during the COVID-19 pandemic](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7532385/). The [evolution of convolutional neural networks](https://ieeexplore.ieee.org/document/9156454) further contributes to this increase.
 ## Project status
 
-|Training and validation data &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
+|Training and validation data &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp;||
 |---|---|
-|[ICBHI data](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database)|&check;|
-|[Steth data](https://data.mendeley.com/datasets/jwyy9np4gv/3)|&check;|
+|[ICBHI data](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database)| &ensp; &check;&emsp;|
+|[Steth data](https://data.mendeley.com/datasets/jwyy9np4gv/3)| &ensp; &check;&emsp;|
 |[HF_Lung_V1 data](https://gitlab.com/techsupportHF/HF_Lung_V1)||
 |Microphone data||
 |Training data from the apps||
 
-|Network programming|<div style="width:430px"></div>||
+|Network programming| &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;||
 |---|---|---|
-|Model1:|- distinction between healthy and suspicious|&check;|
+|**Model1:**|- distinction between healthy and suspicious| &ensp; &check;&emsp;|
 ||- area under the receiver operating characteristic curve||
-|Model2:|- is acute or chronic more probable?||
-|Model3:|- most probable diagnosis||
+|**Model2:**|- is acute or chronic more probable?||
+|**Model3:**|- most probable diagnosis||
 
-|<div style="width:590px">Performance of model1 given a recall of 95% for the respiratory ill</div>||
+|Performance of model1 given a recall of 95% for the respiratory ill &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; ||
 |---|---|
-|Threshold for the predicted probability|52%|
-|Recall for the respiratory healthy|67%|
-|[Accuracy level reached (0 to 4)](https://www.nature.com/articles/s41598-021-96724-7/figures/4)|3|
+|Threshold for the predicted probability|&nbsp; 52% |
+|Recall for the respiratory healthy|&nbsp; 67% |
+|[Accuracy level reached (0 to 4)](https://www.nature.com/articles/s41598-021-96724-7/figures/4)| &nbsp; 3 |
 
-|<div style="width:470px">Client app programming</div>|App1|App2|App3|
-|---|---|---|---|
+|Client app programming &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;|App1|App2|App3|
+|---|:---:|:---:|:---:|
 |Main functionality|&check;|&check;||
 |Full functionality|&check;|||
 |Table for further improvement|&check;|||
 |Communication with the model||&check;||
 |More factors than respiration and smoking||||
 ## Training and validation data
-The ICBHI and Steth datasets include a total of 238 participants (37% girls/women) from the infancy up to >90 years of age. 177 suffered from respiratory diseases, of which 124 were chronic, predominately COPD (75 cases) and asthma (34 cases). The participants provided 25618 seconds of respiratory auscultation, namely 2570 seconds by the respiratory healthy and 23048 seconds by the respiratory ill. The duration of the breath cycles was - on the average of the participant averages of the ICBHI set - 2.4 in the healthy and 2.2 in the acutely ill versus 3.0 in the chronically ill.
+The ICBHI and Steth datasets include a total of 238 participants (37% girls/women) from infancy to >90 years old. 177 suffered from respiratory diseases, of which 124 were chronic, predominately COPD (75 cases) and asthma (34 cases). The participants provided 25618 seconds of respiratory auscultation, namely 2570 by the respiratory healthy and 23048 by the respiratory ill. The breath cycles lasted - on the average of individual averages of the ICBHI set - 2.4 seconds in the healthy, 2.2 in the acutely ill, and 3.0 in the chronically ill.
 ## Programming
 The most important programming steps are a deep convolutional neural network and client apps.
 ### Preprocessing and augmentation
@@ -88,7 +88,7 @@ App1 is built with HTML, CSS, and JavaScript, app2 with [Streamlit](https://stre
 ## Server/cloud
 Currently Streamlit and [GitHub](https://github.com/loukra/RespiratoryApp)
 ## Confidentiality
-The additional training data collected within this project is anonymous. Audio with other content than breath cycles, such as voices, etc., are immediately deleted. Users have the possibility to indicate if they
+The additional training data collected within this project is anonymous. Audio files with other content than breath cycles, such as voices, etc., are immediately deleted. The users have the possibility to indicate if they
 - suspect an airway illness.
 - have sound airways.
 - have sick airways.
