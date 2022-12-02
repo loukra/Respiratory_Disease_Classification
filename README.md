@@ -15,12 +15,11 @@ The breathing sound test is a telemedical online lung auscultation that automati
 * [Server respectively cloud](#Server-respectively-cloud)
 * [Confidentiality](#Confidentiality)
 * [Demo](#Demo)
-  * [App1 (full web application)](#App1-(full-web-application))
-  * [App2 (Streamlit application)](#App2-(Streamlit-application))
-  * [App3 (mobile phone application)](#App3-(mobile-phone-application))
+  * [App1 (full web application)](#Full-web-application)
+  * [App2 (Streamlit application)](#Streamlit-application)
+  * [App3 (mobile phone application)](#Mobile-phone-application)
 * [Local editing](#Local-editing)
 * [Authors](#Authors)
-* [Links](#🔗-Links)
 * [Acknowledgements](#Acknowledgements)
 
 ## Motivation
@@ -100,9 +99,10 @@ In the latter case, they can further check one of these options:
 That´s all. The function to collect data will be implemented later.
 
 ## Demo
-### [App1 (full web application)](https://medscoops.com/capstone)
-### [App2 (Streamlit application)](https://loukra-respiratoryapp-streamlit-app-deploy-qhc6bz.streamlit.app)
-### App3 (Mobile phone application - to do)
+### [Full web application](https://medscoops.com/capstone)
+### [Streamlit application](https://loukra-respiratoryapp-streamlit-app-deploy-qhc6bz.streamlit.app)
+### Mobile phone application
+Coming soon.
 ## Local editing
 
 Clone the project
