@@ -1,12 +1,10 @@
 
-# Respiratory Disease Classification - Readme
+# Respiratory Health Classification - Readme
 
 ## Introduction
-The breathing sound test is a telemedical online lung auscultation that automatically returns the probability of having healthy airways with and without smoking, along with the caveat that more risk factors and symptoms may further diminish it. With a threshold of 52%, 95% of the respiratory ill are classified as such.
+The Respiratory Health Classifier is a telemedical online lung auscultation system that automatically returns the probability of having healthy airways. With a threshold of 52%, 95% of the respiratory ill are classified as such.
 
-
-https://user-images.githubusercontent.com/111969813/205320868-b64c6b27-a005-4017-8c57-8c33b0716fe3.mp4
-
+https://user-images.githubusercontent.com/111969813/205321259-96847fac-d2ba-40ff-8a50-092246b958aa.mp4
 
 ## Table of contents
 * [Motivation](#Motivation)
