@@ -7,21 +7,21 @@ The breathing sound test is a telemedical online lung auscultation that automati
 ## Table of contents
 * [Motivation](#Motivation)
 * [Project status](#Project-status)
-* [Training and validation data](Training-and-validation-datasets)
+* [Training and validation data](#Training-and-validation-data)
 * [Programming](#Programming)
   * [Preprocessing and augmentation](#Preprocessing-and-augmentation)
   * [Deep convolutional neural network](#Deep-convolutional-neural-network)
   * [Client applications](#Client-applications)
-* [Server/cloud](#Server/cloud)
+* [Server respectively cloud](#Server-respectively-cloud)
 * [Confidentiality](#Confidentiality)
 * [Demo](#Demo)
-  * [App1 (full web application)](App1)
-  * [App2 (Streamlit application)](App2)
-  * [App3 (mobile phone application)](App3)
-* [Local editing](Local-editing)
-* [Authors](Authors)
-* [Links](Links)
-* [Acknowledgements](Acknowledgements)
+  * [App1 (full web application)](#App1 (full web application))
+  * [App2 (Streamlit application)](#App2 (Streamlit application))
+  * [App3 (mobile phone application)](#App3 (mobile phone application))
+* [Local editing](#Local-editing)
+* [Authors](#Authors)
+* [Links](#Links)
+* [Acknowledgements](#Acknowledgements)
 
 ## Motivation
 [Seven percent of the humanity](https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(20)30157-0/fulltext) suffer from chronic respiratory diseases, mainly COPD. 3.9 million persons died from them in 2017, and even more became disabled. Before COVID19, the one-year global incidence of acute respiratory diseases was already near to 100%. COPD is the third and lower respiratory infections the fourth [global leading cause of death](https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death).
@@ -72,7 +72,7 @@ Transfer learning with ResNet50V2 pre-trained on the [ImageNet Classification Pr
 - 47 convolutional layers, a max pooling layer, an average pooling layer, and a fully connected output layer with 1000 nodes and softmax activation function
 - replacement of the original output layer by a densely-connected output layer with 2048 weights, sigmoid activation function, and one final output
 - first freezing of the original layers and training of the new output layer, then retraining of the entire network with a 40 times smaller initial learning rate
-### Client apps
+### Client applications
 App1 is built with HTML, CSS, and JavaScript, app2 with [Streamlit](https://streamlit.io), app3 will run locally on mobile phones. They include:
 - during the initial state:
   - a train button with instructions to improve the quality
@@ -85,7 +85,7 @@ App1 is built with HTML, CSS, and JavaScript, app2 with [Streamlit](https://stre
   - thresholds below which consulting a physician is recommended respectively urgent (traffic light system)
   - a copy of the record for the user
   - a table with possibilities to further improve the recording quality
-## Server/cloud
+## Server respectively cloud
 Currently Streamlit and [GitHub](https://github.com/loukra/RespiratoryApp)
 ## Confidentiality
 The additional training data collected within this project is anonymous. Audio files with other content than breath cycles, such as voices, etc., are immediately deleted. The users have the possibility to indicate if they
@@ -131,7 +131,6 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 ## Authors
-
 - [@Louis Krause](https://www.github.com/loukra)
 - [@Li Xie](https://www.github.com/loukra)
 - [@Dr. med. Rafael Cámara](https://www.github.com/loukra)
