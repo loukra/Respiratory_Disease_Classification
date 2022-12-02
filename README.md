@@ -15,12 +15,12 @@ The breathing sound test is a telemedical online lung auscultation that automati
 * [Server respectively cloud](#Server-respectively-cloud)
 * [Confidentiality](#Confidentiality)
 * [Demo](#Demo)
-  * [App1 (full web application)](#App1 (full web application))
-  * [App2 (Streamlit application)](#App2 (Streamlit application))
-  * [App3 (mobile phone application)](#App3 (mobile phone application))
+  * [App1 (full web application)](#App1-(full-web-application))
+  * [App2 (Streamlit application)](#App2-(Streamlit-application))
+  * [App3 (mobile phone application)](#App3-(mobile-phone-application))
 * [Local editing](#Local-editing)
 * [Authors](#Authors)
-* [Links](#Links)
+* [Links](#🔗-Links)
 * [Acknowledgements](#Acknowledgements)
 
 ## Motivation
